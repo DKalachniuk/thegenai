@@ -183,13 +183,19 @@ document.querySelectorAll('.service-card').forEach(card => {
 // Portfolio item click tracking
 document.querySelectorAll('.portfolio-item').forEach(item => {
     item.addEventListener('click', (e) => {
-        // Don't trigger if clicking on a link or button
-        if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button')) {
+        // Don't trigger if clicking on a link, button, or portfolio-link
+        if (e.target.tagName === 'A' || 
+            e.target.tagName === 'BUTTON' || 
+            e.target.closest('a') || 
+            e.target.closest('button') ||
+            e.target.classList.contains('portfolio-link') ||
+            e.target.closest('.portfolio-link') ||
+            e.target.classList.contains('btn') ||
+            e.target.closest('.btn')) {
             return;
         }
         
         const projectTitle = item.querySelector('h3').textContent;
-        console.log(`Portfolio item clicked: ${projectTitle}`);
         
         // Add a subtle animation
         item.style.transform = 'scale(0.98)';
@@ -266,7 +272,15 @@ document.querySelectorAll('.btn').forEach(btn => {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('TheGenAI website loaded successfully!');
+    
+    // Track page view with analytics
+    if (typeof analytics !== 'undefined') {
+        analytics.logEvent('page_view', {
+            page_title: document.title,
+            page_location: window.location.href,
+            language: document.documentElement.lang
+        });
+    }
     
     // Add a subtle entrance animation to the hero
     const heroContent = document.querySelector('.hero-content');
@@ -282,12 +296,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Ensure portfolio links work properly
-    const portfolioLinks = document.querySelectorAll('a[href*="woonprijs.nl"]');
+    const portfolioLinks = document.querySelectorAll('a[href*="woonprijs.nl"], .portfolio-link');
     portfolioLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent parent click handlers
-            console.log('Portfolio link clicked, opening woonprijs.nl');
-            window.open('https://woonprijs.nl', '_blank');
+            // Track portfolio link click
+            if (typeof analytics !== 'undefined') {
+                analytics.logEvent('portfolio_link_click', {
+                    link_url: 'https://woonprijs.nl',
+                    link_text: 'View Project'
+                });
+            }
+            
+            // Force open the link if default behavior doesn't work
+            setTimeout(() => {
+                if (!window.open('https://woonprijs.nl', '_blank')) {
+                    window.location.href = 'https://woonprijs.nl';
+                }
+            }, 100);
         });
     });
+    
+    // Simple button click handler
+    const viewProjectBtn = document.querySelector('.portfolio-link');
+    if (viewProjectBtn) {
+        viewProjectBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.open('https://woonprijs.nl', '_blank');
+        });
+    }
 });

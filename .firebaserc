@@ -3,6 +3,17 @@
     "default": "the-genai",
     "thegenai": "the-genai"
   },
-  "targets": {},
+  "targets": {
+    "the-genai": {
+      "hosting": {
+        "default": [
+          "the-genai"
+        ],
+        "thegenai-nl": [
+          "thegenai-nl"
+        ]
+      }
+    }
+  },
   "etags": {}
 }

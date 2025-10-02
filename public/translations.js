@@ -345,6 +345,14 @@ class TranslationManager {
         
         // Show notification
         this.showLanguageNotification(lang);
+        
+        // Track language change with analytics
+        if (typeof analytics !== 'undefined') {
+            analytics.logEvent('language_change', {
+                new_language: lang,
+                previous_language: this.currentLanguage
+            });
+        }
     }
     
     showLanguageNotification(lang) {
