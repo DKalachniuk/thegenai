@@ -392,12 +392,16 @@ document.querySelectorAll('.btn').forEach(btn => {
 document.addEventListener('DOMContentLoaded', () => {
     
     // Track page view with analytics
-    if (typeof analytics !== 'undefined') {
-        analytics.logEvent('page_view', {
-            page_title: document.title,
-            page_location: window.location.href,
-            language: document.documentElement.lang
-        });
+    if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+        try {
+            window.analytics.logEvent('page_view', {
+                page_title: document.title,
+                page_location: window.location.href,
+                language: document.documentElement.lang
+            });
+        } catch (error) {
+            // Analytics tracking failed silently
+        }
     }
     
     // Add a subtle entrance animation to the hero
@@ -418,11 +422,15 @@ document.addEventListener('DOMContentLoaded', () => {
     portfolioLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             // Track portfolio link click
-            if (typeof analytics !== 'undefined') {
-                analytics.logEvent('portfolio_link_click', {
-                    link_url: 'https://woonprijs.nl',
-                    link_text: 'View Project'
-                });
+            if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+                try {
+                    window.analytics.logEvent('portfolio_link_click', {
+                        link_url: 'https://woonprijs.nl',
+                        link_text: 'View Project'
+                    });
+                } catch (error) {
+                    // Analytics tracking failed silently
+                }
             }
             
             // Force open the link if default behavior doesn't work
