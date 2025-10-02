@@ -68,8 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Contact form handling
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
         
         // Get form data
         const formData = new FormData(contactForm);
@@ -89,19 +91,102 @@ if (contactForm) {
             return;
         }
         
+        // Track form submission attempt
+        if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+            try {
+                window.analytics.logEvent('contact_form_submit', {
+                    form_name: 'contact_form',
+                    user_name: name,
+                    user_email: email,
+                    has_company: !!company
+                });
+            } catch (error) {
+                console.log('Analytics tracking failed:', error);
+            }
+        }
+        
         // Simulate form submission
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Simulate API call
-        setTimeout(() => {
-            showNotification('Thank you for your message! We\'ll get back to you soon.', 'success');
+        // Add loading animation
+        submitBtn.style.opacity = '0.7';
+        submitBtn.style.cursor = 'not-allowed';
+        
+        // Save message to Firestore
+        try {
+            // Check if Firebase is properly initialized
+            if (!window.db) {
+                throw new Error('Firebase not initialized');
+            }
+
+            const messageData = {
+                name: name,
+                email: email,
+                company: company || '',
+                message: message,
+                timestamp: window.serverTimestamp(),
+                ip: await getClientIP(),
+                userAgent: navigator.userAgent,
+                status: 'new'
+            };
+
+            const docRef = await window.addDoc(window.collection(window.db, 'contact_messages'), messageData);
+            
+            // Track successful submission
+            if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+                try {
+                    window.analytics.logEvent('contact_form_success', {
+                        form_name: 'contact_form',
+                        message_length: message.length
+                    });
+                } catch (error) {
+                    // Analytics tracking failed silently
+                }
+            }
+            
+            showNotification('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
             contactForm.reset();
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-        }, 2000);
+            submitBtn.style.opacity = '1';
+            submitBtn.style.cursor = 'pointer';
+            
+            // Optional: Scroll to top to show the success message
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+        } catch (error) {
+            
+            // Track error
+            if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+                try {
+                    window.analytics.logEvent('contact_form_error', {
+                        error: error.message,
+                        code: error.code
+                    });
+                } catch (analyticsError) {
+                    // Analytics tracking failed silently
+                }
+            }
+            
+            // Show specific error message
+            let errorMessage = 'Sorry, there was an error sending your message. Please try again.';
+            if (error.message.includes('permission')) {
+                errorMessage = 'Database permission error. Please contact support.';
+            } else if (error.message.includes('network')) {
+                errorMessage = 'Network error. Please check your connection and try again.';
+            }
+            
+            showNotification(errorMessage, 'error');
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+            submitBtn.style.cursor = 'pointer';
+        }
+        
+        return false;
     });
 }
 
@@ -110,6 +195,39 @@ function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+// Get client IP function
+async function getClientIP() {
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        return data.ip;
+    } catch (error) {
+        return 'unknown';
+    }
+}
+
+// Test Firestore function
+window.testFirestore = async function() {
+    try {
+        if (!window.db) {
+            throw new Error('Firebase not initialized');
+        }
+        
+        const testData = {
+            message: 'Test message from website',
+            timestamp: window.serverTimestamp(),
+            test: true
+        };
+        
+        const docRef = await window.addDoc(window.collection(window.db, 'test_messages'), testData);
+        
+        alert('Test message saved successfully! Check Firestore console.');
+        
+    } catch (error) {
+        alert('Test failed: ' + error.message);
+    }
+};
 
 // Notification system
 function showNotification(message, type = 'info') {
