@@ -845,6 +845,43 @@ section {
     font-weight: 600;
 }
 
+/* Investment Mockup Styles */
+.investment-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chart-mini {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 60px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.chart-mini .bar {
+    flex: 1;
+    background: linear-gradient(to top, #2563eb, #60a5fa);
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease;
+}
+
+.investment-stats {
+    display: flex;
+    gap: 12px;
+}
+
+.stat-mini {
+    background: #f1f5f9;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1e40af;
+}
+
 .portfolio-content {
     padding: 40px;
 }

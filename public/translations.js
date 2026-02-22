@@ -50,6 +50,9 @@ const translations = {
         'portfolio.woonprijs.title': 'Woonprijs.nl',
         'portfolio.woonprijs.category': 'Real Estate AI Platform',
         'portfolio.woonprijs.description': 'Developed a comprehensive AI-powered property valuation platform that aggregates multiple data sources to provide accurate price estimates, neighborhood demographics, and intelligent bidding advice for the Dutch real estate market.',
+        'portfolio.wheretoinvest.title': 'WhereToInvest.nl',
+        'portfolio.wheretoinvest.category': 'Investment Analysis Platform',
+        'portfolio.wheretoinvest.description': 'An advanced AI-driven platform for real estate investors that analyzes market trends, rental yields, and property appreciation potential to identify the best investment opportunities in the Netherlands.',
         'portfolio.btn.view': 'View Project',
         
         // Contact section
@@ -67,7 +70,7 @@ const translations = {
         'footer.description': 'Creating intelligent solutions for tomorrow\'s challenges.',
         'footer.services.title': 'Services',
         'footer.company.title': 'Company',
-        'footer.copyright': '© 2025 TheGenAI. All rights reserved.'
+        'footer.copyright': '© 2026 TheGenAI. All rights reserved.'
     },
     
     nl: {
@@ -120,6 +123,9 @@ const translations = {
         'portfolio.woonprijs.title': 'Woonprijs.nl',
         'portfolio.woonprijs.category': 'AI Platform voor Vastgoed',
         'portfolio.woonprijs.description': 'Ontwikkeld een uitgebreid AI-aangedreven vastgoedwaarderingplatform dat meerdere gegevensbronnen samenbrengt om nauwkeurige prijsschattingen, buurtdemografie en intelligente biedingsadviezen te bieden voor de Nederlandse vastgoedmarkt.',
+        'portfolio.wheretoinvest.title': 'WhereToInvest.nl',
+        'portfolio.wheretoinvest.category': 'Investeringsanalyse Platform',
+        'portfolio.wheretoinvest.description': 'Een geavanceerd AI-gestuurd platform voor vastgoedbeleggers dat markttrends, huuropbrengsten en waardestijgingspotentieel analyseert om de beste investeringsmogelijkheden in Nederland te identificeren.',
         'portfolio.btn.view': 'Bekijk Project',
         
         // Contact section
@@ -137,7 +143,7 @@ const translations = {
         'footer.description': 'Intelligente oplossingen creëren voor de uitdagingen van morgen.',
         'footer.services.title': 'Diensten',
         'footer.company.title': 'Bedrijf',
-        'footer.copyright': '© 2025 TheGenAI. Alle rechten voorbehouden.'
+        'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden.'
     }
 };
 
