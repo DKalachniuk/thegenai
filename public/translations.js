@@ -8,20 +8,20 @@ const translations = {
         'og-description': 'TheGenAI creates innovative AI solutions for businesses and individuals. Transforming ideas into intelligent technology.',
         'twitter-title': 'TheGenAI - AI Solutions for Business',
         'twitter-description': 'TheGenAI creates innovative AI solutions for businesses and individuals. Transforming ideas into intelligent technology.',
-        
+
         // Navigation
         'nav.home': 'Home',
         'nav.about': 'About',
         'nav.services': 'Services',
         'nav.portfolio': 'Portfolio',
         'nav.contact': 'Contact',
-        
+
         // Hero section
         'hero.title': 'AI Solutions That Transform Business',
         'hero.subtitle': 'We create intelligent technology that empowers businesses and individuals to achieve extraordinary results.',
         'hero.btn.explore': 'Explore Solutions',
         'hero.btn.portfolio': 'View Portfolio',
-        
+
         // About section
         'about.title': 'About TheGenAI',
         'about.subtitle': 'We\'re passionate about creating AI solutions that make a real difference',
@@ -31,7 +31,7 @@ const translations = {
         'about.stats.projects': 'Projects Completed',
         'about.stats.clients': 'Happy Clients',
         'about.stats.experience': 'Years Experience',
-        
+
         // Services section
         'services.title': 'Our AI Solutions',
         'services.subtitle': 'Comprehensive AI services designed to accelerate your business growth',
@@ -43,7 +43,9 @@ const translations = {
         'services.cv.description': 'Image and video analysis systems that can recognize patterns, objects, and behaviors with high accuracy.',
         'services.consulting.title': 'AI Consulting',
         'services.consulting.description': 'Strategic guidance to help you identify AI opportunities and develop a comprehensive AI roadmap.',
-        
+        'services.dev.title': 'Software Development with AI',
+        'services.dev.description': 'Custom software solutions powered by AI to automate workflows and enhance user experiences.',
+
         // Portfolio section
         'portfolio.title': 'Featured Portfolio',
         'portfolio.subtitle': 'Real-world AI solutions that deliver measurable results',
@@ -54,7 +56,7 @@ const translations = {
         'portfolio.wheretoinvest.category': 'Investment Analysis Platform',
         'portfolio.wheretoinvest.description': 'An advanced AI-driven platform for real estate investors that analyzes market trends, rental yields, and property appreciation potential to identify the best investment opportunities in the Netherlands.',
         'portfolio.btn.view': 'View Project',
-        
+
         // Contact section
         'contact.title': 'Ready to Transform Your Business?',
         'contact.subtitle': 'Let\'s discuss how AI can accelerate your growth',
@@ -65,14 +67,14 @@ const translations = {
         'contact.form.company': 'Company Name',
         'contact.form.message': 'Tell us about your project',
         'contact.form.submit': 'Send Message',
-        
+
         // Footer
         'footer.description': 'Creating intelligent solutions for tomorrow\'s challenges.',
         'footer.services.title': 'Services',
         'footer.company.title': 'Company',
         'footer.copyright': '© 2026 TheGenAI. All rights reserved.'
     },
-    
+
     nl: {
         // Meta tags
         'page-title': 'TheGenAI - AI Oplossingen voor Bedrijven',
@@ -81,20 +83,20 @@ const translations = {
         'og-description': 'TheGenAI ontwikkelt innovatieve AI-oplossingen voor bedrijven en particulieren. We transformeren ideeën in intelligente technologie.',
         'twitter-title': 'TheGenAI - AI Oplossingen voor Bedrijven',
         'twitter-description': 'TheGenAI ontwikkelt innovatieve AI-oplossingen voor bedrijven en particulieren. We transformeren ideeën in intelligente technologie.',
-        
+
         // Navigation
         'nav.home': 'Home',
         'nav.about': 'Over Ons',
         'nav.services': 'Diensten',
         'nav.portfolio': 'Portfolio',
         'nav.contact': 'Contact',
-        
+
         // Hero section
         'hero.title': 'AI Oplossingen Die Bedrijven Transformeren',
         'hero.subtitle': 'We ontwikkelen intelligente technologie die bedrijven en particulieren helpt om buitengewone resultaten te behalen.',
         'hero.btn.explore': 'Ontdek Oplossingen',
         'hero.btn.portfolio': 'Bekijk Portfolio',
-        
+
         // About section
         'about.title': 'Over TheGenAI',
         'about.subtitle': 'We zijn gepassioneerd over het creëren van AI-oplossingen die echt verschil maken',
@@ -104,7 +106,7 @@ const translations = {
         'about.stats.projects': 'Projecten Voltooid',
         'about.stats.clients': 'Tevreden Klanten',
         'about.stats.experience': 'Jaar Ervaring',
-        
+
         // Services section
         'services.title': 'Onze AI Oplossingen',
         'services.subtitle': 'Uitgebreide AI-diensten ontworpen om uw bedrijfsgroei te versnellen',
@@ -116,7 +118,9 @@ const translations = {
         'services.cv.description': 'Beeld- en videoanalysesystemen die patronen, objecten en gedragingen met hoge nauwkeurigheid kunnen herkennen.',
         'services.consulting.title': 'AI Advies',
         'services.consulting.description': 'Strategische begeleiding om u te helpen AI-mogelijkheden te identificeren en een uitgebreide AI-roadmap te ontwikkelen.',
-        
+        'services.dev.title': 'Softwareontwikkeling met AI',
+        'services.dev.description': 'Maatwerk software-oplossingen aangedreven door AI om workflows te automatiseren en gebruikerservaringen te verbeteren.',
+
         // Portfolio section
         'portfolio.title': 'Uitgelicht Portfolio',
         'portfolio.subtitle': 'AI-oplossingen uit de echte wereld die meetbare resultaten opleveren',
@@ -127,7 +131,7 @@ const translations = {
         'portfolio.wheretoinvest.category': 'Investeringsanalyse Platform',
         'portfolio.wheretoinvest.description': 'Een geavanceerd AI-gestuurd platform voor vastgoedbeleggers dat markttrends, huuropbrengsten en waardestijgingspotentieel analyseert om de beste investeringsmogelijkheden in Nederland te identificeren.',
         'portfolio.btn.view': 'Bekijk Project',
-        
+
         // Contact section
         'contact.title': 'Klaar om Uw Bedrijf te Transformeren?',
         'contact.subtitle': 'Laten we bespreken hoe AI uw groei kan versnellen',
@@ -138,7 +142,7 @@ const translations = {
         'contact.form.company': 'Bedrijfsnaam',
         'contact.form.message': 'Vertel ons over uw project',
         'contact.form.submit': 'Verstuur Bericht',
-        
+
         // Footer
         'footer.description': 'Intelligente oplossingen creëren voor de uitdagingen van morgen.',
         'footer.services.title': 'Diensten',
@@ -153,7 +157,7 @@ class TranslationManager {
         this.currentLanguage = this.detectLanguage();
         this.init();
     }
-    
+
     detectLanguage() {
         // Check URL parameter first
         const urlParams = new URLSearchParams(window.location.search);
@@ -161,30 +165,30 @@ class TranslationManager {
         if (urlLang && translations[urlLang]) {
             return urlLang;
         }
-        
+
         // Check browser language
         const browserLang = navigator.language || navigator.userLanguage;
         if (browserLang.startsWith('nl')) {
             return 'nl';
         }
-        
+
         // Default to English
         return 'en';
     }
-    
+
     init() {
         this.applyLanguage(this.currentLanguage);
         this.updateMetaTags();
         this.updateStructuredData();
         this.addLanguageToggle();
     }
-    
+
     applyLanguage(lang) {
         this.currentLanguage = lang;
-        
+
         // Update HTML lang attribute
         document.getElementById('html-lang').setAttribute('lang', lang);
-        
+
         // Update all translatable elements
         const elements = document.querySelectorAll('[data-translate]');
         elements.forEach(element => {
@@ -193,7 +197,7 @@ class TranslationManager {
                 element.textContent = translations[lang][key];
             }
         });
-        
+
         // Update placeholder attributes
         const inputs = document.querySelectorAll('input[data-translate], textarea[data-translate]');
         inputs.forEach(input => {
@@ -202,62 +206,62 @@ class TranslationManager {
                 input.setAttribute('placeholder', translations[lang][key]);
             }
         });
-        
+
         // Store language preference
         localStorage.setItem('thegenai-language', lang);
     }
-    
+
     updateMetaTags() {
         const lang = this.currentLanguage;
-        
+
         // Update page title
         document.getElementById('page-title').textContent = translations[lang]['page-title'];
         document.title = translations[lang]['page-title'];
-        
+
         // Update meta description
         document.getElementById('page-description').setAttribute('content', translations[lang]['page-description']);
-        
+
         // Update Open Graph tags
         document.getElementById('og-title').setAttribute('content', translations[lang]['og-title']);
         document.getElementById('og-description').setAttribute('content', translations[lang]['og-description']);
-        
+
         // Update Twitter tags
         document.getElementById('twitter-title').setAttribute('content', translations[lang]['twitter-title']);
         document.getElementById('twitter-description').setAttribute('content', translations[lang]['twitter-description']);
-        
+
         // Update language meta tag
         const languageMeta = document.querySelector('meta[name="language"]');
         if (languageMeta) {
             languageMeta.setAttribute('content', lang);
         }
-        
+
         // Update Open Graph locale
         const ogLocale = document.querySelector('meta[property="og:locale"]');
         if (ogLocale) {
             ogLocale.setAttribute('content', lang === 'nl' ? 'nl_NL' : 'en_US');
         }
     }
-    
+
     updateStructuredData() {
         const lang = this.currentLanguage;
         const structuredData = document.getElementById('structured-data');
-        
+
         if (structuredData) {
             const data = JSON.parse(structuredData.textContent);
             data.description = translations[lang]['page-description'];
-            
+
             // Update structured data with translated content
             structuredData.textContent = JSON.stringify(data);
         }
     }
-    
+
     addLanguageToggle() {
         // Create language toggle button
         const toggle = document.createElement('button');
         toggle.className = 'language-toggle';
         toggle.innerHTML = this.currentLanguage === 'nl' ? '🇺🇸 EN' : '🇳🇱 NL';
         toggle.title = this.currentLanguage === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands';
-        
+
         // Add styles
         toggle.style.cssText = `
             position: fixed;
@@ -277,35 +281,35 @@ class TranslationManager {
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         `;
-        
+
         // Add hover effect
         toggle.addEventListener('mouseenter', () => {
             toggle.style.background = 'rgba(102, 126, 234, 1)';
             toggle.style.transform = 'translateY(-3px) scale(1.05)';
             toggle.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.3)';
         });
-        
+
         toggle.addEventListener('mouseleave', () => {
             toggle.style.background = 'rgba(102, 126, 234, 0.9)';
             toggle.style.transform = 'translateY(0) scale(1)';
             toggle.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2)';
         });
-        
+
         // Add click handler
         toggle.addEventListener('click', () => {
             const newLang = this.currentLanguage === 'nl' ? 'en' : 'nl';
             this.switchLanguage(newLang);
         });
-        
+
         document.body.appendChild(toggle);
-        
+
         // Add scroll-based visibility enhancement
         this.addScrollEnhancement(toggle);
     }
-    
+
     addScrollEnhancement(toggle) {
         let scrollTimeout;
-        
+
         window.addEventListener('scroll', () => {
             // Add scrolled class for enhanced visibility
             if (window.scrollY > 100) {
@@ -313,14 +317,14 @@ class TranslationManager {
             } else {
                 toggle.classList.remove('scrolled');
             }
-            
+
             // Temporarily enhance visibility during scroll
             toggle.style.transform = 'scale(1.1)';
             toggle.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.4)';
-            
+
             // Clear existing timeout
             clearTimeout(scrollTimeout);
-            
+
             // Reset after scroll stops
             scrollTimeout = setTimeout(() => {
                 if (!toggle.classList.contains('scrolled')) {
@@ -330,28 +334,28 @@ class TranslationManager {
             }, 150);
         });
     }
-    
+
     switchLanguage(lang) {
         // Update URL without page reload
         const url = new URL(window.location);
         url.searchParams.set('lang', lang);
         window.history.pushState({}, '', url);
-        
+
         // Apply new language
         this.applyLanguage(lang);
         this.updateMetaTags();
         this.updateStructuredData();
-        
+
         // Update language toggle
         const toggle = document.querySelector('.language-toggle');
         if (toggle) {
             toggle.innerHTML = lang === 'nl' ? '🇺🇸 EN' : '🇳🇱 NL';
             toggle.title = lang === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands';
         }
-        
+
         // Show notification
         this.showLanguageNotification(lang);
-        
+
         // Track language change with analytics
         if (typeof analytics !== 'undefined') {
             analytics.logEvent('language_change', {
@@ -360,24 +364,24 @@ class TranslationManager {
             });
         }
     }
-    
+
     showLanguageNotification(lang) {
         const message = lang === 'nl' ? 'Taal gewijzigd naar Nederlands' : 'Language changed to English';
         this.showNotification(message);
     }
-    
+
     showNotification(message) {
         // Remove existing notifications
         const existingNotification = document.querySelector('.language-notification');
         if (existingNotification) {
             existingNotification.remove();
         }
-        
+
         // Create notification element
         const notification = document.createElement('div');
         notification.className = 'language-notification';
         notification.textContent = message;
-        
+
         // Add styles
         notification.style.cssText = `
             position: fixed;
@@ -395,14 +399,14 @@ class TranslationManager {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         `;
-        
+
         document.body.appendChild(notification);
-        
+
         // Animate in
         setTimeout(() => {
             notification.style.transform = 'translateX(0)';
         }, 100);
-        
+
         // Auto remove after 3 seconds
         setTimeout(() => {
             notification.style.transform = 'translateX(100%)';
