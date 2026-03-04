@@ -49,6 +49,9 @@ const translations = {
         // Portfolio section
         'portfolio.title': 'Featured Portfolio',
         'portfolio.subtitle': 'Real-world AI solutions that deliver measurable results',
+        'portfolio.bedankt.title': 'Bedankt.me',
+        'portfolio.bedankt.category': 'Digital Gratitude Platform',
+        'portfolio.bedankt.description': 'A modern, easy-to-use eCard platform that revolutionizes group greeting cards and employee recognition. Built with a focus on simplicity, responsiveness, and premium design to help teams and individuals celebrate life\'s moments together.',
         'portfolio.woonprijs.title': 'Woonprijs.nl',
         'portfolio.woonprijs.category': 'Real Estate AI Platform',
         'portfolio.woonprijs.description': 'Developed a comprehensive AI-powered property valuation platform that aggregates multiple data sources to provide accurate price estimates, neighborhood demographics, and intelligent bidding advice for the Dutch real estate market.',
@@ -124,6 +127,9 @@ const translations = {
         // Portfolio section
         'portfolio.title': 'Uitgelicht Portfolio',
         'portfolio.subtitle': 'AI-oplossingen uit de echte wereld die meetbare resultaten opleveren',
+        'portfolio.bedankt.title': 'Bedankt.me',
+        'portfolio.bedankt.category': 'Digitaal Dankbaarheidsplatform',
+        'portfolio.bedankt.description': 'Een modern, gebruiksvriendelijk eCard-platform dat groepskaarten en werknemerserkenning naar een hoger niveau tilt. Gebouwd met een focus op eenvoud, responsiviteit en een premium design om teams en individuen te helpen samen de momenten van het leven te vieren.',
         'portfolio.woonprijs.title': 'Woonprijs.nl',
         'portfolio.woonprijs.category': 'AI Platform voor Vastgoed',
         'portfolio.woonprijs.description': 'Ontwikkeld een uitgebreid AI-aangedreven vastgoedwaarderingplatform dat meerdere gegevensbronnen samenbrengt om nauwkeurige prijsschattingen, buurtdemografie en intelligente biedingsadviezen te bieden voor de Nederlandse vastgoedmarkt.',
