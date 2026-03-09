@@ -139,21 +139,22 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title" data-translate="hero.title">AI Solutions That Transform Business</h1>
-            <p class="hero-subtitle" data-translate="hero.subtitle">We create intelligent technology that empowers
-                businesses and individuals to achieve extraordinary results.</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary" data-translate="hero.btn.explore">Explore Solutions</a>
-                <a href="#portfolio" class="btn btn-secondary" data-translate="hero.btn.portfolio">View Portfolio</a>
+            <div class="hero-text">
+                <h1 class="hero-title" data-translate="hero.title">AI Solutions That Transform Business</h1>
+                <p class="hero-subtitle" data-translate="hero.subtitle">We build production-ready AI prototypes in just 8 hours, and deliver comprehensive workshops to teach your teams how to do the same.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary" data-translate="hero.btn.explore">Explore Solutions</a>
+                    <a href="#portfolio" class="btn btn-secondary" data-translate="hero.btn.portfolio">View Portfolio</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-visual">
-            <div class="hero-bento">
-                <div class="bento-card main-code">
-                    <div class="window-controls">
-                        <i></i><i></i><i></i>
-                    </div>
-                    <pre><code><span class="token-keyword">import</span> { Prototypes, Workshops } <span class="token-keyword">from</span> <span class="token-string">'@thegenai/core'</span>;
+            
+            <div class="hero-visual">
+                <div class="hero-bento">
+                    <div class="bento-card main-code">
+                        <div class="window-controls">
+                            <i></i><i></i><i></i>
+                        </div>
+                        <pre><code><span class="token-keyword">import</span> { Prototypes, Workshops } <span class="token-keyword">from</span> <span class="token-string">'@thegenai/core'</span>;
 
 <span class="token-keyword">const</span> solution = <span class="token-keyword">await</span> Prototypes.<span class="token-function">build</span>({
   timeframe: <span class="token-string">'8_hours'</span>,
@@ -164,16 +165,17 @@ Workshops.<span class="token-function">trainTeam</span>({
   location: <span class="token-string">'Europe'</span>,
   impact: <span class="token-number">100</span>
 });</code></pre>
-                </div>
-                <div class="bento-card floating-card" id="tilt-card">
-                    <div class="stat-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fbbf24;">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                        </svg>
                     </div>
-                    <div class="stat-text">
-                        <span class="stat-value">8 Hours</span>
-                        <span class="stat-label">Idea to Prototype</span>
+                    <div class="bento-card floating-card" id="tilt-card">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fbbf24;">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <div class="stat-text">
+                            <span class="stat-value">8 Hours</span>
+                            <span class="stat-label">Idea to Prototype</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -513,7 +515,7 @@ Workshops.<span class="token-function">trainTeam</span>({
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+        import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
         import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
 
         // Your web app's Firebase configuration
@@ -535,6 +537,7 @@ Workshops.<span class="token-function">trainTeam</span>({
         // Make Firebase services globally available
         window.firebaseApp = app;
         window.analytics = analytics;
+        window.logEvent = logEvent;
         window.db = db;
         window.addDoc = addDoc;
         window.collection = collection;

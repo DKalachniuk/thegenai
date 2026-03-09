@@ -394,6 +394,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .ai-visualization {
@@ -1252,10 +1253,18 @@ section {
         background-color: #2563eb;
     }
 
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 140px;
+        gap: 40px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
+        width: 100%;
     }
 
     .hero-title {
@@ -1269,6 +1278,38 @@ section {
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .hero-bento {
+        height: 380px;
+        transform: scale(0.9);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .floating-card {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: -30px;
+        min-width: 200px;
+        max-width: 280px;
+        padding: 16px 20px;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-value {
+        font-size: 16px;
+    }
+
+    .stat-label {
+        font-size: 11px;
     }
 
     .about-content {

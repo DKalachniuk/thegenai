@@ -298,8 +298,8 @@ class TranslationManager {
         this.showLanguageNotification(lang);
 
         // Track language change with analytics
-        if (typeof analytics !== 'undefined') {
-            analytics.logEvent('language_change', {
+        if (typeof analytics !== 'undefined' && typeof window.logEvent !== 'undefined') {
+            window.logEvent(analytics, 'language_change', {
                 new_language: lang,
                 previous_language: this.currentLanguage
             });
