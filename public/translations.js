@@ -2,12 +2,12 @@
 const translations = {
     en: {
         // Meta tags
-        'page-title': 'TheGenAI - AI Solutions for Business',
-        'page-description': 'TheGenAI creates innovative AI solutions for businesses and individuals. Transforming ideas into intelligent technology.',
-        'og-title': 'TheGenAI - AI Solutions for Business',
-        'og-description': 'TheGenAI creates innovative AI solutions for businesses and individuals. Transforming ideas into intelligent technology.',
-        'twitter-title': 'TheGenAI - AI Solutions for Business',
-        'twitter-description': 'TheGenAI creates innovative AI solutions for businesses and individuals. Transforming ideas into intelligent technology.',
+        'page-title': 'TheGenAI - AI Prototyping & Team Workshops across Europe',
+        'page-description': 'TheGenAI offers rapid 8-hour AI prototyping and hands-on team workshops. Based in the Netherlands, serving all of Europe.',
+        'og-title': 'TheGenAI - AI Prototyping & Team Workshops across Europe',
+        'og-description': 'TheGenAI offers rapid 8-hour AI prototyping and hands-on team workshops. Based in the Netherlands, serving all of Europe.',
+        'twitter-title': 'TheGenAI - AI Prototyping & Team Workshops across Europe',
+        'twitter-description': 'TheGenAI offers rapid 8-hour AI prototyping and hands-on team workshops. Based in the Netherlands, serving all of Europe.',
 
         // Navigation
         'nav.home': 'Home',
@@ -27,20 +27,17 @@ const translations = {
         'about.subtitle': 'We\'re passionate about creating AI solutions that make a real difference',
         'about.heading': 'Transforming Ideas into Intelligence',
         'about.text1': 'At TheGenAI, we specialize in developing cutting-edge artificial intelligence solutions tailored to meet the unique needs of businesses and individuals. Our team combines deep technical expertise with a deep understanding of real-world challenges.',
-        'about.text2': 'From machine learning algorithms to natural language processing, we create intelligent systems that enhance productivity, improve decision-making, and drive innovation across various industries.',
+        'about.text2': 'We create intelligent systems that enhance productivity, improve decision-making, and drive innovation across various industries.',
         'about.stats.projects': 'Projects Completed',
         'about.stats.clients': 'Happy Clients',
-        'about.stats.experience': 'Years Experience',
 
         // Services section
         'services.title': 'Our AI Solutions',
         'services.subtitle': 'Comprehensive AI services designed to accelerate your business growth',
-        'services.ml.title': 'Machine Learning',
-        'services.ml.description': 'Custom ML models that learn from your data to make intelligent predictions and automate complex processes.',
-        'services.nlp.title': 'Natural Language Processing',
-        'services.nlp.description': 'Advanced NLP solutions for text analysis, sentiment detection, and automated content generation.',
-        'services.cv.title': 'Computer Vision',
-        'services.cv.description': 'Image and video analysis systems that can recognize patterns, objects, and behaviors with high accuracy.',
+        'services.workshop.title': 'AI Team Workshops',
+        'services.workshop.description': 'Empower your team with hands-on training to build AI prototypes and real-world projects over immersive sessions.',
+        'services.prototype.title': 'Rapid AI Prototyping',
+        'services.prototype.description': 'Hire us to design and build a working AI prototype for your future project in just 8 hours.',
         'services.consulting.title': 'AI Consulting',
         'services.consulting.description': 'Strategic guidance to help you identify AI opportunities and develop a comprehensive AI roadmap.',
         'services.dev.title': 'Software Development with AI',
@@ -74,18 +71,22 @@ const translations = {
         // Footer
         'footer.description': 'Creating intelligent solutions for tomorrow\'s challenges.',
         'footer.services.title': 'Services',
+        'footer.services.workshop': 'AI Workshops',
+        'footer.services.prototype': 'Rapid Prototyping',
+        'footer.services.consulting': 'AI Consulting',
+        'footer.services.dev': 'Software Development',
         'footer.company.title': 'Company',
         'footer.copyright': '© 2026 TheGenAI. All rights reserved.'
     },
 
     nl: {
         // Meta tags
-        'page-title': 'TheGenAI - AI Oplossingen voor Bedrijven',
-        'page-description': 'TheGenAI ontwikkelt innovatieve AI-oplossingen voor bedrijven en particulieren. We transformeren ideeën in intelligente technologie.',
-        'og-title': 'TheGenAI - AI Oplossingen voor Bedrijven',
-        'og-description': 'TheGenAI ontwikkelt innovatieve AI-oplossingen voor bedrijven en particulieren. We transformeren ideeën in intelligente technologie.',
-        'twitter-title': 'TheGenAI - AI Oplossingen voor Bedrijven',
-        'twitter-description': 'TheGenAI ontwikkelt innovatieve AI-oplossingen voor bedrijven en particulieren. We transformeren ideeën in intelligente technologie.',
+        'page-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
+        'page-description': 'TheGenAI biedt snelle 8-uur AI-prototyping en praktische teamworkshops. Gevestigd in Nederland, actief in heel Europa.',
+        'og-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
+        'og-description': 'TheGenAI biedt snelle 8-uur AI-prototyping en praktische teamworkshops. Gevestigd in Nederland, actief in heel Europa.',
+        'twitter-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
+        'twitter-description': 'TheGenAI biedt snelle 8-uur AI-prototyping en praktische teamworkshops. Gevestigd in Nederland, actief in heel Europa.',
 
         // Navigation
         'nav.home': 'Home',
@@ -105,20 +106,17 @@ const translations = {
         'about.subtitle': 'We zijn gepassioneerd over het creëren van AI-oplossingen die echt verschil maken',
         'about.heading': 'Ideeën Omzetten in Intelligentie',
         'about.text1': 'Bij TheGenAI specialiseren we ons in het ontwikkelen van geavanceerde kunstmatige intelligentie-oplossingen die zijn afgestemd op de unieke behoeften van bedrijven en particulieren. Ons team combineert diepgaande technische expertise met een diep begrip van uitdagingen in de echte wereld.',
-        'about.text2': 'Van machine learning algoritmes tot natuurlijke taalverwerking, we creëren intelligente systemen die productiviteit verhogen, besluitvorming verbeteren en innovatie stimuleren in verschillende industrieën.',
+        'about.text2': 'We creëren intelligente systemen die productiviteit verhogen, besluitvorming verbeteren en innovatie stimuleren in verschillende industrieën.',
         'about.stats.projects': 'Projecten Voltooid',
         'about.stats.clients': 'Tevreden Klanten',
-        'about.stats.experience': 'Jaar Ervaring',
 
         // Services section
         'services.title': 'Onze AI Oplossingen',
         'services.subtitle': 'Uitgebreide AI-diensten ontworpen om uw bedrijfsgroei te versnellen',
-        'services.ml.title': 'Machine Learning',
-        'services.ml.description': 'Aangepaste ML-modellen die leren van uw gegevens om intelligente voorspellingen te maken en complexe processen te automatiseren.',
-        'services.nlp.title': 'Natuurlijke Taalverwerking',
-        'services.nlp.description': 'Geavanceerde NLP-oplossingen voor tekstanalyse, sentimentdetectie en geautomatiseerde contentgeneratie.',
-        'services.cv.title': 'Computer Vision',
-        'services.cv.description': 'Beeld- en videoanalysesystemen die patronen, objecten en gedragingen met hoge nauwkeurigheid kunnen herkennen.',
+        'services.workshop.title': 'AI Team Workshops',
+        'services.workshop.description': 'Geef uw team praktische training om AI-prototypes en echte projecten te bouwen tijdens interactieve sessies.',
+        'services.prototype.title': 'Snelle AI Prototyping',
+        'services.prototype.description': 'Huur ons in om binnen 8 uur een werkend AI-prototype voor uw toekomstige project te ontwerpen en bouwen.',
         'services.consulting.title': 'AI Advies',
         'services.consulting.description': 'Strategische begeleiding om u te helpen AI-mogelijkheden te identificeren en een uitgebreide AI-roadmap te ontwikkelen.',
         'services.dev.title': 'Softwareontwikkeling met AI',
@@ -152,6 +150,10 @@ const translations = {
         // Footer
         'footer.description': 'Intelligente oplossingen creëren voor de uitdagingen van morgen.',
         'footer.services.title': 'Diensten',
+        'footer.services.workshop': 'AI Workshops',
+        'footer.services.prototype': 'Snelle Prototyping',
+        'footer.services.consulting': 'AI Advies',
+        'footer.services.dev': 'Softwareontwikkeling',
         'footer.company.title': 'Bedrijf',
         'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden.'
     }
