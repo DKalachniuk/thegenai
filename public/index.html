@@ -124,6 +124,9 @@
                 <li class="nav-item">
                     <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -145,14 +148,33 @@
             </div>
         </div>
         <div class="hero-visual">
-            <div class="ai-visualization">
-                <div class="neural-network">
-                    <div class="node"></div>
-                    <div class="node"></div>
-                    <div class="node"></div>
-                    <div class="node"></div>
-                    <div class="node"></div>
-                    <div class="node"></div>
+            <div class="hero-bento">
+                <div class="bento-card main-code">
+                    <div class="window-controls">
+                        <i></i><i></i><i></i>
+                    </div>
+                    <pre><code><span class="token-keyword">import</span> { Prototypes, Workshops } <span class="token-keyword">from</span> <span class="token-string">'@thegenai/core'</span>;
+
+<span class="token-keyword">const</span> solution = <span class="token-keyword">await</span> Prototypes.<span class="token-function">build</span>({
+  timeframe: <span class="token-string">'8_hours'</span>,
+  quality: <span class="token-string">'production_ready'</span>
+});
+
+Workshops.<span class="token-function">trainTeam</span>({
+  location: <span class="token-string">'Europe'</span>,
+  impact: <span class="token-number">100</span>
+});</code></pre>
+                </div>
+                <div class="bento-card floating-card" id="tilt-card">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fbbf24;">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-value">8 Hours</span>
+                        <span class="stat-label">Idea to Prototype</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -202,6 +224,15 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                    </div>
+                    <h3 data-translate="services.prototype.title">Rapid AI Prototyping</h3>
+                    <p data-translate="services.prototype.description">Hire us to design and build a working AI prototype for your future project in just 8 hours.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path
                                 d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                             <polyline points="3.27,6.96 12,12.01 20.73,6.96" />
@@ -233,15 +264,6 @@
                     </div>
                     <h3 data-translate="services.workshop.title">AI Team Workshops</h3>
                     <p data-translate="services.workshop.description">Empower your team with hands-on training to build AI prototypes and real-world projects over immersive sessions.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                        </svg>
-                    </div>
-                    <h3 data-translate="services.prototype.title">Rapid AI Prototyping</h3>
-                    <p data-translate="services.prototype.description">Hire us to design and build a working AI prototype for your future project in just 8 hours.</p>
                 </div>
             </div>
         </div>
@@ -517,7 +539,38 @@
         window.addDoc = addDoc;
         window.collection = collection;
         window.serverTimestamp = serverTimestamp;
-
+    </script>
+    
+    <!-- Hero 3D Hover Effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroWrapper = document.querySelector('.hero');
+            const heroBento = document.querySelector('.hero-bento');
+            
+            if (window.innerWidth > 768 && heroWrapper && heroBento) {
+                heroWrapper.addEventListener('mousemove', (e) => {
+                    const rect = heroWrapper.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const percentX = (x - centerX) / centerX;
+                    const percentY = (y - centerY) / centerY;
+                    
+                    const maxRotate = 15;
+                    const rotateX = percentY * -maxRotate;
+                    const rotateY = percentX * maxRotate;
+                    
+                    heroBento.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+                
+                heroWrapper.addEventListener('mouseleave', () => {
+                    heroBento.style.transform = `perspective(1200px) rotateX(0deg) rotateY(0deg)`;
+                });
+            }
+        });
     </script>
 </body>
 

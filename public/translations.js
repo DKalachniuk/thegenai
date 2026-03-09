@@ -18,7 +18,7 @@ const translations = {
 
         // Hero section
         'hero.title': 'AI Solutions That Transform Business',
-        'hero.subtitle': 'We create intelligent technology that empowers businesses and individuals to achieve extraordinary results.',
+        'hero.subtitle': 'We build production-ready AI prototypes in just 8 hours, and deliver comprehensive workshops to teach your teams how to do the same.',
         'hero.btn.explore': 'Explore Solutions',
         'hero.btn.portfolio': 'View Portfolio',
 
@@ -97,7 +97,7 @@ const translations = {
 
         // Hero section
         'hero.title': 'AI Oplossingen Die Bedrijven Transformeren',
-        'hero.subtitle': 'We ontwikkelen intelligente technologie die bedrijven en particulieren helpt om buitengewone resultaten te behalen.',
+        'hero.subtitle': 'Wij bouwen productieklare AI-prototypes in slechts 8 uur en geven uitgebreide workshops om uw teams te leren hetzelfde te doen.',
         'hero.btn.explore': 'Ontdek Oplossingen',
         'hero.btn.portfolio': 'Bekijk Portfolio',
 
@@ -264,82 +264,15 @@ class TranslationManager {
     }
 
     addLanguageToggle() {
-        // Create language toggle button
-        const toggle = document.createElement('button');
-        toggle.className = 'language-toggle';
-        toggle.innerHTML = this.currentLanguage === 'nl' ? '🇺🇸 EN' : '🇳🇱 NL';
+        const toggle = document.getElementById('header-lang-toggle');
+        if (!toggle) return;
+
+        toggle.innerHTML = this.currentLanguage === 'nl' ? 'EN' : 'NL';
         toggle.title = this.currentLanguage === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands';
 
-        // Add styles
-        toggle.style.cssText = `
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            background: rgba(102, 126, 234, 0.9);
-            backdrop-filter: blur(20px);
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            border-radius: 16px;
-            padding: 12px 20px;
-            color: white;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            z-index: 10000;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        `;
-
-        // Add hover effect
-        toggle.addEventListener('mouseenter', () => {
-            toggle.style.background = 'rgba(102, 126, 234, 1)';
-            toggle.style.transform = 'translateY(-3px) scale(1.05)';
-            toggle.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.3)';
-        });
-
-        toggle.addEventListener('mouseleave', () => {
-            toggle.style.background = 'rgba(102, 126, 234, 0.9)';
-            toggle.style.transform = 'translateY(0) scale(1)';
-            toggle.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2)';
-        });
-
-        // Add click handler
         toggle.addEventListener('click', () => {
             const newLang = this.currentLanguage === 'nl' ? 'en' : 'nl';
             this.switchLanguage(newLang);
-        });
-
-        document.body.appendChild(toggle);
-
-        // Add scroll-based visibility enhancement
-        this.addScrollEnhancement(toggle);
-    }
-
-    addScrollEnhancement(toggle) {
-        let scrollTimeout;
-
-        window.addEventListener('scroll', () => {
-            // Add scrolled class for enhanced visibility
-            if (window.scrollY > 100) {
-                toggle.classList.add('scrolled');
-            } else {
-                toggle.classList.remove('scrolled');
-            }
-
-            // Temporarily enhance visibility during scroll
-            toggle.style.transform = 'scale(1.1)';
-            toggle.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.4)';
-
-            // Clear existing timeout
-            clearTimeout(scrollTimeout);
-
-            // Reset after scroll stops
-            scrollTimeout = setTimeout(() => {
-                if (!toggle.classList.contains('scrolled')) {
-                    toggle.style.transform = 'scale(1)';
-                    toggle.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2)';
-                }
-            }, 150);
         });
     }
 
@@ -355,9 +288,9 @@ class TranslationManager {
         this.updateStructuredData();
 
         // Update language toggle
-        const toggle = document.querySelector('.language-toggle');
+        const toggle = document.getElementById('header-lang-toggle');
         if (toggle) {
-            toggle.innerHTML = lang === 'nl' ? '🇺🇸 EN' : '🇳🇱 NL';
+            toggle.innerHTML = lang === 'nl' ? 'EN' : 'NL';
             toggle.title = lang === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands';
         }
 
