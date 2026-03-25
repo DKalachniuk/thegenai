@@ -900,6 +900,163 @@ section {
     color: #1e40af;
 }
 
+/* Round Robin Mockup Styles */
+.round-robin-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.roster-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.roster-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.roster-badge {
+    background: #dcfce7;
+    color: #166534;
+    padding: 4px 8px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.roster-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.roster-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.roster-item.active {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.roster-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    flex-shrink: 0;
+}
+
+.roster-info {
+    flex: 1;
+}
+
+.roster-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.roster-status {
+    font-size: 10px;
+    color: #64748b;
+}
+
+/* LinkedIn Formatter Mockup */
+.linkedin-formatter-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formatter-ai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #e1f0ff;
+    color: #0a66c2;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.formatter-box {
+    background: #f3f6f8;
+    border: 1px solid #dce6f1;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 13px;
+    color: #000000e6;
+    line-height: 1.5;
+}
+
+.formatter-box b {
+    color: #000;
+    font-weight: 700;
+}
+
+.formatter-box i {
+    font-style: italic;
+    color: #1d1d1f;
+}
+
+/* Landlordje Mockup */
+.landlordje-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.game-title-card {
+    background: linear-gradient(160deg, #FF7A2F 0%, #E85000 100%);
+    border: 2px solid #2C1A0E;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px 0 #2C1A0E;
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.game-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.game-stat-item {
+    background: white;
+    border: 2px solid #D4C0A8;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2C1A0E;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 2px 2px 0 #D4C0A8;
+}
+
 /* Bedankt.me Mockup Styles */
 .greeting-card-preview {
     display: flex;

@@ -14,6 +14,7 @@ const translations = {
         'nav.about': 'About',
         'nav.services': 'Services',
         'nav.portfolio': 'Portfolio',
+        'nav.games': 'Games',
         'nav.contact': 'Contact',
 
         // Hero section
@@ -55,7 +56,21 @@ const translations = {
         'portfolio.wheretoinvest.title': 'WhereToInvest.nl',
         'portfolio.wheretoinvest.category': 'Investment Analysis Platform',
         'portfolio.wheretoinvest.description': 'An advanced AI-driven platform for real estate investors that analyzes market trends, rental yields, and property appreciation potential to identify the best investment opportunities in the Netherlands.',
+        'portfolio.roundrobin.title': 'Round Robin Shift Manager for Confluence',
+        'portfolio.roundrobin.category': 'Confluence Workflow Automation',
+        'portfolio.roundrobin.description': 'A comprehensive Atlassian Marketplace app that automates rotating team responsibilities, on-call duties, and support schedules. Features real-time countdowns, automated rotation logic, and a full audit trail of shift history, integrated directly into Confluence.',
+        'portfolio.linkedinformatter.title': 'LinkedIn Formatter',
+        'portfolio.linkedinformatter.category': 'Content Creation Tool',
+        'portfolio.linkedinformatter.description': 'A specialized tool that ensures your rich text (bold and italics) survives the paste into LinkedIn. It also automatically detects and cleans up common AI-generated "slop" to make your posts feel more authentic and professional.',
         'portfolio.btn.view': 'View Project',
+
+        // Games section
+        'games.title': 'AI & Strategy Games',
+        'games.subtitle': 'Immersive experiences that blend strategy, management, and fun',
+        'games.landlordje.title': 'Landlordje',
+        'games.landlordje.category': 'Real Estate Strategy Game',
+        'games.landlordje.description': 'Become the wealthiest landlord in the Netherlands. Start as a regular employee, save your wages, and build a property empire. Manage tenants, survive tax changes, and deal with broken washing machines in this realistic Dutch real estate simulator.',
+        'games.btn.play': 'Play Game',
 
         // Contact section
         'contact.title': 'Ready to Transform Your Business?',
@@ -93,6 +108,7 @@ const translations = {
         'nav.about': 'Over Ons',
         'nav.services': 'Diensten',
         'nav.portfolio': 'Portfolio',
+        'nav.games': 'Games',
         'nav.contact': 'Contact',
 
         // Hero section
@@ -134,7 +150,21 @@ const translations = {
         'portfolio.wheretoinvest.title': 'WhereToInvest.nl',
         'portfolio.wheretoinvest.category': 'Investeringsanalyse Platform',
         'portfolio.wheretoinvest.description': 'Een geavanceerd AI-gestuurd platform voor vastgoedbeleggers dat markttrends, huuropbrengsten en waardestijgingspotentieel analyseert om de beste investeringsmogelijkheden in Nederland te identificeren.',
+        'portfolio.roundrobin.title': 'Round Robin Shift Manager voor Confluence',
+        'portfolio.roundrobin.category': 'Confluence Workflow Automatisering',
+        'portfolio.roundrobin.description': 'Een uitgebreide Atlassian Marketplace-app die roterende teamverantwoordelijkheden, oproepdiensten en ondersteuningsschema\'s automatiseert. Voorzien van real-time aftellers, geautomatiseerde rotatielogica en een volledige historiek van diensten, direct geïntegreerd in Confluence.',
+        'portfolio.linkedinformatter.title': 'LinkedIn Formatter',
+        'portfolio.linkedinformatter.category': 'Content Creatie Tool',
+        'portfolio.linkedinformatter.description': 'Een gespecialiseerde tool die ervoor zorgt dat je opgemaakte tekst (vetgedrukt en cursief) behouden blijft bij het plakken in LinkedIn. De tool detecteert en verwijdert ook automatisch veelvoorkomende AI-gegenereerde "slop" om je berichten authentieker en professioneler te maken.',
         'portfolio.btn.view': 'Bekijk Project',
+
+        // Games section
+        'games.title': 'AI & Strategy Games',
+        'games.subtitle': 'Meeslepende ervaringen die strategie, management en plezier combineren',
+        'games.landlordje.title': 'Landlordje',
+        'games.landlordje.category': 'Vastgoed Strategie Spel',
+        'games.landlordje.description': 'Word de rijkste verhuurder van Nederland. Begin als werknemer, spaar je salaris op en bouw een vastgoedimperium. Beheer huurders, overleef belastingwijzigingen en ga om met kapotte wasmachines in deze realistische Nederlandse vastgoedsimulator.',
+        'games.btn.play': 'Speel Nu',
 
         // Contact section
         'contact.title': 'Klaar om Uw Bedrijf te Transformeren?',
