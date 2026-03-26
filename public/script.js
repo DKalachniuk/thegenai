@@ -374,8 +374,8 @@ window.addEventListener('scroll', debouncedScrollHandler);
 // Add loading state to buttons
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', function(e) {
-        // Don't add loading state to form submit buttons (handled separately)
-        if (this.type === 'submit') return;
+        // Don't add loading state to form submit buttons or external project links
+        if (this.type === 'submit' || this.classList.contains('portfolio-link')) return;
         
         const originalText = this.textContent;
         this.textContent = 'Loading...';
@@ -417,38 +417,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     }
     
-    // Ensure portfolio links work properly
-    const portfolioLinks = document.querySelectorAll('a[href*="woonprijs.nl"], .portfolio-link');
-    portfolioLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Track portfolio link click
-            if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
-                try {
-                    window.analytics.logEvent('portfolio_link_click', {
-                        link_url: 'https://woonprijs.nl',
-                        link_text: 'View Project'
-                    });
-                } catch (error) {
-                    // Analytics tracking failed silently
-                }
-            }
-            
-            // Force open the link if default behavior doesn't work
-            setTimeout(() => {
-                if (!window.open('https://woonprijs.nl', '_blank')) {
-                    window.location.href = 'https://woonprijs.nl';
-                }
-            }, 100);
-        });
-    });
-    
-    // Simple button click handler
-    const viewProjectBtn = document.querySelector('.portfolio-link');
-    if (viewProjectBtn) {
-        viewProjectBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            window.open('https://woonprijs.nl', '_blank');
-        });
-    }
+    // Ensure portfolio links work properly - removed hardcoded woonprijs redirect
 });

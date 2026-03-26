@@ -91,7 +91,7 @@ const translations = {
         'footer.services.consulting': 'AI Consulting',
         'footer.services.dev': 'Software Development',
         'footer.company.title': 'Company',
-        'footer.copyright': '© 2026 TheGenAI. All rights reserved.'
+        'footer.copyright': '© 2026 TheGenAI. All rights reserved. KVK 42019613'
     },
 
     nl: {
@@ -185,7 +185,7 @@ const translations = {
         'footer.services.consulting': 'AI Advies',
         'footer.services.dev': 'Softwareontwikkeling',
         'footer.company.title': 'Bedrijf',
-        'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden.'
+        'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden. KVK 42019613'
     }
 };
 
