@@ -47,9 +47,33 @@
     --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
+/* Smooth Scroll and Base Animations */
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+}
+
+/* Initial state for JS-based animations to prevent blinking */
+.js-enabled .reveal,
+.js-enabled .hero-content,
+.js-enabled .service-card,
+.js-enabled .portfolio-item,
+.js-enabled .stat,
+.js-enabled .about-text,
+.js-enabled .contact-info {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Animation trigger classes */
+.reveal-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-content.reveal-visible {
+    transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {

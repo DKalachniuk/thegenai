@@ -47,8 +47,8 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('reveal-visible');
+            observer.unobserve(entry.target); // Only animate once
         }
     });
 }, observerOptions);
@@ -58,9 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll('.service-card, .portfolio-item, .stat, .about-text, .contact-info');
     
     animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
 });
@@ -509,13 +506,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add a subtle entrance animation to the hero
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
-        heroContent.style.opacity = '0';
-        heroContent.style.transform = 'translateY(30px)';
-        
         setTimeout(() => {
-            heroContent.style.transition = 'opacity 1s ease, transform 1s ease';
-            heroContent.style.opacity = '1';
-            heroContent.style.transform = 'translateY(0)';
+            heroContent.classList.add('reveal-visible');
         }, 300);
     }
     
