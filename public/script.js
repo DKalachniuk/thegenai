@@ -325,12 +325,18 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('img');
     images.forEach(img => {
-        img.addEventListener('load', () => {
+        // If the image is already loaded (e.g. from cache)
+        if (img.complete) {
             img.style.opacity = '1';
-        });
+        } else {
+            img.addEventListener('load', () => {
+                img.style.opacity = '1';
+            });
+            
+            // Set initial opacity for images not yet loaded
+            img.style.opacity = '0';
+        }
         
-        // Set initial opacity
-        img.style.opacity = '0';
         img.style.transition = 'opacity 0.3s ease';
     });
 });

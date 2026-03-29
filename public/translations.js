@@ -11,7 +11,7 @@ const translations = {
 
         // Navigation
         'nav.home': 'Home',
-        'nav.about': 'About',
+        'nav.about': 'About Us',
         'nav.services': 'Services',
         'nav.portfolio': 'Portfolio',
         'nav.games': 'Games',
@@ -61,7 +61,7 @@ const translations = {
         'portfolio.roundrobin.description': 'A comprehensive Atlassian Marketplace app that automates rotating team responsibilities, on-call duties, and support schedules. Features real-time countdowns, automated rotation logic, and a full audit trail of shift history, integrated directly into Confluence.',
         'portfolio.linkedinformatter.title': 'LinkedIn Formatter',
         'portfolio.linkedinformatter.category': 'Content Creation Tool',
-        'portfolio.linkedinformatter.description': 'A specialized tool that ensures your rich text (bold and italics) survives the paste into LinkedIn. It also automatically detects and cleans up common AI-generated "slop" to make your posts feel more authentic and professional.',
+        'portfolio.linkedinformatter.description': 'A specialized tool that ensures your formatted text (bold and italics) stays preserved when pasting into LinkedIn. The tool also automatically detects and removes common AI-generated "slop" to make your posts more authentic and professional.',
         'portfolio.btn.view': 'View Project',
 
         // Games section
