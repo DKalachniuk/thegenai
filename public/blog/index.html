@@ -46,21 +46,41 @@
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json" id="structured-data">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "TheGenAI Blog",
-        "description": "Insights on Artificial Intelligence, prototyping, and team workshops.",
-        "url": "https://thegenai.com/blog",
-        "publisher": {
-            "@type": "Organization",
-            "name": "TheGenAI",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://thegenai.com/public/images/logo_thegenai.png"
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "TheGenAI Blog",
+            "description": "Insights on Artificial Intelligence, prototyping, and team workshops.",
+            "url": "https://thegenai.com/blog",
+            "publisher": {
+                "@type": "Organization",
+                "name": "TheGenAI",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://thegenai.com/public/images/logo_thegenai.png"
+                }
             }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://thegenai.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://thegenai.com/blog"
+                }
+            ]
         }
-    }
+    ]
     </script>
 </head>
 
@@ -110,7 +130,19 @@
             <p data-translate="blog.subtitle">Insights, news, and deep dives into the world of Artificial Intelligence.</p>
         </header>
 
-        <div class="blog-grid" id="blog-posts">
+        <div class="blog-grid" id="blog-posts" style="display: flex; flex-direction: column; gap: 3rem;">
+            <!-- Second Article Card (Newest first) -->
+            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;" onclick="window.location.href='8-hour-mvp-guide/index.html'">
+                <div class="portfolio-content">
+                    <div class="portfolio-category">Strategy Guide</div>
+                    <h3 class="portfolio-title">From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours</h3>
+                    <p class="portfolio-description">Practical tips for rapid prototyping. Learn the exact strategy we use at TheGenAI to launch your idea in a single day.</p>
+                </div>
+                <div style="padding: 0 2rem 2rem 2rem;">
+                    <a href="8-hour-mvp-guide/index.html" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
+                </div>
+            </article>
+
             <!-- First Article Card -->
             <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;" onclick="window.location.href='trae-vs-antigravity-vs-cursor/index.html'">
                 <div class="portfolio-content">
@@ -130,10 +162,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="nav-logo">
-                        <span class="logo-text">The GenAI</span>
+                    <div class="footer-logo">
+                        <img src="../images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo" style="height: 40px; margin-bottom: 1rem;">
                     </div>
-                    <p class="footer-description">Creating intelligent solutions for tomorrow's challenges.</p>
+                    <p class="footer-description" data-translate="footer.description">Creating intelligent solutions for tomorrow's challenges.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
