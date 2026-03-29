@@ -35,6 +35,9 @@ We transform ideas into intelligent technology. We are passionate about creating
 - **Round Robin Shift Manager**: Atlassian Marketplace app for automated team rotations and shift management in Confluence.
 - **LinkedIn Formatter**: Content tool to maintain rich text formatting on LinkedIn and remove AI-generated "slop".
 
+## Blog
+- **Trae vs Antigravity vs Cursor: The Battle of AI IDEs**: A comprehensive comparison of the top AI-powered development environments (Trae, Google Antigravity, and Cursor) in terms of financial impact, development speed, and code quality. Available at https://thegenai.com/blog/trae-vs-antigravity-vs-cursor
+
 ## Games
 - **Landlordje**: A realistic Dutch real estate strategy game where you build a property empire starting from a basic salary.
 

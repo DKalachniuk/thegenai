@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" id="html-lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Blog - TheGenAI</title>
+    <meta name="description" id="page-description"
+        content="Read the latest insights on Artificial Intelligence, prototyping, and team workshops from TheGenAI.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="AI blog, artificial intelligence articles, AI prototyping insights, AI workshops news, TheGenAI blog">
+    <meta name="author" content="TheGenAI">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    <meta name="geo.region" content="NL">
+    <meta name="geo.country" content="Netherlands">
+    <meta name="geo.placename" content="Amsterdam">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" id="og-title" content="Blog - TheGenAI">
+    <meta property="og:description" id="og-description"
+        content="Read the latest insights on Artificial Intelligence, prototyping, and team workshops from TheGenAI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thegenai.com/blog">
+    <meta property="og:image" content="https://thegenai.com/public/images/logo_thegenai.png">
+    <meta property="og:site_name" content="TheGenAI">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="Blog - TheGenAI">
+    <meta name="twitter:description" id="twitter-description"
+        content="Read the latest insights on Artificial Intelligence, prototyping, and team workshops from TheGenAI.">
+    <meta name="twitter:image" content="https://thegenai.com/public/images/logo_thegenai.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thegenai.com/blog">
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json" id="structured-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "TheGenAI Blog",
+        "description": "Insights on Artificial Intelligence, prototyping, and team workshops.",
+        "url": "https://thegenai.com/blog",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TheGenAI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://thegenai.com/public/images/logo_thegenai.png"
+            }
+        }
+    }
+    </script>
+</head>
+
+<body class="blog-page">
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">The GenAI</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link" data-translate="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link" data-translate="nav.about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" data-translate="nav.blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="margin-top: 120px; min-height: 80vh;">
+        <header class="section-header">
+            <h1 data-translate="blog.title">Our Blog</h1>
+            <p data-translate="blog.subtitle">Insights, news, and deep dives into the world of Artificial Intelligence.</p>
+        </header>
+
+        <div class="blog-grid" id="blog-posts">
+            <!-- First Article Card -->
+            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;" onclick="window.location.href='trae-vs-antigravity-vs-cursor/index.html'">
+                <div class="portfolio-content">
+                    <div class="portfolio-category">AI Development</div>
+                    <h3 class="portfolio-title">Trae vs Antigravity vs Cursor: The Battle of AI IDEs</h3>
+                    <p class="portfolio-description">A deep dive into the financial impact, development speed, and code quality of the top three AI-powered development environments.</p>
+                </div>
+                <div style="padding: 0 2rem 2rem 2rem;">
+                    <a href="trae-vs-antigravity-vs-cursor/index.html" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <span class="logo-text">The GenAI</span>
+                    </div>
+                    <p class="footer-description">Creating intelligent solutions for tomorrow's challenges.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-translate="footer.services.title">Services</h4>
+                        <ul class="footer-menu">
+                            <li><a href="../index.html#services" data-translate="footer.services.workshop">AI Workshops</a></li>
+                            <li><a href="../index.html#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
+                            <li><a href="../index.html#services" data-translate="footer.services.consulting">AI Consulting</a></li>
+                            <li><a href="../index.html#services" data-translate="footer.services.dev">Software Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-translate="footer.company.title">Company</h4>
+                        <ul class="footer-menu">
+                            <li><a href="../index.html#about" data-translate="nav.about">About</a></li>
+                            <li><a href="../index.html#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                            <li><a href="../index.html#contact" data-translate="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-translate="footer.copyright">© 2026 TheGenAI. All rights reserved. KVK 42019613</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../translations.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -391,6 +391,20 @@ document.querySelectorAll('.btn').forEach(btn => {
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     
+    // Handle initial hash in URL (for scrolling to sections on page load)
+    if (window.location.hash) {
+        setTimeout(() => {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                const offsetTop = target.offsetTop - 60; // Account for fixed navbar
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }, 100);
+    }
+    
     // Track page view with analytics
     if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
         try {
