@@ -36,6 +36,7 @@ We transform ideas into intelligent technology. We are passionate about creating
 - **LinkedIn Formatter**: Content tool to maintain rich text formatting on LinkedIn and remove AI-generated "slop".
 
 ## Blog
+- **From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours**: Practical tips on rapid AI prototyping and radical prioritization to launch a product in a single day. Includes a strategy for leveraging modern AI stacks and IDEs. Available at https://thegenai.com/blog/8-hour-mvp-guide
 - **Trae vs Antigravity vs Cursor: The Battle of AI IDEs**: A comprehensive comparison of the top AI-powered development environments (Trae, Google Antigravity, and Cursor) in terms of financial impact, development speed, and code quality. Available at https://thegenai.com/blog/trae-vs-antigravity-vs-cursor
 
 ## Games

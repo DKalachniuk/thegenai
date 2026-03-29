@@ -15,7 +15,6 @@ const translations = {
         'nav.services': 'Services',
         'nav.portfolio': 'Portfolio',
         'nav.games': 'Games',
-        'nav.blog': 'Blog',
         'nav.contact': 'Contact',
 
         // Hero section
@@ -65,12 +64,7 @@ const translations = {
         'portfolio.linkedinformatter.description': 'A specialized tool that ensures your rich text (bold and italics) survives the paste into LinkedIn. It also automatically detects and cleans up common AI-generated "slop" to make your posts feel more authentic and professional.',
         'portfolio.btn.view': 'View Project',
 
-        // Blog section
-        'blog.title': 'Our Blog',
-        'blog.subtitle': 'Insights, news, and deep dives into the world of Artificial Intelligence.',
-        'blog.read_more': 'Read More',
-
-        // Contact section
+        // Games section
         'games.title': 'AI & Strategy Games',
         'games.subtitle': 'Immersive experiences that blend strategy, management, and fun',
         'games.landlordje.title': 'Landlordje',
@@ -97,6 +91,9 @@ const translations = {
         'footer.services.consulting': 'AI Consulting',
         'footer.services.dev': 'Software Development',
         'footer.company.title': 'Company',
+        'footer.social.title': 'Connect',
+        'footer.social.linkedin_company': 'LinkedIn (Company)',
+        'footer.social.linkedin_founder': 'LinkedIn (Founder)',
         'footer.copyright': '© 2026 TheGenAI. All rights reserved. KVK 42019613'
     },
 
@@ -115,7 +112,6 @@ const translations = {
         'nav.services': 'Diensten',
         'nav.portfolio': 'Portfolio',
         'nav.games': 'Games',
-        'nav.blog': 'Blog',
         'nav.contact': 'Contact',
 
         // Hero section
@@ -165,12 +161,7 @@ const translations = {
         'portfolio.linkedinformatter.description': 'Een gespecialiseerde tool die ervoor zorgt dat je opgemaakte tekst (vetgedrukt en cursief) behouden blijft bij het plakken in LinkedIn. De tool detecteert en verwijdert ook automatisch veelvoorkomende AI-gegenereerde "slop" om je berichten authentieker en professioneler te maken.',
         'portfolio.btn.view': 'Bekijk Project',
 
-        // Blog sectie
-        'blog.title': 'Onze Blog',
-        'blog.subtitle': 'Inzichten, nieuws en diepgaande verhalen over de wereld van Kunstmatige Intelligentie.',
-        'blog.read_more': 'Lees Meer',
-
-        // Contact section
+        // Games section
         'games.title': 'AI & Strategy Games',
         'games.subtitle': 'Meeslepende ervaringen die strategie, management en plezier combineren',
         'games.landlordje.title': 'Landlordje',
@@ -195,8 +186,11 @@ const translations = {
         'footer.services.workshop': 'AI Workshops',
         'footer.services.prototype': 'Snelle Prototyping',
         'footer.services.consulting': 'AI Advies',
-        'footer.services.dev': 'Softwareontwikkeling',
+        'footer.services.dev': 'Softwareontwikkeling met AI',
         'footer.company.title': 'Bedrijf',
+        'footer.social.title': 'Connect',
+        'footer.social.linkedin_company': 'LinkedIn (Bedrijf)',
+        'footer.social.linkedin_founder': 'LinkedIn (Oprichter)',
         'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden. KVK 42019613'
     }
 };
