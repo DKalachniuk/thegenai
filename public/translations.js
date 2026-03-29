@@ -94,9 +94,41 @@ const translations = {
         'footer.social.title': 'Connect',
         'footer.social.linkedin_company': 'LinkedIn (Company)',
         'footer.social.linkedin_founder': 'LinkedIn (Founder)',
-        'footer.copyright': '© 2026 TheGenAI. All rights reserved. KVK 42019613'
-    },
+        'footer.privacy': 'Privacy Policy',
+        'footer.copyright': '© 2026 TheGenAI. All rights reserved. KVK 42019613',
 
+        // Blog Section
+        'blog.title': 'Our Blog',
+        'blog.subtitle': 'Insights, news, and deep dives into the world of Artificial Intelligence.',
+        'blog.read_more': 'Read More',
+        'blog.guide.category': 'Strategy Guide',
+        'blog.guide.title': 'From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours',
+        'blog.guide.description': 'Practical tips for rapid prototyping. Learn the exact strategy we use at TheGenAI to launch your idea in a single day.',
+        'blog.ide.category': 'AI Development',
+        'blog.ide.title': 'Trae vs Antigravity vs Cursor: The Battle of AI IDEs',
+        'blog.ide.description': 'A deep dive into the financial impact, development speed, and code quality of the top three AI-powered development environments.',
+
+        // Privacy Policy Page
+        'privacy.title': 'Privacy Policy - TheGenAI',
+        'privacy.heading': 'Privacy Policy',
+        'privacy.last_updated': 'Last Updated: March 29, 2026',
+        'privacy.intro': 'At TheGenAI, we are committed to protecting your privacy and ensuring a transparent experience on our website.',
+        
+        'privacy.analytics.title': '1. Analytics & Tracking',
+        'privacy.analytics.text': 'We use Umami Analytics to understand how visitors interact with our website. Umami is a privacy-first, cookieless analytics solution. It does not collect any personally identifiable information (PII) and does not track you across different websites. All data is anonymized and used solely to improve our website experience.',
+        
+        'privacy.contact.title': '2. Contact Form & Data',
+        'privacy.contact.text': 'When you fill out our contact form, we collect the information you provide (name, email, company, and message) to respond to your inquiry. This data is stored securely using Firebase Firestore. We do not use this information for marketing purposes unless you explicitly request it, and we never share it with third parties.',
+        
+        'privacy.cookies.title': '3. Cookies',
+        'privacy.cookies.text': 'Our website does not use non-essential tracking cookies. We prioritize your privacy by using modern, cookieless alternatives for analytics. Some functional cookies may be used by our hosting provider (Firebase) to ensure the security and stability of the site.',
+        
+        'privacy.rights.title': '4. Your Rights',
+        'privacy.rights.text': 'Under the GDPR, you have the right to access, rectify, or erase your personal data. If you have submitted a contact form and wish to have your data removed, please contact us at info@thegenai.com.',
+        
+        'privacy.contact_us.title': '5. Contact Us',
+        'privacy.contact_us.text': 'If you have any questions about this Privacy Policy, please contact us at info@thegenai.com.'
+    },
     nl: {
         // Meta tags
         'page-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
@@ -191,7 +223,40 @@ const translations = {
         'footer.social.title': 'Connect',
         'footer.social.linkedin_company': 'LinkedIn (Bedrijf)',
         'footer.social.linkedin_founder': 'LinkedIn (Oprichter)',
-        'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden. KVK 42019613'
+        'footer.privacy': 'Privacybeleid',
+        'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden. KVK 42019613',
+
+        // Blog Section
+        'blog.title': 'Onze Blog',
+        'blog.subtitle': 'Inzichten, nieuws en diepgaande duiken in de wereld van Artificial Intelligence.',
+        'blog.read_more': 'Lees Meer',
+        'blog.guide.category': 'Strategiegids',
+        'blog.guide.title': 'Van Idee naar Lancering: Hoe je een Werkend AI MVP Bouwt in Slechts 8 Uur',
+        'blog.guide.description': 'Praktische tips voor snelle prototyping. Leer de exacte strategie die we bij TheGenAI gebruiken om je idee in één dag te lanceren.',
+        'blog.ide.category': 'AI Ontwikkeling',
+        'blog.ide.title': 'Trae vs Antigravity vs Cursor: De Strijd van de AI IDE\'s',
+        'blog.ide.description': 'Een diepe duik in de financiële impact, ontwikkelingssnelheid en codekwaliteit van de drie beste AI-gestuurde ontwikkelomgevingen.',
+
+        // Privacy Policy Page
+        'privacy.title': 'Privacybeleid - TheGenAI',
+        'privacy.heading': 'Privacybeleid',
+        'privacy.last_updated': 'Laatst Bijgewerkt: 29 maart 2026',
+        'privacy.intro': 'Bij TheGenAI doen we er alles aan om uw privacy te beschermen en te zorgen voor een transparante ervaring op onze website.',
+        
+        'privacy.analytics.title': '1. Analytics & Tracking',
+        'privacy.analytics.text': 'We gebruiken Umami Analytics om te begrijpen hoe bezoekers met onze website omgaan. Umami is een privacy-vriendelijke, cookieloze analytics-oplossing. Het verzamelt geen persoonlijk identificeerbare informatie (PII) en volgt u niet op verschillende websites. Alle gegevens worden geanonimiseerd en uitsluitend gebruikt om onze website-ervaring te verbeteren.',
+        
+        'privacy.contact.title': '2. Contactformulier & Gegevens',
+        'privacy.contact.text': 'Wanneer u ons contactformulier invult, verzamelen we de informatie die u verstrekt (naam, e-mailadres, bedrijf en bericht) om op uw aanvraag te reageren. Deze gegevens worden veilig opgeslagen met Firebase Firestore. We gebruiken deze informatie niet voor marketingdoeleinden, tenzij u hier expliciet om vraagt, en we delen deze nooit met derden.',
+        
+        'privacy.cookies.title': '3. Cookies',
+        'privacy.cookies.text': 'Onze website gebruikt geen niet-essentiële tracking cookies. We geven prioriteit aan uw privacy door moderne, cookieloze alternatieven te gebruiken voor analytics. Sommige functionele cookies kunnen worden gebruikt door onze hostingprovider (Firebase) om de veiligheid en stabiliteit van de site te garanderen.',
+        
+        'privacy.rights.title': '4. Uw Rechten',
+        'privacy.rights.text': 'Onder de AVG heeft u het recht om uw persoonlijke gegevens in te zien, te corrigeren of te laten verwijderen. Als u een contactformulier heeft ingediend en wilt dat uw gegevens worden verwijderd, neem dan contact met ons op via info@thegenai.com.',
+        
+        'privacy.contact_us.title': '5. Contact met Ons Opnemen',
+        'privacy.contact_us.text': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via info@thegenai.com.'
     }
 };
 
@@ -333,12 +398,16 @@ class TranslationManager {
         // Show notification
         this.showLanguageNotification(lang);
 
-        // Track language change with analytics
-        if (typeof analytics !== 'undefined' && typeof window.logEvent !== 'undefined') {
-            window.logEvent(analytics, 'language_change', {
-                new_language: lang,
-                previous_language: this.currentLanguage
-            });
+        // Track language change with Umami
+        if (typeof window.umami !== 'undefined') {
+            try {
+                window.umami.track('language_change', {
+                    new_language: lang,
+                    previous_language: this.currentLanguage
+                });
+            } catch (error) {
+                // Analytics tracking failed silently
+            }
         }
     }
 

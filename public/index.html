@@ -637,9 +637,10 @@ Workshops.<span class="token-function">trainTeam</span>({
                     <div class="footer-column">
                         <h4 data-translate="footer.company.title">Company</h4>
                         <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about" data-translate="nav.about">About Us</a></li>
+                            <li><a href="#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                            <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                            <li><a href="privacy.html" data-translate="footer.privacy">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -664,11 +665,10 @@ Workshops.<span class="token-function">trainTeam</span>({
     <script defer src="https://cloud.umami.is/script.js"
         data-website-id="8225d3b1-0a45-4c33-9346-ca32ebf3e4ba"></script>
 
-    <!-- Firebase Analytics & Firestore -->
+    <!-- Firebase Firestore -->
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
-        import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
         import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
 
         // Your web app's Firebase configuration
@@ -678,19 +678,15 @@ Workshops.<span class="token-function">trainTeam</span>({
             projectId: "the-genai",
             storageBucket: "the-genai.firebasestorage.app",
             messagingSenderId: "758468557423",
-            appId: "1:758468557423:web:0f3c6dac00fdbbccde6b9a",
-            measurementId: "G-ZR0M0GN0NF"
+            appId: "1:758468557423:web:0f3c6dac00fdbbccde6b9a"
         };
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
         const db = getFirestore(app);
 
         // Make Firebase services globally available
         window.firebaseApp = app;
-        window.analytics = analytics;
-        window.logEvent = logEvent;
         window.db = db;
         window.addDoc = addDoc;
         window.collection = collection;

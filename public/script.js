@@ -92,16 +92,14 @@ if (contactForm) {
         }
         
         // Track form submission attempt
-        if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+        if (typeof window.umami !== 'undefined') {
             try {
-                window.analytics.logEvent('contact_form_submit', {
+                window.umami.track('contact_form_submit', {
                     form_name: 'contact_form',
-                    user_name: name,
-                    user_email: email,
                     has_company: !!company
                 });
             } catch (error) {
-                console.log('Analytics tracking failed:', error);
+                console.log('Umami tracking failed:', error);
             }
         }
         
@@ -136,9 +134,9 @@ if (contactForm) {
             const docRef = await window.addDoc(window.collection(window.db, 'contact_messages'), messageData);
             
             // Track successful submission
-            if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+            if (typeof window.umami !== 'undefined') {
                 try {
-                    window.analytics.logEvent('contact_form_success', {
+                    window.umami.track('contact_form_success', {
                         form_name: 'contact_form',
                         message_length: message.length
                     });
@@ -160,9 +158,9 @@ if (contactForm) {
         } catch (error) {
             
             // Track error
-            if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+            if (typeof window.umami !== 'undefined') {
                 try {
-                    window.analytics.logEvent('contact_form_error', {
+                    window.umami.track('contact_form_error', {
                         error: error.message,
                         code: error.code
                     });
@@ -405,14 +403,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     }
     
-    // Track page view with analytics
-    if (typeof window.analytics !== 'undefined' && window.analytics.logEvent) {
+    // Track page view with Umami (Umami tracks automatically, but we can log custom data if needed)
+    if (typeof window.umami !== 'undefined') {
         try {
-            window.analytics.logEvent('page_view', {
-                page_title: document.title,
-                page_location: window.location.href,
-                language: document.documentElement.lang
-            });
+            // Umami tracks pageviews automatically by default. 
+            // We can track a custom event if we want more control.
         } catch (error) {
             // Analytics tracking failed silently
         }
