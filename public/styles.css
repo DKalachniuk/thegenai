@@ -1280,7 +1280,187 @@ section {
     min-height: 120px;
 }
 
-/* Footer */
+/* Process Section */
+.process {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.process-step {
+    padding: 40px;
+    background: var(--bg-secondary);
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    transition: all 0.4s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-family: 'SF Pro Display', sans-serif;
+    line-height: 1;
+}
+
+.step-duration {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.process-step h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.process-step p {
+    color: var(--text-secondary);
+}
+
+/* FAQ Section */
+.faq {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 60px auto 0;
+}
+
+.faq-item {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.faq-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 32px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 32px 24px;
+    max-height: 200px;
+    opacity: 1;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+}
+
+.newsletter-card {
+    background: var(--accent-gradient);
+    padding: 60px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-content h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.newsletter-form {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 992px) {
+    .newsletter-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .newsletter-form {
+        width: 100%;
+    }
+}
+
+/* Footer (Updated) */
 .footer {
     background: #0f172a;
     color: white;
@@ -1608,8 +1788,9 @@ section {
     box-shadow: 0 12px 40px rgba(37, 99, 235, 0.5) !important;
 }
 
-/* Contact Form Button Visibility */
-.contact-form .btn {
+/* Contact and Newsletter Form Button Visibility */
+.contact-form .btn,
+.newsletter-form .btn {
     background: #2563eb !important;
     color: white !important;
     border: 2px solid #2563eb !important;
@@ -1622,6 +1803,13 @@ section {
     opacity: 1 !important;
     visibility: visible !important;
     display: inline-block !important;
+}
+
+.contact-form .btn:hover,
+.newsletter-form .btn:hover {
+    background: #1e40af !important;
+    transform: translateY(-3px) scale(1.02) !important;
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.4) !important;
 }
 
 /* Portfolio Button Specific Styling */
@@ -1646,12 +1834,6 @@ section {
     border-color: rgba(37, 99, 235, 0.5) !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2) !important;
-}
-
-.contact-form .btn:hover {
-    background: #1e40af !important;
-    transform: translateY(-3px) scale(1.02) !important;
-    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.4) !important;
 }
 
 /* Print styles */

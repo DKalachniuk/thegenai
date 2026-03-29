@@ -375,6 +375,93 @@ const debouncedScrollHandler = debounce(() => {
 
 window.addEventListener('scroll', debouncedScrollHandler);
 
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentNode;
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+            otherItem.classList.remove('active');
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
+// Newsletter Form Handling
+const newsletterForm = document.getElementById('newsletter-form');
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const emailInput = document.getElementById('newsletter-email');
+        const email = emailInput.value.trim();
+        
+        if (email) {
+            const submitBtn = newsletterForm.querySelector('button');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = '...';
+            submitBtn.disabled = true;
+            
+            try {
+                // 1. Track in Umami
+                if (typeof window.umami !== 'undefined') {
+                    window.umami.track('newsletter_signup', {
+                        email: email
+                    });
+                }
+
+                // 2. Save to Firestore
+                if (window.db && window.addDoc && window.collection) {
+                    const subscriptionData = {
+                        email: email,
+                        timestamp: window.serverTimestamp(),
+                        ip: await getClientIP(),
+                        userAgent: navigator.userAgent,
+                        source: window.location.pathname,
+                        status: 'active'
+                    };
+
+                    await window.addDoc(window.collection(window.db, 'newsletter_subscriptions'), subscriptionData);
+                } else {
+                    // Fallback or wait for Firebase
+                    console.warn('Firebase not ready, retrying once...');
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    
+                    if (window.db && window.addDoc && window.collection) {
+                        const subscriptionData = {
+                            email: email,
+                            timestamp: window.serverTimestamp(),
+                            ip: await getClientIP(),
+                            userAgent: navigator.userAgent,
+                            source: window.location.pathname,
+                            status: 'active'
+                        };
+                        await window.addDoc(window.collection(window.db, 'newsletter_subscriptions'), subscriptionData);
+                    } else {
+                        throw new Error('Database connection unavailable. Please refresh and try again.');
+                    }
+                }
+
+                showNotification('Thanks for subscribing! Check your inbox soon.', 'success');
+                emailInput.value = '';
+                
+            } catch (error) {
+                console.error('Newsletter subscription error:', error);
+                showNotification('Something went wrong. Please try again later.', 'error');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+    });
+}
+
 // Add loading state to buttons
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', function(e) {

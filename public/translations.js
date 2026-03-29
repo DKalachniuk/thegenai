@@ -83,6 +83,38 @@ const translations = {
         'contact.form.message': 'Tell us about your project',
         'contact.form.submit': 'Send Message',
 
+        // Process Section (How it Works)
+        'process.title': 'How It Works',
+        'process.subtitle': 'From idea to working prototype in a single day.',
+        'process.step1.title': 'Discovery',
+        'process.step1.duration': '1 Hour',
+        'process.step1.text': 'We identify the core problem and define the "magic" feature.',
+        'process.step2.title': 'Architecture',
+        'process.step2.duration': '2 Hours',
+        'process.step2.text': 'We map out the data flow and UI structure.',
+        'process.step3.title': 'Core Build',
+        'process.step3.duration': '4 Hours',
+        'process.step3.text': 'We code the primary AI functionality and user interface.',
+        'process.step4.title': 'Handover',
+        'process.step4.duration': '1 Hour',
+        'process.step4.text': 'We refine the UX and deliver your production-ready prototype.',
+
+        // FAQ Section
+        'faq.title': 'Frequently Asked Questions',
+        'faq.subtitle': 'Everything you need to know about our AI solutions.',
+        'faq.q1': 'Can you really build a prototype in 8 hours?',
+        'faq.a1': 'Yes. By focusing on the "magic" feature and leveraging pre-built components, we deliver high-quality, focused results that solve real problems.',
+        'faq.q2': 'Do I need a technical background?',
+        'faq.a2': 'No. Our workshops and prototypes are designed to bridge the gap between business ideas and technical reality for everyone.',
+        'faq.q3': 'What happens after the 8 hours?',
+        'faq.a3': 'You receive a fully functional, production-ready codebase that you can host, test, or use as a foundation for your final product.',
+
+        // Newsletter
+        'newsletter.title': 'Stay Ahead of AI',
+        'newsletter.subtitle': 'Get fresh insights and deep dives from our blog delivered to your inbox.',
+        'newsletter.placeholder': 'Your Email',
+        'newsletter.btn': 'Subscribe',
+
         // Footer
         'footer.description': 'Creating intelligent solutions for tomorrow\'s challenges.',
         'footer.services.title': 'Services',
@@ -211,6 +243,38 @@ const translations = {
         'contact.form.company': 'Bedrijfsnaam',
         'contact.form.message': 'Vertel ons over uw project',
         'contact.form.submit': 'Verstuur Bericht',
+
+        // Process Section (How it Works)
+        'process.title': 'Hoe Het Werkt',
+        'process.subtitle': 'Van idee naar werkend prototype in één dag.',
+        'process.step1.title': 'Discovery',
+        'process.step1.duration': '1 Uur',
+        'process.step1.text': 'We identificeren het kernprobleem en definiëren de "magic" feature.',
+        'process.step2.title': 'Architectuur',
+        'process.step2.duration': '2 Uur',
+        'process.step2.text': 'We brengen de datastroom en UI-structuur in kaart.',
+        'process.step3.title': 'Core Bouw',
+        'process.step3.duration': '4 Uur',
+        'process.step3.text': 'We coderen de primaire AI-functionaliteit en gebruikersinterface.',
+        'process.step4.title': 'Overdracht',
+        'process.step4.duration': '1 Uur',
+        'process.step4.text': 'We verfijnen de UX en leveren uw productieklare prototype op.',
+
+        // FAQ Section
+        'faq.title': 'Veelgestelde Vragen',
+        'faq.subtitle': 'Alles wat u moet weten over onze AI-oplossingen.',
+        'faq.q1': 'Kunnen jullie echt een prototype bouwen in 8 uur?',
+        'faq.a1': 'Ja. Door te focussen op de "magic" feature en gebruik te maken van vooraf gebouwde componenten, leveren we hoogwaardige, gerichte resultaten die echte problemen oplossen.',
+        'faq.q2': 'Heb ik een technische achtergrond nodig?',
+        'faq.a2': 'Nee. Onze workshops en prototypes zijn ontworpen om de kloof tussen zakelijke ideeën en technische realiteit voor iedereen te overbruggen.',
+        'faq.q3': 'Wat gebeurt er na de 8 uur?',
+        'faq.a3': 'U ontvangt een volledig functionele, productieklare codebase die u kunt hosten, testen of gebruiken als basis voor uw uiteindelijke product.',
+
+        // Newsletter
+        'newsletter.title': 'Blijf Voorop met AI',
+        'newsletter.subtitle': 'Ontvang de nieuwste inzichten en verdiepingen van onze blog in uw inbox.',
+        'newsletter.placeholder': 'Uw E-mailadres',
+        'newsletter.btn': 'Inschrijven',
 
         // Footer
         'footer.description': 'Intelligente oplossingen creëren voor de uitdagingen van morgen.',
