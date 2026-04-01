@@ -1,23 +1,33 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Specific AI & LLM Crawlers (Always allowed and encouraged)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap & LLM Documentation
 Sitemap: https://thegenai.com/sitemap.xml
+X-LLMS-TXT: https://thegenai.com/llms.txt
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
 
-# Allow all search engines to index the site
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Block access to admin or sensitive areas (if any)
+# Block access to sensitive areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /.git/

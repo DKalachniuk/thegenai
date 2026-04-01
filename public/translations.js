@@ -130,15 +130,23 @@ const translations = {
         'footer.copyright': '© 2026 TheGenAI. All rights reserved. KVK 42019613',
 
         // Blog Section
+        'blog.page_title': 'Blog: AI Insights, Workshops & Prototyping - TheGenAI',
+        'blog.page_description': 'Read the latest insights on Artificial Intelligence, prototyping, and team workshops from TheGenAI. Based in the Netherlands.',
         'blog.title': 'Our Blog',
         'blog.subtitle': 'Insights, news, and deep dives into the world of Artificial Intelligence.',
         'blog.read_more': 'Read More',
+        'blog.view_all': 'Explore more articles',
         'blog.guide.category': 'Strategy Guide',
         'blog.guide.title': 'From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours',
         'blog.guide.description': 'Practical tips for rapid prototyping. Learn the exact strategy we use at TheGenAI to launch your idea in a single day.',
         'blog.ide.category': 'AI Development',
         'blog.ide.title': 'Trae vs Antigravity vs Cursor: The Battle of AI IDEs',
         'blog.ide.description': 'A deep dive into the financial impact, development speed, and code quality of the top three AI-powered development environments.',
+
+        'blog.guide.page_title': '8-Hour MVP: How to Build and Launch Your AI Idea Fast - TheGenAI',
+        'blog.guide.page_description': 'Practical tips on how to build a working AI MVP in just 8 hours. Learn the strategies for rapid prototyping.',
+        'blog.ide.page_title': 'Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026? - TheGenAI',
+        'blog.ide.page_description': 'Comparing Trae, Google Antigravity, and Cursor. A deep dive into speed and code quality for developers.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacy Policy - TheGenAI',
@@ -291,15 +299,23 @@ const translations = {
         'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden. KVK 42019613',
 
         // Blog Section
+        'blog.page_title': 'Blog: AI Inzichten, Workshops & Prototyping - TheGenAI',
+        'blog.page_description': 'Lees de nieuwste inzichten over kunstmatige intelligentie, prototyping en teamworkshops van TheGenAI. Gevestigd in Nederland.',
         'blog.title': 'Onze Blog',
         'blog.subtitle': 'Inzichten, nieuws en diepgaande duiken in de wereld van Artificial Intelligence.',
         'blog.read_more': 'Lees Meer',
+        'blog.view_all': 'Bekijk alle artikelen',
         'blog.guide.category': 'Strategiegids',
         'blog.guide.title': 'Van Idee naar Lancering: Hoe je een Werkend AI MVP Bouwt in Slechts 8 Uur',
         'blog.guide.description': 'Praktische tips voor snelle prototyping. Leer de exacte strategie die we bij TheGenAI gebruiken om je idee in één dag te lanceren.',
         'blog.ide.category': 'AI Ontwikkeling',
         'blog.ide.title': 'Trae vs Antigravity vs Cursor: De Strijd van de AI IDE\'s',
         'blog.ide.description': 'Een diepe duik in de financiële impact, ontwikkelingssnelheid en codekwaliteit van de drie beste AI-gestuurde ontwikkelomgevingen.',
+
+        'blog.guide.page_title': '8-Uur MVP: Hoe je jouw AI-idee snel bouwt en lanceert - TheGenAI',
+        'blog.guide.page_description': 'Praktische tips over hoe je in slechts 8 uur een werkende AI MVP bouwt. Leer de strategieën voor prototyping.',
+        'blog.ide.page_title': 'Trae vs Antigravity vs Cursor: Welke AI IDE wint in 2026? - TheGenAI',
+        'blog.ide.page_description': 'Vergelijking tussen Trae, Google Antigravity en Cursor. Een diepe duik in snelheid en codekwaliteit.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacybeleid - TheGenAI',
@@ -387,20 +403,58 @@ class TranslationManager {
     updateMetaTags() {
         const lang = this.currentLanguage;
 
-        // Update page title
-        document.getElementById('page-title').textContent = translations[lang]['page-title'];
-        document.title = translations[lang]['page-title'];
+        // Update page title only if it has data-translate attribute
+        const titleEl = document.getElementById('page-title');
+        if (titleEl && titleEl.hasAttribute('data-translate')) {
+            const key = titleEl.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                titleEl.textContent = translations[lang][key];
+                document.title = translations[lang][key];
+            }
+        }
 
         // Update meta description
-        document.getElementById('page-description').setAttribute('content', translations[lang]['page-description']);
+        const descEl = document.getElementById('page-description');
+        if (descEl && descEl.hasAttribute('data-translate')) {
+            const key = descEl.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                descEl.setAttribute('content', translations[lang][key]);
+            }
+        }
 
         // Update Open Graph tags
-        document.getElementById('og-title').setAttribute('content', translations[lang]['og-title']);
-        document.getElementById('og-description').setAttribute('content', translations[lang]['og-description']);
+        const ogTitleEl = document.getElementById('og-title');
+        if (ogTitleEl && ogTitleEl.hasAttribute('data-translate')) {
+            const key = ogTitleEl.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                ogTitleEl.setAttribute('content', translations[lang][key]);
+            }
+        }
+
+        const ogDescEl = document.getElementById('og-description');
+        if (ogDescEl && ogDescEl.hasAttribute('data-translate')) {
+            const key = ogDescEl.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                ogDescEl.setAttribute('content', translations[lang][key]);
+            }
+        }
 
         // Update Twitter tags
-        document.getElementById('twitter-title').setAttribute('content', translations[lang]['twitter-title']);
-        document.getElementById('twitter-description').setAttribute('content', translations[lang]['twitter-description']);
+        const twitterTitleEl = document.getElementById('twitter-title');
+        if (twitterTitleEl && twitterTitleEl.hasAttribute('data-translate')) {
+            const key = twitterTitleEl.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                twitterTitleEl.setAttribute('content', translations[lang][key]);
+            }
+        }
+
+        const twitterDescEl = document.getElementById('twitter-description');
+        if (twitterDescEl && twitterDescEl.hasAttribute('data-translate')) {
+            const key = twitterDescEl.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                twitterDescEl.setAttribute('content', translations[lang][key]);
+            }
+        }
 
         // Update language meta tag
         const languageMeta = document.querySelector('meta[name="language"]');
