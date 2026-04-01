@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title" data-translate="blog.ide.page_title">Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026? - TheGenAI</title>
+    <title id="page-title" data-translate="blog.ide.page_title">Trae vs Antigravity vs Cursor: Which AI IDE Wins in
+        2026? - TheGenAI</title>
     <meta name="description" id="page-description" data-translate="blog.ide.page_description"
         content="Comparing Trae, Google Antigravity, and Cursor. A deep dive into financial impact, development speed, and code quality for the modern developer.">
 
@@ -19,7 +20,8 @@
     <meta name="geo.placename" content="Amsterdam">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" id="og-title" data-translate="blog.ide.page_title" content="Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026?">
+    <meta property="og:title" id="og-title" data-translate="blog.ide.page_title"
+        content="Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026?">
     <meta property="og:description" id="og-description" data-translate="blog.ide.page_description"
         content="We compared the three giants of AI development. Here is what we found about their speed, cost, and quality.">
     <meta property="og:type" content="article">
@@ -31,7 +33,8 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" id="twitter-title" data-translate="blog.ide.page_title" content="Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026?">
+    <meta name="twitter:title" id="twitter-title" data-translate="blog.ide.page_title"
+        content="Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026?">
     <meta name="twitter:description" id="twitter-description" data-translate="blog.ide.page_description"
         content="Comparing Trae, Google Antigravity, and Cursor on speed, cost, and quality.">
     <meta name="twitter:image" content="https://thegenai.com/public/images/logo_thegenai.png">
@@ -105,52 +108,173 @@
     ]
     </script>
     <style>
+        :root {
+            --article-max-width: 850px;
+            --accent-blue: #2563eb;
+            --bg-offset: #f8fafc;
+        }
+
         .article-body {
             line-height: 1.8;
-            font-size: 1.1rem;
-            color: #333;
-            max-width: 800px;
+            font-size: 1.15rem;
+            color: #1e293b;
+            max-width: var(--article-max-width);
             margin: 0 auto;
         }
+
         .article-body h2 {
-            margin-top: 2.5rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1.25rem;
+            color: #0f172a;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .article-body h3 {
+            margin-top: 2rem;
             margin-bottom: 1rem;
-            color: #1a1a1a;
+            color: #334155;
+            font-size: 1.5rem;
         }
+
         .article-body p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
         }
-        .article-body ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
+
+        .article-body strong {
+            color: #0f172a;
         }
-        .article-body li {
-            margin-bottom: 0.5rem;
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-offset);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
+
+        .toc h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #64748b;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .toc a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .toc a:hover {
+            opacity: 0.7;
+        }
+
+        /* Enhanced Comparison Table */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 3rem 0;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 2rem 0;
             background: #fff;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            overflow: hidden;
+            min-width: 600px;
         }
-        .comparison-table th, .comparison-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
+
         .comparison-table th {
-            background: #f8f9fa;
-            font-weight: 600;
+            background: #f1f5f9;
+            padding: 1.5rem 1rem;
+            text-align: left;
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
         }
+
+        .comparison-table td {
+            padding: 1.25rem 1rem;
+            border-bottom: 1px solid #f1f5f9;
+            color: #475569;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Highlight Box */
         .highlight-box {
-            background: #f0f7ff;
-            padding: 1.5rem;
-            border-left: 4px solid #0066cc;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            position: relative;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+
+        .highlight-box::before {
+            content: "💡";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            font-size: 1.5rem;
+            background: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Score Badge */
+        .score {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .score.good {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .score.neutral {
+            background: #fef9c3;
+            color: #854d0e;
+        }
+
+        .score.top {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        @media (max-width: 768px) {
+            .article-body {
+                font-size: 1.05rem;
+            }
+
+            .section-header h1 {
+                font-size: 2.25rem !important;
+            }
         }
     </style>
 </head>
@@ -165,12 +289,18 @@
                 </a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="../../index.html#home" class="nav-link" data-translate="nav.home">Home</a></li>
-                <li class="nav-item"><a href="../../index.html#about" class="nav-link" data-translate="nav.about">About</a></li>
-                <li class="nav-item"><a href="../../index.html#services" class="nav-link" data-translate="nav.services">Services</a></li>
-                <li class="nav-item"><a href="../../index.html#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a></li>
-                <li class="nav-item"><a href="../index.html" class="nav-link active" data-translate="nav.blog">Blog</a></li>
-                <li class="nav-item"><a href="../../index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a></li>
+                <li class="nav-item"><a href="../../index.html#home" class="nav-link" data-translate="nav.home">Home</a>
+                </li>
+                <li class="nav-item"><a href="../../index.html#about" class="nav-link"
+                        data-translate="nav.about">About</a></li>
+                <li class="nav-item"><a href="../../index.html#services" class="nav-link"
+                        data-translate="nav.services">Services</a></li>
+                <li class="nav-item"><a href="../../index.html#portfolio" class="nav-link"
+                        data-translate="nav.portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="../index.html" class="nav-link active" data-translate="nav.blog">Blog</a>
+                </li>
+                <li class="nav-item"><a href="../../index.html#contact" class="nav-link"
+                        data-translate="nav.contact">Contact</a></li>
                 <li class="nav-item">
                     <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
                 </li>
@@ -187,76 +317,140 @@
         <article class="article-content">
             <header class="section-header" style="text-align: left; max-width: 800px; margin: 0 auto 3rem auto;">
                 <div class="portfolio-category" style="margin-bottom: 1rem;">Deep Dive</div>
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Trae vs Antigravity vs Cursor: The Battle of AI IDEs in 2026</h1>
+                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Trae vs Antigravity vs Cursor: The Battle of AI IDEs
+                    in 2026</h1>
                 <p style="font-size: 1.2rem; opacity: 0.8;">By TheGenAI Team • March 29, 2026</p>
             </header>
 
             <div class="article-body">
-                <p>If you’re a developer today, you’ve probably felt it: the ground is shifting under your feet. The days of "just an editor" are long gone. We’ve moved from basic syntax highlighting to AI assistants that can practically read our minds—or at least our entire repositories. But with so many options hitting the market, which one should you actually commit your workflow to?</p>
-                
-                <p>We spent the last month living in three different environments: <strong>Cursor</strong> (the reigning champ), <strong>Trae</strong> (the ByteDance-backed speedster), and <strong>Antigravity</strong> (Google's agent-first newcomer). Here’s our honest take on how they stack up in the areas that actually matter: your wallet, your time, and the quality of the code they produce.</p>
+                <p>If you&rsquo;re a developer today, you&rsquo;ve probably felt it: the ground is shifting under your
+                    feet. The days of &quot;just an editor&quot; are long gone. We&rsquo;ve moved from basic syntax
+                    highlighting to AI assistants that can practically read our minds&mdash;or at least our entire
+                    repositories.</p>
 
-                <h2>1. The Financial Factor: Subscriptions vs. Efficiency</h2>
-                <p>Let’s talk money first. It’s not just about the monthly subscription fee; it’s about the return on investment (ROI) you get from every hour you spend in the chair.</p>
-                <ul>
-                    <li><strong>Cursor:</strong> At $20/month for Pro, it’s the standard. It feels like a utility bill now. You pay for the stability and the best-in-class models (Claude 3.5 Sonnet, GPT-4o) without having to manage your own API keys.</li>
-                    <li><strong>Trae:</strong> This is where it gets interesting. Trae is currently offering a robust free tier that feels suspiciously like Cursor Pro. If you’re a solo dev or a startup watching every Euro, Trae is the clear financial winner for now.</li>
-                    <li><strong>Antigravity:</strong> Being Google’s playground, it’s currently free in public preview. They want your data and your feedback more than your money. It’s a great way to access Gemini 3 Pro without the enterprise price tag.</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Verdict:</strong> Trae wins on raw cost, but Cursor wins on predictable value for professional teams.
+                <div class="toc">
+                    <h4>Table of Contents</h4>
+                    <ul>
+                        <li><a href="#financial">1. Financial Factor</a></li>
+                        <li><a href="#speed">2. Speed & Flow</a></li>
+                        <li><a href="#quality">3. Code Quality</a></li>
+                        <li><a href="#scoreboard">The Scoreboard</a></li>
+                    </ul>
                 </div>
 
-                <h2>2. Speed of Development: Flow vs. Delegation</h2>
-                <p>Speed isn't just about how fast the AI generates code; it's about how little it breaks your "flow."</p>
-                <p><strong>Cursor</strong> is built for the "flow-state" developer. The inline autocomplete is so fast it feels like it’s predicting your thoughts. The "Composer" mode allows you to refactor entire modules in seconds while keeping you firmly in the driver’s seat.</p>
-                <p><strong>Trae</strong> feels like a direct response to Cursor. It’s snappy, the indexing is incredibly fast, and it doesn't suffer from the occasional "lag" that Cursor sometimes hits on massive monorepos. It’s built for velocity.</p>
-                <p><strong>Antigravity</strong>, however, is a different beast entirely. It’s not just an assistant; it’s an agent. You don't just "code faster"; you delegate tasks. You tell Antigravity, "Build a contact form that saves to Firestore and sends a Slack notification," and it goes off, plans the steps, writes the code, and tests it in a built-in browser. For greenfield prototyping, Antigravity’s "outcome-based" speed is unmatched.</p>
+                <p>We spent the last month living in three different environments: <strong>Cursor</strong> (the reigning
+                    champ), <strong>Trae</strong> (the ByteDance-backed speedster), and <strong>Antigravity</strong>
+                    (Google's agent-first newcomer). Here&rsquo;s our honest take on how they stack up.</p>
 
-                <h2>3. Quality of Development: Precision vs. Autonomy</h2>
-                <p>This is where things get subjective. Does the AI write "clever" code that you have to fix later, or does it write the code you would have written yourself?</p>
-                <p><strong>Cursor</strong> still feels like it has the best "taste." Because it uses highly tuned models with deep repository context, the suggestions usually match your existing architectural patterns. It rarely suggests something that feels "out of place."</p>
-                <p><strong>Trae</strong> is impressively accurate but occasionally leans towards more generic implementations. It’s perfect for 90% of tasks, but for that last 10% of complex architecture, you might find yourself doing a bit more manual cleanup.</p>
-                <p><strong>Antigravity</strong> is the most "autonomous," which is a double-edged sword. When it works, it feels like magic. When it misses, it can create a mess of files that takes 20 minutes to untangle. It’s brilliant for exploration, but you’ll want to keep a close eye on it for production builds.</p>
+                <h2 id="financial">1. The Financial Factor</h2>
+                <p>It&rsquo;s not just about the monthly subscription fee; it&rsquo;s about the <strong>Return on
+                        Investment (ROI)</strong> you get from every hour you spend in the chair.</p>
 
-                <h2>The Final Scoreboard</h2>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Cursor</th>
-                            <th>Trae</th>
-                            <th>Antigravity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Cost</strong></td>
-                            <td>$$ (Paid)</td>
-                            <td>Free (Currently)</td>
-                            <td>Free (Preview)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Best For</strong></td>
-                            <td>Daily Professional Work</td>
-                            <td>Rapid, Cost-Effective Dev</td>
-                            <td>Autonomous Prototyping</td>
-                        </tr>
-                        <tr>
-                            <td><strong>"Wow" Factor</strong></td>
-                            <td>Perfect Autocomplete</td>
-                            <td>Raw Performance</td>
-                            <td>Multi-Agent Tasks</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h3>Cursor: The Predictable Choice</h3>
+                <p>At $20/month for Pro, it&rsquo;s the industry standard. You pay for stability and the best-in-class
+                    models (Claude 3.6, GPT 5.0) without having to manage your own API keys. It&rsquo;s a utility bill
+                    that pays for itself in the first hour of work.</p>
+
+                <h3>Trae: The Disruptor</h3>
+                <p>Trae is currently offering a robust free tier that mirrors Cursor Pro almost perfectly, while giving
+                    you access to the massive reasoning power of <strong>GPT 5.0</strong>. If you&rsquo;re a solo dev or
+                    a startup watching every Euro, Trae is the clear financial winner for now. They are aggressively
+                    capturing market share by making top-tier models accessible without a subscription barrier.</p>
+
+                <h3>Antigravity: The Google Ecosystem</h3>
+                <p>Being Google&rsquo;s specialized playground, it&rsquo;s currently free in public preview. They want
+                    your data and your feedback more than your money. It&rsquo;s the best way to access the full power
+                    of Gemini 3.1 Pro without an enterprise price tag.</p>
+
+                <div class="highlight-box">
+                    <strong>The Verdict:</strong> Switch to Trae if you're cost-conscious; stay with Cursor if you value
+                    a proven, stable ecosystem with the best model selection.
+                </div>
+
+                <h2 id="speed">2. Speed of Development: Flow vs. Delegation</h2>
+                <p>Speed isn&rsquo;t just about how fast the AI generates code; it&rsquo;s about how little it breaks
+                    your <strong>flow state</strong>.</p>
+
+                <p><strong>Cursor</strong> is built for the precision developer. The inline autocomplete is so fast it
+                    feels like it&rsquo;s predicting your thoughts. The <em>Composer</em> mode allows you to refactor
+                    entire modules in seconds while keeping you firmly in the driver&rsquo;s seat.</p>
+
+                <p><strong>Trae</strong> feels like a direct response to Cursor. It&rsquo;s snappy, the indexing is
+                    incredibly fast, and it doesn&rsquo;t suffer from the occasional &quot;lag&quot; that Cursor
+                    sometimes hits on massive monorepos. It&rsquo;s built for pure velocity.</p>
+
+                <p><strong>Antigravity</strong>, however, is a different beast entirely. It&rsquo;s not just an
+                    assistant; it&rsquo;s an <strong>agent</strong>. You don&rsquo;t just &quot;code faster&quot;; you
+                    delegate. You tell Antigravity, <em>&quot;Build a contact form that saves to Firestore&quot;</em>,
+                    and it plans the steps, writes the code, and tests it autonomously.</p>
+
+                <h2 id="quality">3. Quality of Development: Precision vs. Autonomy</h2>
+                <p>Does the AI write &quot;clever&quot; code that you have to fix later, or does it write the code you
+                    would have written yourself?</p>
+
+                <p><strong>Cursor</strong> still has the best &quot;taste.&quot; Because it uses highly tuned models
+                    with deep repository context, the suggestions usually match your existing architectural patterns
+                    perfectly. It rarely suggests something that feels out of place.</p>
+
+                <p><strong>Antigravity</strong> is the most autonomous, which is a double-edged sword. When it works, it
+                    feels like magic. When it misses, it can create a mess of files that takes 20 minutes to untangle.
+                    It&rsquo;s brilliant for exploration, but you&rsquo;ll want to keep a close eye on it for production
+                    builds.</p>
+
+                <h2 id="scoreboard">The Final Scoreboard</h2>
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Cursor</th>
+                                <th>Trae</th>
+                                <th>Antigravity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Monthly Cost</strong></td>
+                                <td>$20 / mo</td>
+                                <td><span class="score good">Free</span></td>
+                                <td><span class="score good">Free</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Primary Model</strong></td>
+                                <td>Claude 3.6 / GPT 5.0</td>
+                                <td>GPT 5.0</td>
+                                <td>Gemini 3.1 Pro</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Context Handling</strong></td>
+                                <td><span class="score top">Excellent</span></td>
+                                <td>Good</td>
+                                <td>Advanced Agent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Best Use Case</strong></td>
+                                <td>Stable Production</td>
+                                <td>Fast Startups</td>
+                                <td>Agentic Prototypes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <h2>Conclusion: Which one should you pick?</h2>
-                <p>If you want the tool everyone trusts and you don't mind the $20/month, <strong>Cursor</strong> is still the king. It’s polished, reliable, and just works.</p>
-                <p>If you’re looking for a free alternative that doesn't compromise on speed, switch to <strong>Trae</strong> today. You’ll be surprised how close it gets to the Cursor experience. If you're ready to start building, check out our <a href="../8-hour-mvp-guide/index.html">practical guide to building an 8-hour MVP</a>.</p>
-                <p>But if you want to see the future of "agentic" development—where you manage a team of AI agents rather than writing every line yourself—<strong>Antigravity</strong> is the one to watch. It’s raw, it’s exciting, and it’s changing the definition of what an IDE can be.</p>
-                
-                <p style="margin-top: 2rem;">At <strong>TheGenAI</strong>, we use all three depending on the project. For our <a href="../../index.html#services">8-hour prototypes</a>, we often lean on Antigravity for the initial scaffold and Cursor for the final production polish. The best tool is the one that stays out of your way and helps you build amazing things.</p>
+                <p>If you want the tool everyone trusts and you don&rsquo;t mind the subscription,
+                    <strong>Cursor</strong> is still the king. It&rsquo;s polished, reliable, and integrated into the
+                    dev community.
+                </p>
+
+                <p>If you want to see the future of &quot;agentic&quot; development&mdash;where you manage a team of AI
+                    agents rather than writing every line yourself&mdash;<strong>Antigravity</strong> is the one to
+                    watch. It&rsquo;s raw, exciting, and changing the definition of what an IDE can be.</p>
+
+                <p style="margin-top: 2rem;">At <strong>TheGenAI</strong>, we use all three depending on the project.
+                    For our <a href="../../index.html#services">8-hour prototypes</a>, we often lean on Antigravity for
+                    the initial scaffold and Cursor for the final production polish. The best tool is the one that stays
+                    out of your way and helps you build amazing things.</p>
             </div>
         </article>
     </main>
@@ -267,10 +461,12 @@
             <div class="newsletter-card">
                 <div class="newsletter-content">
                     <h2 data-translate="newsletter.title">Stay Ahead of AI</h2>
-                    <p data-translate="newsletter.subtitle">Get fresh insights and deep dives from our blog delivered to your inbox.</p>
+                    <p data-translate="newsletter.subtitle">Get fresh insights and deep dives from our blog delivered to
+                        your inbox.</p>
                 </div>
                 <form id="newsletter-form" class="newsletter-form">
-                    <input type="email" id="newsletter-email" data-translate="newsletter.placeholder" placeholder="Your Email" required>
+                    <input type="email" id="newsletter-email" data-translate="newsletter.placeholder"
+                        placeholder="Your Email" required>
                     <button type="submit" class="btn btn-primary" data-translate="newsletter.btn">Subscribe</button>
                 </form>
             </div>
@@ -283,18 +479,25 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="../../images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo" style="height: 40px; margin-bottom: 1rem;">
+                        <img src="../../images/logo_thegenai.png"
+                            alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo"
+                            style="height: 40px; margin-bottom: 1rem;">
                     </div>
-                    <p class="footer-description" data-translate="footer.description">Creating intelligent solutions for tomorrow's challenges.</p>
+                    <p class="footer-description" data-translate="footer.description">Creating intelligent solutions for
+                        tomorrow's challenges.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 data-translate="footer.services.title">Services</h4>
                         <ul class="footer-menu">
-                            <li><a href="../../index.html#services" data-translate="footer.services.workshop">AI Workshops</a></li>
-                            <li><a href="../../index.html#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
-                            <li><a href="../../index.html#services" data-translate="footer.services.consulting">AI Consulting</a></li>
-                            <li><a href="../../index.html#services" data-translate="footer.services.dev">Software Development</a></li>
+                            <li><a href="../../index.html#services" data-translate="footer.services.workshop">AI
+                                    Workshops</a></li>
+                            <li><a href="../../index.html#services" data-translate="footer.services.prototype">Rapid
+                                    Prototyping</a></li>
+                            <li><a href="../../index.html#services" data-translate="footer.services.consulting">AI
+                                    Consulting</a></li>
+                            <li><a href="../../index.html#services" data-translate="footer.services.dev">Software
+                                    Development</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -309,14 +512,17 @@
                     <div class="footer-column">
                         <h4 data-translate="footer.social.title">Connect</h4>
                         <ul class="footer-menu">
-                            <li><a href="https://www.linkedin.com/company/112309922" target="_blank" data-translate="footer.social.linkedin_company">LinkedIn (Company)</a></li>
-                            <li><a href="https://www.linkedin.com/in/dima-kalachniuk-0b07b368" target="_blank" data-translate="footer.social.linkedin_founder">LinkedIn (Founder)</a></li>
+                            <li><a href="https://www.linkedin.com/company/112309922" target="_blank"
+                                    data-translate="footer.social.linkedin_company">LinkedIn (Company)</a></li>
+                            <li><a href="https://www.linkedin.com/in/dima-kalachniuk-0b07b368" target="_blank"
+                                    data-translate="footer.social.linkedin_founder">LinkedIn (Founder)</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright" data-translate="footer.copyright">© 2026 TheGenAI. All rights reserved. KVK 42019613</p>
+                <p class="footer-copyright" data-translate="footer.copyright">© 2026 TheGenAI. All rights reserved. KVK
+                    42019613</p>
             </div>
         </div>
     </footer>

@@ -146,7 +146,7 @@ const translations = {
         'blog.guide.page_title': '8-Hour MVP: How to Build and Launch Your AI Idea Fast - TheGenAI',
         'blog.guide.page_description': 'Practical tips on how to build a working AI MVP in just 8 hours. Learn the strategies for rapid prototyping.',
         'blog.ide.page_title': 'Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026? - TheGenAI',
-        'blog.ide.page_description': 'Comparing Trae, Google Antigravity, and Cursor. A deep dive into speed and code quality for developers.',
+        'blog.ide.page_description': 'Comparing Trae, Google Antigravity, and Cursor. A deep dive into GPT 5.0, Gemini 3.1 Pro, and Claude 3.6 for developers.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacy Policy - TheGenAI',
@@ -315,7 +315,7 @@ const translations = {
         'blog.guide.page_title': '8-Uur MVP: Hoe je jouw AI-idee snel bouwt en lanceert - TheGenAI',
         'blog.guide.page_description': 'Praktische tips over hoe je in slechts 8 uur een werkende AI MVP bouwt. Leer de strategieën voor prototyping.',
         'blog.ide.page_title': 'Trae vs Antigravity vs Cursor: Welke AI IDE wint in 2026? - TheGenAI',
-        'blog.ide.page_description': 'Vergelijking tussen Trae, Google Antigravity en Cursor. Een diepe duik in snelheid en codekwaliteit.',
+        'blog.ide.page_description': 'Vergelijking tussen Trae, Google Antigravity en Cursor. Een diepe duik in GPT 5.0, Gemini 3.1 Pro en Claude 3.6.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacybeleid - TheGenAI',
