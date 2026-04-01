@@ -1481,6 +1481,16 @@ section {
     
     .newsletter-form {
         width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
     }
 }
 

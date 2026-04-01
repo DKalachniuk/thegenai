@@ -38,6 +38,13 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Trailing slash enforcement for blog directory (prevents broken relative links)
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.protocol !== 'file:' && window.location.pathname.endsWith('/blog')) {
+        window.location.href = window.location.href + '/';
+    }
+});
+
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
