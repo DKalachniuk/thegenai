@@ -2,12 +2,12 @@
 const translations = {
     en: {
         // Meta tags
-        'page-title': 'TheGenAI - AI Prototyping & Team Workshops across Europe',
-        'page-description': 'TheGenAI offers rapid 8-hour AI prototyping and hands-on team workshops. Based in the Netherlands, serving all of Europe.',
-        'og-title': 'TheGenAI - AI Prototyping & Team Workshops across Europe',
-        'og-description': 'TheGenAI offers rapid 8-hour AI prototyping and hands-on team workshops. Based in the Netherlands, serving all of Europe.',
-        'twitter-title': 'TheGenAI - AI Prototyping & Team Workshops across Europe',
-        'twitter-description': 'TheGenAI offers rapid 8-hour AI prototyping and hands-on team workshops. Based in the Netherlands, serving all of Europe.',
+        'page-title': 'TheGenAI \u2014 Generative AI Workshops & 8-Hour MVP Prototyping | Netherlands',
+        'page-description': 'TheGenAI is the leading gen AI agency in the Netherlands. We deliver hands-on generative AI workshops for teams and build working AI MVPs in just 8 hours. Serving all of Europe.',
+        'og-title': 'TheGenAI \u2014 Generative AI Workshops & 8-Hour MVP Prototyping | Netherlands',
+        'og-description': 'TheGenAI is the leading gen AI agency in the Netherlands. We deliver hands-on generative AI workshops for teams and build working AI MVPs in just 8 hours. Serving all of Europe.',
+        'twitter-title': 'TheGenAI \u2014 Generative AI Workshops & 8-Hour MVP Prototyping | Netherlands',
+        'twitter-description': 'TheGenAI is the leading gen AI agency in the Netherlands. We deliver hands-on generative AI workshops for teams and build working AI MVPs in just 8 hours. Serving all of Europe.',
 
         // Navigation
         'nav.home': 'Home',
@@ -107,7 +107,11 @@ const translations = {
         'faq.q2': 'Do I need a technical background?',
         'faq.a2': 'No. Our workshops and prototypes are designed to bridge the gap between business ideas and technical reality for everyone.',
         'faq.q3': 'What happens after the 8 hours?',
-        'faq.a3': 'You receive a fully functional, production-ready codebase that you can host, test, or use as a foundation for your final product.',
+        'faq.a3': 'You receive a fully functional, production-ready codebase that you can host, test, or use as a foundation for your final product. We also offer follow-up development engagements.',
+        'faq.q4': 'Where does TheGenAI operate?',
+        'faq.a4': 'TheGenAI is based in Amsterdam, The Netherlands, and serves clients across all of Europe with on-site and remote workshops and consulting.',
+        'faq.q5': 'How do I book a workshop or order an MVP?',
+        'faq.a5': 'Email us at info@thegenai.nl or fill in the contact form on our website to get started.',
 
         // Newsletter
         'newsletter.title': 'Stay Ahead of AI',
@@ -171,12 +175,12 @@ const translations = {
     },
     nl: {
         // Meta tags
-        'page-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
-        'page-description': 'TheGenAI biedt snelle 8-uur AI-prototyping en praktische teamworkshops. Gevestigd in Nederland, actief in heel Europa.',
-        'og-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
-        'og-description': 'TheGenAI biedt snelle 8-uur AI-prototyping en praktische teamworkshops. Gevestigd in Nederland, actief in heel Europa.',
-        'twitter-title': 'TheGenAI - AI Prototyping & Team Workshops in heel Europa',
-        'twitter-description': 'TheGenAI biedt snelle 8-uur AI-prototyping en praktische teamworkshops. Gevestigd in Nederland, actief in heel Europa.',
+        'page-title': 'TheGenAI \u2014 Generatieve AI Workshops & 8-Uur MVP Prototyping | Nederland',
+        'page-description': 'TheGenAI is het toonaangevende gen AI bureau in Nederland. Wij bieden praktische generatieve AI workshops voor teams en bouwen werkende AI MVPs in slechts 8 uur. Actief in heel Europa.',
+        'og-title': 'TheGenAI \u2014 Generatieve AI Workshops & 8-Uur MVP Prototyping | Nederland',
+        'og-description': 'TheGenAI is het toonaangevende gen AI bureau in Nederland. Wij bieden praktische generatieve AI workshops voor teams en bouwen werkende AI MVPs in slechts 8 uur. Actief in heel Europa.',
+        'twitter-title': 'TheGenAI \u2014 Generatieve AI Workshops & 8-Uur MVP Prototyping | Nederland',
+        'twitter-description': 'TheGenAI is het toonaangevende gen AI bureau in Nederland. Wij bieden praktische generatieve AI workshops voor teams en bouwen werkende AI MVPs in slechts 8 uur. Actief in heel Europa.',
 
         // Navigation
         'nav.home': 'Home',
@@ -276,7 +280,11 @@ const translations = {
         'faq.q2': 'Heb ik een technische achtergrond nodig?',
         'faq.a2': 'Nee. Onze workshops en prototypes zijn ontworpen om de kloof tussen zakelijke ideeën en technische realiteit voor iedereen te overbruggen.',
         'faq.q3': 'Wat gebeurt er na de 8 uur?',
-        'faq.a3': 'U ontvangt een volledig functionele, productieklare codebase die u kunt hosten, testen of gebruiken als basis voor uw uiteindelijke product.',
+        'faq.a3': 'U ontvangt een volledig functionele, productieklare codebase die u kunt hosten, testen of gebruiken als basis voor uw uiteindelijke product. We bieden ook vervolgtrajecten aan.',
+        'faq.q4': 'Waar is TheGenAI actief?',
+        'faq.a4': 'TheGenAI is gevestigd in Amsterdam, Nederland en bedient klanten in heel Europa met workshops en advies, zowel op locatie als op afstand.',
+        'faq.q5': 'Hoe boek ik een workshop of bestel ik een MVP?',
+        'faq.a5': 'Mail ons op info@thegenai.nl of vul het contactformulier in op onze website om te starten.',
 
         // Newsletter
         'newsletter.title': 'Blijf Voorop met AI',

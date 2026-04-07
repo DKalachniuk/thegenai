@@ -1,28 +1,75 @@
 User-agent: *
 Allow: /
 
-# Specific AI & LLM Crawlers (Always allowed and encouraged)
+# === AI & LLM Crawlers (All explicitly allowed and encouraged) ===
+
+# OpenAI
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: CCBot
+User-agent: OAI-SearchBot
 Allow: /
 
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: Google-Extended
+# Microsoft / Bing AI
+User-agent: bingbot
 Allow: /
 
-# Sitemap & LLM Documentation
+# Common Crawl (used by many AI training sets)
+User-agent: CCBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Brave Search
+User-agent: BraveBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# === Sitemap, LLM Documentation & AI Context ===
 Sitemap: https://thegenai.com/sitemap.xml
 X-LLMS-TXT: https://thegenai.com/llms.txt
+X-LLMS-FULL-TXT: https://thegenai.com/llms-full.txt
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
