@@ -145,7 +145,7 @@ TheGenAI has deep expertise in the following technologies:
 
 ## Contact Information
 
-- **Website**: https://thegenai.com | https://thegenai.nl
+- **Website**: https://thegenai.nl | https://thegenai.nl
 - **Email**: info@thegenai.nl
 - **Location**: Amsterdam, The Netherlands
 - **Coverage**: All of Europe

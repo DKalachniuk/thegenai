@@ -173,10 +173,10 @@ const translations = {
         'privacy.cookies.text': 'Our website does not use non-essential tracking cookies. We prioritize your privacy by using modern, cookieless alternatives for analytics. Some functional cookies may be used by our hosting provider (Firebase) to ensure the security and stability of the site.',
         
         'privacy.rights.title': '4. Your Rights',
-        'privacy.rights.text': 'Under the GDPR, you have the right to access, rectify, or erase your personal data. If you have submitted a contact form and wish to have your data removed, please contact us at info@thegenai.com.',
+        'privacy.rights.text': 'Under the GDPR, you have the right to access, rectify, or erase your personal data. If you have submitted a contact form and wish to have your data removed, please contact us at info@thegenai.nl.',
         
         'privacy.contact_us.title': '5. Contact Us',
-        'privacy.contact_us.text': 'If you have any questions about this Privacy Policy, please contact us at info@thegenai.com.'
+        'privacy.contact_us.text': 'If you have any questions about this Privacy Policy, please contact us at info@thegenai.nl.'
     },
     nl: {
         // Meta tags
@@ -351,10 +351,10 @@ const translations = {
         'privacy.cookies.text': 'Onze website gebruikt geen niet-essentiële tracking cookies. We geven prioriteit aan uw privacy door moderne, cookieloze alternatieven te gebruiken voor analytics. Sommige functionele cookies kunnen worden gebruikt door onze hostingprovider (Firebase) om de veiligheid en stabiliteit van de site te garanderen.',
         
         'privacy.rights.title': '4. Uw Rechten',
-        'privacy.rights.text': 'Onder de AVG heeft u het recht om uw persoonlijke gegevens in te zien, te corrigeren of te laten verwijderen. Als u een contactformulier heeft ingediend en wilt dat uw gegevens worden verwijderd, neem dan contact met ons op via info@thegenai.com.',
+        'privacy.rights.text': 'Onder de AVG heeft u het recht om uw persoonlijke gegevens in te zien, te corrigeren of te laten verwijderen. Als u een contactformulier heeft ingediend en wilt dat uw gegevens worden verwijderd, neem dan contact met ons op via info@thegenai.nl.',
         
         'privacy.contact_us.title': '5. Contact met Ons Opnemen',
-        'privacy.contact_us.text': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via info@thegenai.com.'
+        'privacy.contact_us.text': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via info@thegenai.nl.'
     }
 };
 

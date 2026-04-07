@@ -67,9 +67,9 @@ User-agent: YouBot
 Allow: /
 
 # === Sitemap, LLM Documentation & AI Context ===
-Sitemap: https://thegenai.com/sitemap.xml
-X-LLMS-TXT: https://thegenai.com/llms.txt
-X-LLMS-FULL-TXT: https://thegenai.com/llms-full.txt
+Sitemap: https://thegenai.nl/sitemap.xml
+X-LLMS-TXT: https://thegenai.nl/llms.txt
+X-LLMS-FULL-TXT: https://thegenai.nl/llms-full.txt
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

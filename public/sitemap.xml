@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://thegenai.com/</loc>
+        <loc>https://thegenai.nl/</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/" />
     </url>
     <url>
-        <loc>https://thegenai.com/?lang=nl</loc>
+        <loc>https://thegenai.nl/?lang=nl</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/" />
     </url>
     <url>
-        <loc>https://thegenai.com/blog</loc>
+        <loc>https://thegenai.nl/blog</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/blog" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/blog?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/blog" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/blog" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/blog?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog" />
     </url>
     <url>
-        <loc>https://thegenai.com/blog/trae-vs-antigravity-vs-cursor</loc>
+        <loc>https://thegenai.nl/blog/trae-vs-antigravity-vs-cursor</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/blog/trae-vs-antigravity-vs-cursor" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/blog/trae-vs-antigravity-vs-cursor?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/blog/trae-vs-antigravity-vs-cursor" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/blog/trae-vs-antigravity-vs-cursor" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/blog/trae-vs-antigravity-vs-cursor?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/trae-vs-antigravity-vs-cursor" />
     </url>
     <url>
-        <loc>https://thegenai.com/blog/geo-optimization</loc>
+        <loc>https://thegenai.nl/blog/geo-optimization</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/blog/geo-optimization" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/blog/geo-optimization?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/blog/geo-optimization" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/blog/geo-optimization" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/blog/geo-optimization?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/geo-optimization" />
     </url>
     <url>
-        <loc>https://thegenai.com/blog/8-hour-mvp-guide</loc>
+        <loc>https://thegenai.nl/blog/8-hour-mvp-guide</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/blog/8-hour-mvp-guide" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/blog/8-hour-mvp-guide?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/blog/8-hour-mvp-guide" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/blog/8-hour-mvp-guide" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/blog/8-hour-mvp-guide?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/8-hour-mvp-guide" />
     </url>
     <url>
-        <loc>https://thegenai.com/privacy</loc>
+        <loc>https://thegenai.nl/privacy</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/privacy" />
-        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/privacy?lang=nl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/privacy" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/privacy" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/privacy?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/privacy" />
     </url>
     <url>
-        <loc>https://thegenai.com/llms.txt</loc>
+        <loc>https://thegenai.nl/llms.txt</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://thegenai.com/llms-full.txt</loc>
+        <loc>https://thegenai.nl/llms-full.txt</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
