@@ -38,6 +38,15 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/blog/trae-vs-antigravity-vs-cursor" />
     </url>
     <url>
+        <loc>https://thegenai.com/blog/geo-optimization</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.com/blog/geo-optimization" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.com/blog/geo-optimization?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.com/blog/geo-optimization" />
+    </url>
+    <url>
         <loc>https://thegenai.com/blog/8-hour-mvp-guide</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>

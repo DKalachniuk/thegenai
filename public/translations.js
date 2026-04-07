@@ -146,11 +146,16 @@ const translations = {
         'blog.ide.category': 'AI Development',
         'blog.ide.title': 'Trae vs Antigravity vs Cursor: The Battle of AI IDEs',
         'blog.ide.description': 'A deep dive into the financial impact, development speed, and code quality of the top three AI-powered development environments.',
+        'blog.geo.category': 'SEO & Marketing',
+        'blog.geo.title': 'The New SEO: How to Get Your Website Cited by LLMs',
+        'blog.geo.description': 'The exact blueprint we used to get discovered, read, and cited by the world\'s most popular AI assistants.',
 
         'blog.guide.page_title': '8-Hour MVP: How to Build and Launch Your AI Idea Fast - TheGenAI',
         'blog.guide.page_description': 'Practical tips on how to build a working AI MVP in just 8 hours. Learn the strategies for rapid prototyping.',
         'blog.ide.page_title': 'Trae vs Antigravity vs Cursor: Which AI IDE Wins in 2026? - TheGenAI',
         'blog.ide.page_description': 'Comparing Trae, Google Antigravity, and Cursor. A deep dive into GPT 5.0, Gemini 3.1 Pro, and Claude 3.6 for developers.',
+        'blog.geo.page_title': 'The New SEO: How to Get Your Website Cited by LLMs - TheGenAI',
+        'blog.geo.page_description': 'Learn how to optimize your website for AI search engines like ChatGPT, Gemini, Copilot, and Claude. Embrace Generative Engine Optimization (GEO).',
 
         // Privacy Policy Page
         'privacy.title': 'Privacy Policy - TheGenAI',
@@ -319,11 +324,16 @@ const translations = {
         'blog.ide.category': 'AI Ontwikkeling',
         'blog.ide.title': 'Trae vs Antigravity vs Cursor: De Strijd van de AI IDE\'s',
         'blog.ide.description': 'Een diepe duik in de financiële impact, ontwikkelingssnelheid en codekwaliteit van de drie beste AI-gestuurde ontwikkelomgevingen.',
+        'blog.geo.category': 'SEO & Marketing',
+        'blog.geo.title': 'De Nieuwe SEO: Hoe u geciteerd wordt door LLM\'s',
+        'blog.geo.description': 'De exacte blauwdruk die we gebruikten om ontdekt, gelezen en geciteerd te worden door de meest populaire AI-assistenten.',
 
         'blog.guide.page_title': '8-Uur MVP: Hoe je jouw AI-idee snel bouwt en lanceert - TheGenAI',
         'blog.guide.page_description': 'Praktische tips over hoe je in slechts 8 uur een werkende AI MVP bouwt. Leer de strategieën voor prototyping.',
         'blog.ide.page_title': 'Trae vs Antigravity vs Cursor: Welke AI IDE wint in 2026? - TheGenAI',
         'blog.ide.page_description': 'Vergelijking tussen Trae, Google Antigravity en Cursor. Een diepe duik in GPT 5.0, Gemini 3.1 Pro en Claude 3.6.',
+        'blog.geo.page_title': 'De Nieuwe SEO: Hoe u geciteerd wordt door LLM\'s - TheGenAI',
+        'blog.geo.page_description': 'Leer hoe u uw website optimaliseert voor AI-zoekmachines zoals ChatGPT, Gemini, Copilot en Claude. Ontdek Generative Engine Optimization (GEO).',
 
         // Privacy Policy Page
         'privacy.title': 'Privacybeleid - TheGenAI',
