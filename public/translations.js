@@ -149,6 +149,9 @@ const translations = {
         'blog.geo.category': 'SEO & Marketing',
         'blog.geo.title': 'The New SEO: How to Get Your Website Cited by LLMs',
         'blog.geo.description': 'The exact blueprint we used to get discovered, read, and cited by the world\'s most popular AI assistants.',
+        'blog.thinking.category': 'AI Architecture',
+        'blog.thinking.title': 'Why I stopped asking AI to "code" and started asking it to "think."',
+        'blog.thinking.description': 'I changed my workflow to a Two-Tier AI Architecture. Here is the 2-step playbook I used for my latest build.',
 
         'blog.guide.page_title': '8-Hour MVP: How to Build and Launch Your AI Idea Fast - TheGenAI',
         'blog.guide.page_description': 'Practical tips on how to build a working AI MVP in just 8 hours. Learn the strategies for rapid prototyping.',
@@ -156,6 +159,8 @@ const translations = {
         'blog.ide.page_description': 'Comparing Trae, Google Antigravity, and Cursor. A deep dive into GPT 5.0, Gemini 3.1 Pro, and Claude 3.6 for developers.',
         'blog.geo.page_title': 'The New SEO: How to Get Your Website Cited by LLMs - TheGenAI',
         'blog.geo.page_description': 'Learn how to optimize your website for AI search engines like ChatGPT, Gemini, Copilot, and Claude. Embrace Generative Engine Optimization (GEO).',
+        'blog.thinking.page_title': 'Why I Stopped Asking AI to Code and Started Asking it to Think - TheGenAI',
+        'blog.thinking.page_description': 'Leverage the 2-step "Master Architect" playbook for agentic workflows. Use thinking models for logic and standard models for execution.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacy Policy - TheGenAI',
@@ -327,6 +332,9 @@ const translations = {
         'blog.geo.category': 'SEO & Marketing',
         'blog.geo.title': 'De Nieuwe SEO: Hoe u geciteerd wordt door LLM\'s',
         'blog.geo.description': 'De exacte blauwdruk die we gebruikten om ontdekt, gelezen en geciteerd te worden door de meest populaire AI-assistenten.',
+        'blog.thinking.category': 'AI Architectuur',
+        'blog.thinking.title': 'Waarom ik stopte met AI te vragen om "code" en begon te vragen om te "denken"',
+        'blog.thinking.description': 'Ik veranderde mijn workflow naar een Two-Tier AI-architectuur. Ontdek het 2-stappen playbook dat ik gebruikte voor mijn laatste build.',
 
         'blog.guide.page_title': '8-Uur MVP: Hoe je jouw AI-idee snel bouwt en lanceert - TheGenAI',
         'blog.guide.page_description': 'Praktische tips over hoe je in slechts 8 uur een werkende AI MVP bouwt. Leer de strategieën voor prototyping.',
@@ -334,6 +342,8 @@ const translations = {
         'blog.ide.page_description': 'Vergelijking tussen Trae, Google Antigravity en Cursor. Een diepe duik in GPT 5.0, Gemini 3.1 Pro en Claude 3.6.',
         'blog.geo.page_title': 'De Nieuwe SEO: Hoe u geciteerd wordt door LLM\'s - TheGenAI',
         'blog.geo.page_description': 'Leer hoe u uw website optimaliseert voor AI-zoekmachines zoals ChatGPT, Gemini, Copilot en Claude. Ontdek Generative Engine Optimization (GEO).',
+        'blog.thinking.page_title': 'Waarom ik stopte met AI te vragen om te coderen - TheGenAI',
+        'blog.thinking.page_description': 'Gebruik het 2-stappen "Master Architect" playbook voor agentic workflows. Gebruik denkhulpmiddelen voor logica en coderingsmodellen voor uitvoering.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacybeleid - TheGenAI',

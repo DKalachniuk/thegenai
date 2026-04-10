@@ -95,28 +95,28 @@
     <nav class="navbar scrolled">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                <a href="../" style="text-decoration: none; color: inherit;">
                     <span class="logo-text">The GenAI</span>
                 </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../index.html#home" class="nav-link" data-translate="nav.home">Home</a>
+                    <a href="../#home" class="nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#about" class="nav-link" data-translate="nav.about">About</a>
+                    <a href="../#about" class="nav-link" data-translate="nav.about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                    <a href="../#services" class="nav-link" data-translate="nav.services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
+                    <a href="../#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active" data-translate="nav.blog">Blog</a>
+                    <a href="" class="nav-link active" data-translate="nav.blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                    <a href="../#contact" class="nav-link" data-translate="nav.contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
@@ -137,8 +137,21 @@
         </header>
 
         <div class="blog-grid" id="blog-posts" style="display: flex; flex-direction: column; gap: 3rem;">
-            <!-- New Article Card -->
-            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;" onclick="window.location.href='./geo-optimization/index.html'">
+            <!-- Newest Article Card -->
+            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;" onclick="window.location.href='./why-i-stopped-asking-ai-to-code/'">
+                <div class="portfolio-content">
+                    <div class="portfolio-category" data-translate="blog.thinking.category">AI Architecture</div>
+                    <h3 class="portfolio-title" data-translate="blog.thinking.title">Why I stopped asking AI to "code" and started asking it to "think."</h3>
+                    <p class="portfolio-description" data-translate="blog.thinking.description">I changed my workflow to a Two-Tier AI Architecture. Here is the 2-step playbook I used for my latest build.</p>
+                </div>
+                <div style="padding: 0 2rem 2rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.9rem; color: var(--text-secondary);">April 10, 2026</span>
+                    <a href="./why-i-stopped-asking-ai-to-code/" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Previous Article Card -->
+            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;" onclick="window.location.href='./geo-optimization/'">
                 <div class="portfolio-content">
                     <div class="portfolio-category" data-translate="blog.geo.category">SEO & Marketing</div>
                     <h3 class="portfolio-title" data-translate="blog.geo.title">The New SEO: How to Get Your Website Cited by LLMs</h3>
@@ -146,12 +159,12 @@
                 </div>
                 <div style="padding: 0 2rem 2rem 2rem; display: flex; justify-content: space-between; align-items: center;">
                     <span style="font-size: 0.9rem; color: var(--text-secondary);">April 7, 2026</span>
-                    <a href="./geo-optimization/index.html" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
+                    <a href="./geo-optimization/" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
                 </div>
             </article>
 
             <!-- Second Article Card (Newest first) -->
-            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;" onclick="window.location.href='./8-hour-mvp-guide/index.html'">
+            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;" onclick="window.location.href='./8-hour-mvp-guide/'">
                 <div class="portfolio-content">
                     <div class="portfolio-category" data-translate="blog.guide.category">Strategy Guide</div>
                     <h3 class="portfolio-title" data-translate="blog.guide.title">From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours</h3>
@@ -159,12 +172,12 @@
                 </div>
                 <div style="padding: 0 2rem 2rem 2rem; display: flex; justify-content: space-between; align-items: center;">
                     <span style="font-size: 0.9rem; color: var(--text-secondary);">March 29, 2026</span>
-                    <a href="./8-hour-mvp-guide/index.html" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
+                    <a href="./8-hour-mvp-guide/" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
                 </div>
             </article>
 
             <!-- First Article Card -->
-            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;" onclick="window.location.href='./trae-vs-antigravity-vs-cursor/index.html'">
+            <article class="portfolio-item" style="opacity: 1; transform: translateY(0); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;" onclick="window.location.href='./trae-vs-antigravity-vs-cursor/'">
                 <div class="portfolio-content">
                     <div class="portfolio-category" data-translate="blog.ide.category">AI Development</div>
                     <h3 class="portfolio-title" data-translate="blog.ide.title">Trae vs Antigravity vs Cursor: The Battle of AI IDEs</h3>
@@ -172,7 +185,7 @@
                 </div>
                 <div style="padding: 0 2rem 2rem 2rem; display: flex; justify-content: space-between; align-items: center;">
                     <span style="font-size: 0.9rem; color: var(--text-secondary);">March 29, 2026</span>
-                    <a href="./trae-vs-antigravity-vs-cursor/index.html" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
+                    <a href="./trae-vs-antigravity-vs-cursor/" class="btn btn-outline" data-translate="blog.read_more">Read More</a>
                 </div>
             </article>
         </div>
@@ -208,18 +221,18 @@
                     <div class="footer-column">
                         <h4 data-translate="footer.services.title">Services</h4>
                         <ul class="footer-menu">
-                            <li><a href="../index.html#services" data-translate="footer.services.workshop">AI Workshops</a></li>
-                            <li><a href="../index.html#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
-                            <li><a href="../index.html#services" data-translate="footer.services.consulting">AI Consulting</a></li>
-                            <li><a href="../index.html#services" data-translate="footer.services.dev">Software Development</a></li>
+                            <li><a href="../#services" data-translate="footer.services.workshop">AI Workshops</a></li>
+                            <li><a href="../#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
+                            <li><a href="../#services" data-translate="footer.services.consulting">AI Consulting</a></li>
+                            <li><a href="../#services" data-translate="footer.services.dev">Software Development</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4 data-translate="footer.company.title">Company</h4>
                         <ul class="footer-menu">
-                            <li><a href="../index.html#about" data-translate="nav.about">About</a></li>
-                            <li><a href="../index.html#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
-                            <li><a href="../index.html#contact" data-translate="nav.contact">Contact</a></li>
+                            <li><a href="../#about" data-translate="nav.about">About</a></li>
+                            <li><a href="../#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                            <li><a href="../#contact" data-translate="nav.contact">Contact</a></li>
                             <li><a href="../privacy.html" data-translate="footer.privacy">Privacy Policy</a></li>
                         </ul>
                     </div>

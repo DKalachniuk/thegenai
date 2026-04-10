@@ -54,6 +54,7 @@ We build robust custom software solutions powered by generative AI to automate c
 - **Landlordje** — A realistic Dutch real estate strategy game. URL: https://landlordje.nl
 
 ## Blog & Insights
+- [Why I stopped asking AI to "code" and started asking it to "think."](https://thegenai.nl/blog/why-i-stopped-asking-ai-to-code) — The 2-step "Master Architect" playbook for agentic workflows using thinking models like DeepSeek-R1 and o1.
 - [From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours](https://thegenai.nl/blog/8-hour-mvp-guide) — Practical tips on rapid AI prototyping and radical prioritization.
 - [Trae vs Antigravity vs Cursor: The Battle of AI IDEs](https://thegenai.nl/blog/trae-vs-antigravity-vs-cursor) — A comprehensive comparison of the top AI-powered development environments.
 

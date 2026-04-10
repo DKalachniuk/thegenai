@@ -520,3 +520,46 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Ensure portfolio links work properly - removed hardcoded woonprijs redirect
 });
+
+// Local file protocol support - handles directory links when viewing without a server
+if (window.location.protocol === 'file:') {
+    // Fix standard links
+    document.querySelectorAll('a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href.endsWith('/')) {
+            link.setAttribute('href', href + 'index.html');
+        } else if (href && !href.includes('.') && !href.startsWith('#') && !href.includes(':')) {
+            link.setAttribute('href', href + '/index.html');
+        }
+    });
+
+    // Fix onclick navigation patterns in portfolio/blog cards
+    document.querySelectorAll('[onclick*="window.location.href"]').forEach(el => {
+        const attr = el.getAttribute('onclick');
+        if (attr.includes("'./") && attr.endsWith("/'")) {
+            const newAttr = attr.replace("/'", "/index.html'");
+            el.setAttribute('onclick', newAttr);
+        }
+    });
+}
+
+// Copy to Keyboard functionality for Prompt Boxes
+document.addEventListener('click', (e) => {
+    if (e.target.closest('.prompt-box')) {
+        const promptBox = e.target.closest('.prompt-box');
+        const text = promptBox.innerText.replace('Ready to copy', '').trim();
+        
+        navigator.clipboard.writeText(text).then(() => {
+            const statusText = promptBox.querySelector('.prompt-header span:last-child');
+            const originalText = statusText.textContent;
+            statusText.textContent = 'Copied!';
+            statusText.style.color = '#4ade80';
+            
+            setTimeout(() => {
+                statusText.textContent = originalText;
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+    }
+});
