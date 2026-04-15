@@ -279,26 +279,8 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroVisual = document.querySelector('.hero-visual');
-    if (heroVisual) {
-        const rate = scrolled * -0.5;
-        heroVisual.style.transform = `translateY(${rate}px)`;
-    }
-});
-
-// Service cards hover effect enhancement
-document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-8px) scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
-    });
-});
+// Parallax effect removed — was conflicting with 3D bento hover transforms
+// Service card hover removed — CSS handles it with better transitions
 
 // Portfolio item click tracking
 document.querySelectorAll('.portfolio-item').forEach(item => {
@@ -466,22 +448,7 @@ if (newsletterForm) {
     });
 }
 
-// Add loading state to buttons
-document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        // Don't add loading state to form submit buttons or external project links
-        if (this.type === 'submit' || this.classList.contains('portfolio-link')) return;
-        
-        const originalText = this.textContent;
-        this.textContent = 'Loading...';
-        this.style.pointerEvents = 'none';
-        
-        setTimeout(() => {
-            this.textContent = originalText;
-            this.style.pointerEvents = 'auto';
-        }, 1000);
-    });
-});
+// Loading state removed from anchor-link buttons — only async operations show loading
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
