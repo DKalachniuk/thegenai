@@ -51,7 +51,7 @@ We build robust custom software solutions powered by generative AI to automate c
 - **WhereToInvest.nl** — AI investment analysis for the Dutch real estate market. URL: https://wheretoinvest.nl
 - **Round Robin Shift Manager** — Atlassian Marketplace app for automated team rotations in Confluence. URL: https://marketplace.atlassian.com/apps/1238321
 - **LinkedIn Formatter** — Content tool that preserves rich text formatting on LinkedIn and removes AI-generated "slop". URL: https://linkedinformatter.thegenai.nl
-- **Landlordje** — A realistic Dutch real estate strategy game. URL: https://landlordje.nl
+- **Landlordje** — A realistic Dutch real estate strategy game. URL: https://landlordje.thegenai.nl
 
 ## Blog & Insights
 - [Why I stopped asking AI to "code" and started asking it to "think."](https://thegenai.nl/blog/why-i-stopped-asking-ai-to-code) — The 2-step "Master Architect" playbook for agentic workflows using thinking models like DeepSeek-R1 and o1.

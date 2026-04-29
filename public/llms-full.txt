@@ -125,7 +125,7 @@ For companies that need more than a prototype — a production-grade, scalable A
 **Description**: A free tool that preserves rich text formatting (bold, italics) when pasting into LinkedIn posts. Also detects and removes common AI-generated clichés ("delve", "landscape") to make posts more authentic.
 
 ### Landlordje
-**URL**: https://landlordje.nl
+**URL**: https://landlordje.thegenai.nl
 **Category**: Web Game / Strategy
 **Description**: A realistic Dutch real estate strategy game where players start as regular employees and build property empires. Features authentic Dutch market mechanics, tenant management, and economic events.
 
