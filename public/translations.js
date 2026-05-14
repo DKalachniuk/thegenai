@@ -62,6 +62,12 @@ const translations = {
         'portfolio.linkedinformatter.title': 'LinkedIn Formatter',
         'portfolio.linkedinformatter.category': 'Content Creation Tool',
         'portfolio.linkedinformatter.description': 'A specialized tool that ensures your formatted text (bold and italics) stays preserved when pasting into LinkedIn. The tool also automatically detects and removes common AI-generated "slop" to make your posts more authentic and professional.',
+        'portfolio.tendermaat.title': 'TenderMaat.nl',
+        'portfolio.tendermaat.category': 'AI Tender Analysis Platform',
+        'portfolio.tendermaat.description': 'An AI-powered platform for Dutch companies to analyze public tenders from TenderNed. It provides instant Go/No-Go recommendations, qualification checklists, and strategic bid advice in Dutch.',
+        'portfolio.fluitvoormij.title': 'FluitVoorMij.nl',
+        'portfolio.fluitvoormij.category': 'Sports Automation Platform',
+        'portfolio.fluitvoormij.description': 'A specialized platform that automates referee assignments for football clubs in the Netherlands. It streamlines communication, manages availability, and ensures fair rotation for club referees.',
         'portfolio.btn.view': 'View Project',
 
         // Games section
@@ -245,6 +251,12 @@ const translations = {
         'portfolio.linkedinformatter.title': 'LinkedIn Formatter',
         'portfolio.linkedinformatter.category': 'Content Creatie Tool',
         'portfolio.linkedinformatter.description': 'Een gespecialiseerde tool die ervoor zorgt dat je opgemaakte tekst (vetgedrukt en cursief) behouden blijft bij het plakken in LinkedIn. De tool detecteert en verwijdert ook automatisch veelvoorkomende AI-gegenereerde "slop" om je berichten authentieker en professioneler te maken.',
+        'portfolio.tendermaat.title': 'TenderMaat.nl',
+        'portfolio.tendermaat.category': 'AI Tender Analyse Platform',
+        'portfolio.tendermaat.description': 'Een AI-gestuurd platform voor Nederlandse bedrijven om openbare aanbestedingen van TenderNed te analyseren. Het biedt direct Go/No-Go advies, kwalificatiechecklists en strategisch biedingsadvies.',
+        'portfolio.fluitvoormij.title': 'FluitVoorMij.nl',
+        'portfolio.fluitvoormij.category': 'Sport Automatisering Platform',
+        'portfolio.fluitvoormij.description': 'Een gespecialiseerd platform dat scheidsrechtertoewijzingen voor voetbalclubs in Nederland automatiseert. Het stroomlijnt de communicatie, beheert beschikbaarheid en zorgt voor een eerlijke rotatie van clubscheidsrechters.',
         'portfolio.btn.view': 'Bekijk Project',
 
         // Games section
