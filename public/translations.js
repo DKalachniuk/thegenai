@@ -53,6 +53,7 @@ const translations = {
         'waas.hero.title': 'Bespoke Websites for Builders. Zero Upfront Costs.',
         'waas.hero.subtitle': 'Get a world-class, premium website that showcases your projects, generates leads, and brings in clients. Fully managed, SEO/GEO optimized, with €0 downpayment.',
         'waas.cta.get_started': 'Get Your Offerte Now',
+        'waas.cta.view_example': 'View Live Demo Website',
         'waas.cta.explore': 'Explore Pricing Models',
         
         'waas.features.title': 'Engineered to Convert',
@@ -303,6 +304,7 @@ const translations = {
         'waas.hero.title': 'Professionele Websites voor de Bouw. Nul Opstartkosten.',
         'waas.hero.subtitle': 'Ontvang een website van topklasse die uw projecten toont, nieuwe offerte-aanvragen genereert en perfect werkt. Volledig beheerd, SEO/GEO geoptimaliseerd, met €0 aanbetaling.',
         'waas.cta.get_started': 'Vraag Nu Een Offerte Aan',
+        'waas.cta.view_example': 'Bekijk Demo Website',
         'waas.cta.explore': 'Bekijk Tarieven',
         
         'waas.features.title': 'Ontworpen voor Maximale Conversie',

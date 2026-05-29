@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klusbedrijf De Valk — Professionele Renovatie & Onderhoud | Amsterdam</title>
+    <meta name="description" content="Klusbedrijf De Valk is uw betrouwbare partner voor renovatie, badkamerverbouwing, schilderwerk en onderhoud in Amsterdam en omgeving. Vraag direct een offerte aan!">
+    
+    <!-- Premium Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <style>
+        :root {
+            --primary: #d97706; /* Premium Construction Amber */
+            --primary-hover: #b45309;
+            --dark: #0f172a;
+            --dark-light: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Demo Header Bar */
+        .demo-bar {
+            background: linear-gradient(90deg, #1e3a8a 0%, #2563eb 100%);
+            color: var(--white);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .demo-bar a {
+            color: var(--white);
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .demo-bar a:hover {
+            background: var(--white);
+            color: #1e3a8a;
+        }
+
+        /* Top Info Row */
+        .info-row {
+            background: var(--dark);
+            color: rgba(255,255,255,0.8);
+            padding: 8px 20px;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-row span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            padding: 15px 40px;
+            position: sticky;
+            top: 38px; /* offset due to demo-bar */
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--dark);
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-light);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--dark);
+            border: 2px solid var(--dark);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--dark);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 40px;
+            background: linear-gradient(135deg, var(--light) 0%, #eff6ff 100%);
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 992px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 60px 20px;
+                text-align: center;
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--dark);
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-title span {
+            color: var(--primary);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(16px, 2vw, 18px);
+            color: var(--text-light);
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 992px) {
+            .hero-stats {
+                justify-content: center;
+            }
+        }
+
+        .stat-item h3 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1.1;
+        }
+
+        .stat-item p {
+            font-size: 13px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        /* Hero Visual/Form Card */
+        .hero-visual {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            text-align: left;
+        }
+
+        .form-header {
+            margin-bottom: 24px;
+        }
+
+        .form-header h3 {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+
+        .form-header p {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1.5px solid #e2e8f0;
+            font-family: inherit;
+            font-size: 14px;
+            color: var(--dark);
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+        }
+
+        /* Services Grid */
+        .services-section {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .services-section {
+                padding: 60px 20px;
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--light);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            background: var(--white);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            border-color: rgba(217, 119, 6, 0.2);
+        }
+
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(217, 119, 6, 0.08);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Portfolio/Works Gallery */
+        .portfolio-section {
+            padding: 80px 40px;
+            background: var(--light);
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-section {
+                padding: 60px 20px;
+            }
+        }
+
+        .portfolio-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .portfolio-img-placeholder {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .portfolio-info {
+            padding: 24px;
+        }
+
+        .portfolio-info span {
+            display: inline-block;
+            background: rgba(217, 119, 6, 0.1);
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .portfolio-info h3 {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .portfolio-info p {
+            font-size: 13.5px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* floating WhatsApp button */
+        .whatsapp-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--success);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+            cursor: pointer;
+            z-index: 1500;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        /* Success Message Overlay */
+        .toast {
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+            background: var(--dark);
+            color: var(--white);
+            padding: 16px 28px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 3000;
+            font-weight: 600;
+            display: none;
+            animation: slideUp 0.3s ease;
+            border-left: 4px solid var(--primary);
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: rgba(255,255,255,0.7);
+            padding: 60px 40px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer h3 {
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .footer p {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Demo Announcement Bar -->
+    <div class="demo-bar">
+        <span>💡 WaaS Demo Website: Dit is een voorbeeld van een converterende, kant-en-klare klusbedrijf website.</span>
+        <a href="waas.html">← Terug naar WaaS Informatie</a>
+    </div>
+
+    <!-- Info Row -->
+    <div class="info-row">
+        <span>📞 +31 (0)20 420 1961</span>
+        <span>📍 Werkzaam in Amsterdam, Utrecht, Haarlem & regio</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            Klusbedrijf<span>De Valk</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#diensten">Onze Diensten</a></li>
+            <li><a href="#projecten">Laatste Projecten</a></li>
+            <li><a href="#offerte">Offerte Aanvragen</a></li>
+        </ul>
+        <a href="#offerte" class="btn btn-primary">Offerte aanvragen</a>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div>
+            <h1 class="hero-title">Uw klus, <span>onze passie.</span> Vakkundig & Snel.</h1>
+            <p class="hero-subtitle">Klusbedrijf De Valk staat garant voor hoogwaardige renovaties, badkamerverbouwingen en technisch onderhoud in Noord-Holland & Utrecht. Meer dan 15 jaar ervaring en 100% tevredenheidsgarantie.</p>
+            
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                <a href="#offerte" class="btn btn-primary">Ontvang Gratis Offerte</a>
+                <a href="#diensten" class="btn btn-outline">Bekijk Diensten</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>KLUSSEN AFGEROND</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>TEVREDEN KLANTEN</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5★</h3>
+                    <p>GOOGLE RATING</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual" id="offerte">
+            <div class="form-header">
+                <h3>Vraag direct een offerte aan</h3>
+                <p>Vul uw gegevens in en wij nemen binnen 24 uur contact op.</p>
+            </div>
+            <form id="leadForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Uw Naam</label>
+                    <input type="text" id="name" class="form-control" placeholder="Bijv. Jan de Vries" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefoonnummer</label>
+                    <input type="tel" id="tel" class="form-control" placeholder="Bijv. 06 12345678" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Type Werkzaamheid</label>
+                    <select id="service" class="form-control">
+                        <option value="badkamer">Badkamer & Sanitair</option>
+                        <option value="renovatie">Aanbouw & Renovatie</option>
+                        <option value="schilderwerk">Schilder- & Stucwerk</option>
+                        <option value="anders">Andere klus</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="desc">Projectomschrijving</label>
+                    <textarea id="desc" class="form-control" style="height: 80px;" placeholder="Beschrijf uw klus zo duidelijk mogelijk..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Offerte aanvragen</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="services-section" id="diensten">
+        <div class="section-title">
+            <h2>Onze Diensten</h2>
+            <p>Van kleine aanpassingen tot complete renovaties: wij leveren vakwerk onder één dak.</p>
+        </div>
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 12h16c1.1 0 2-.9 2-2V7c0-.55-.45-1-1-1h-3.5c-.28 0-.5-.22-.5-.5a2.5 2.5 0 0 0-5 0c0 .28-.22.5-.5.5H3c-.55 0-1 .45-1 1v3c0 1.1.9 2 2 2z"></path>
+                        <path d="M2 12v3a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5v-3"></path>
+                        <path d="M7 20v2"></path>
+                        <path d="M17 20v2"></path>
+                    </svg>
+                </div>
+                <h3>Badkamers & Sanitair</h3>
+                <p>Complete badkamerrenovaties van A tot Z. Installatie van sanitair, tegelwerk, leidingen en elektra.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <h3>Aanbouw & Renovatie</h3>
+                <p>Vergroting van uw leefruimte met een professionele aanbouw, dakkapel of zolderrenovatie.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 3h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+                        <path d="M4 6h16"></path>
+                        <path d="M12 9v9a2 2 0 0 0 2 2h3"></path>
+                        <path d="M19 17h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"></path>
+                    </svg>
+                </div>
+                <h3>Schilderwerk & Stucen</h3>
+                <p>Strakke muren en stucwerk van topkwaliteit, gecombineerd met duurzaam binnen- en buitenschilderwerk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects -->
+    <section class="portfolio-section" id="projecten">
+        <div class="portfolio-container">
+            <div class="section-title">
+                <h2>Laatste Projecten</h2>
+                <p>Trots op ons vakmanschap. Enkele recent opgeleverde klussen in de regio.</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <img src="/images/bathroom_renovation.png" alt="Moderne Badkamer Amsterdam" style="width: 100%; height: 240px; object-fit: cover;">
+                    <div class="portfolio-info">
+                        <span>Badkamer</span>
+                        <h3>Moderne Badkamer Amsterdam</h3>
+                        <p>Complete renovatie inclusief inloopdouche, zwevend toilet, luxe tegelwerk en vloerverwarming.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <img src="/images/kitchen_renovation.png" alt="Luxe Woonkeuken Haarlem" style="width: 100%; height: 240px; object-fit: cover;">
+                    <div class="portfolio-info">
+                        <span>Keuken</span>
+                        <h3>Luxe Woonkeuken Haarlem</h3>
+                        <p>Renovatie omgebouwd tot een exclusieve kookomgeving met eiland, eiken kasten en modernste apparatuur.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <img src="/images/house_extension.png" alt="Exclusieve Glazen Aanbouw Utrecht" style="width: 100%; height: 240px; object-fit: cover;">
+                    <div class="portfolio-info">
+                        <span>Aanbouw</span>
+                        <h3>Exclusieve Aanbouw Utrecht</h3>
+                        <p>Lichtovergoten uitbreiding van de woonkamer met slanke stalen profielen, HR+++ glas en houten vlonderterras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3>Klusbedrijf De Valk</h3>
+        <p>Kwalitatieve bouw, onderhoud en renovatie in heel Noord-Holland en Utrecht. KVK: 42019613.</p>
+        <p>&copy; 2026 Klusbedrijf De Valk. Volledig beheerd door TheGenAI.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/31204201961?text=Hallo%20Klusbedrijf%20De%20Valk,%20ik%20wil%20graag%20een%20offerte%20aanvragen." class="whatsapp-widget" target="_blank" title="Chat met ons via WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </a>
+
+    <!-- Action Feedback Toast -->
+    <div class="toast" id="feedbackToast">
+        Bedankt! Uw offerte-aanvraag is succesvol ontvangen.
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            
+            // Show toast
+            const toast = document.getElementById('feedbackToast');
+            toast.style.display = 'block';
+            
+            // Clear inputs
+            document.getElementById('leadForm').reset();
+            
+            // Hide toast after 4s
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 4000);
+        }
+    </script>
+
+</body>
+
+</html>
