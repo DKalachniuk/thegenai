@@ -65,6 +65,15 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/8-hour-mvp-guide" />
     </url>
     <url>
+        <loc>https://thegenai.nl/waas</loc>
+        <lastmod>2026-05-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/waas" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/waas?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/waas" />
+    </url>
+    <url>
         <loc>https://thegenai.nl/privacy</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>

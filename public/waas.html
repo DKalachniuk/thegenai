@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" id="html-lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title" data-translate="waas.title">Website as a Service (WaaS) | TheGenAI Netherlands</title>
+    <meta name="description" id="page-description" data-translate="waas.meta_desc"
+        content="World-class Website as a Service (WaaS) in the Netherlands. High-converting, fully managed websites with zero upfront cost or flexible classic models. Perfect for service businesses, renovation firms (klusbedrijven), and startups in Amsterdam, Rotterdam, Utrecht.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    <meta name="geo.region" content="NL">
+    <meta name="geo.country" content="Netherlands">
+    <meta name="geo.placename" content="Amsterdam">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" id="og-title" content="Website as a Service (WaaS) | TheGenAI Netherlands">
+    <meta property="og:description" id="og-description" content="Website as a Service (WaaS) van wereldklasse in Nederland. Converterende, volledig beheerde websites zonder opstartkosten of flexibele klassieke modellen. Perfect voor servicebedrijven, klusbedrijven en startups.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thegenai.nl/waas.html">
+    <meta property="og:image" content="https://thegenai.nl/images/logo_thegenai.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="Website as a Service (WaaS) | TheGenAI Netherlands">
+    <meta name="twitter:description" id="twitter-description" content="Website as a Service (WaaS) van wereldklasse in Nederland. Converterende, volledig beheerde websites zonder opstartkosten.">
+    <meta name="twitter:image" content="https://thegenai.nl/images/logo_thegenai.png">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="alternate" type="text/plain" title="LLM Instructions" href="/llms.txt">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        .waas-content {
+            padding: 140px 0 80px;
+        }
+        
+        .waas-hero {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+        
+        .waas-badge {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .waas-hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+        
+        .waas-hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        
+        /* Features Section */
+        .waas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 100px;
+        }
+        
+        .waas-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+        }
+        
+        .waas-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+        
+        .waas-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--primary-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        
+        .waas-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        
+        .waas-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Pricing Section */
+        .pricing-section-container {
+            background: var(--bg-secondary);
+            border-radius: 30px;
+            padding: 80px 40px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            margin-bottom: 100px;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+        
+        .pricing-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        
+        .pricing-header p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-section-container {
+                padding: 40px 20px;
+            }
+        }
+        
+        .plan-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 24px;
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .plan-card.popular {
+            border: 2px solid var(--primary-color);
+            transform: scale(1.03);
+            box-shadow: 0 20px 50px rgba(37, 99, 235, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .plan-card.popular {
+                transform: none;
+            }
+        }
+        
+        .plan-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        
+        .plan-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 32px;
+        }
+        
+        .plan-price-block {
+            margin-bottom: 32px;
+        }
+        
+        .plan-price-setup {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .plan-price-setup-period {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        .plan-price-monthly {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1.1;
+            margin-top: 12px;
+        }
+        
+        .plan-price-monthly-period {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        .plan-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            min-height: 72px;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin-bottom: 40px;
+            flex-grow: 1;
+        }
+        
+        .plan-features li {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .plan-features svg {
+            color: #10b981;
+            flex-shrink: 0;
+        }
+        
+        /* FAQ section styling */
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-section h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 24px 0;
+        }
+        
+        .faq-question {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .navbar {
+            background: rgba(15, 23, 42, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;"><span class="logo-text">The GenAI</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link" data-translate="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link" data-translate="nav.about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog/" class="nav-link" data-translate="nav.blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container waas-content">
+        <!-- Hero Section -->
+        <div class="waas-hero">
+            <span class="waas-badge" data-translate="waas.hero.badge">🚀 All-Inclusive Managed Websites</span>
+            <h1 data-translate="waas.hero.title">Bespoke Websites. Zero Upfront Costs.</h1>
+            <p data-translate="waas.hero.subtitle">Get a world-class, premium website that generates leads, handles booking inquiries, and functions beautifully. Fully managed, optimized for SEO/GEO, with optional zero downpayment.</p>
+            <div style="display: flex; gap: 16px; justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary" data-translate="waas.cta.get_started">Get Your Offerte Now</a>
+                <a href="#pricing" class="btn btn-secondary" style="color: var(--primary-color); border-color: rgba(37, 99, 235, 0.2);" data-translate="waas.cta.explore">Explore Pricing Models</a>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="waas-grid">
+            <!-- Feature 1 -->
+            <div class="waas-card">
+                <div class="waas-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h3 data-translate="waas.feature.whatsapp.title">Direct WhatsApp Integration</h3>
+                <p data-translate="waas.feature.whatsapp.desc">A floating, high-conversion WhatsApp widget allows clients to text you immediately, reducing booking friction by up to 40%.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="waas-card">
+                <div class="waas-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h3 data-translate="waas.feature.offerte.title">Smart "Offerte aanvragen" Forms</h3>
+                <p data-translate="waas.feature.offerte.desc">Easy-to-use estimation request forms designed for high response rates. Get qualified leads straight to your inbox.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="waas-card">
+                <div class="waas-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </div>
+                <h3 data-translate="waas.feature.seo.title">Generative Engine & SEO Optimized</h3>
+                <p data-translate="waas.feature.seo.desc">Built from the ground up to rank high on Google and be recommended by LLMs like ChatGPT, Gemini, and Claude.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="waas-card">
+                <div class="waas-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </div>
+                <h3 data-translate="waas.feature.support.title">The WhatsApp Content Feature</h3>
+                <p data-translate="waas.feature.support.desc">Completed a new project? Just WhatsApp us the photos and text from the job site. We will format and publish them beautifully within 24 hours!</p>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div id="pricing" class="pricing-section-container">
+            <div class="pricing-header">
+                <h2 data-translate="waas.pricing.title">Simple, Transparent Pricing</h2>
+                <p data-translate="waas.pricing.subtitle">Choose the model that fits your cash flow. Both options include premium design, responsiveness, and top-tier performance.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Option 1: Classic -->
+                <div class="plan-card">
+                    <h3 class="plan-name" data-translate="waas.plan.classic.title">Classic Model</h3>
+                    <p class="plan-subtitle" data-translate="waas.plan.classic.subtitle">One-off payment + basic maintenance</p>
+                    
+                    <div class="plan-price-block">
+                        <div class="plan-price-setup">
+                            <span data-translate="waas.plan.classic.setup_price">€399 – €499</span>
+                            <span class="plan-price-setup-period" data-translate="waas.plan.classic.setup_period">one-off setup</span>
+                        </div>
+                        <div class="plan-price-monthly">
+                            <span data-translate="waas.plan.classic.monthly_price">€39.99</span>
+                            <span class="plan-price-monthly-period" data-translate="waas.plan.classic.monthly_period">per month</span>
+                        </div>
+                    </div>
+                    
+                    <p class="plan-desc" data-translate="waas.plan.classic.desc">Ideal for businesses wanting full codebase ownership from day one, with low ongoing maintenance costs.</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.classic.feat1">Complete ownership of design & code</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.classic.feat2">Premium hosting & SSL security</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.classic.feat3">Official .nl or .com domain registration</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.classic.feat4">Regular technical & plug-in updates</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.classic.feat5">Basic content changes self-managed</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="index.html#contact" class="btn btn-secondary" style="margin-top: auto; color: var(--text-primary);" data-translate="waas.cta.get_started">Get Started</a>
+                </div>
+
+                <!-- Option 2: WaaS -->
+                <div class="plan-card popular">
+                    <span class="plan-badge">Highly Recommended</span>
+                    <h3 class="plan-name" data-translate="waas.plan.waas.title">Website as a Service (WaaS)</h3>
+                    <p class="plan-subtitle" data-translate="waas.plan.waas.subtitle">Zero downpayment + full management</p>
+                    
+                    <div class="plan-price-block">
+                        <div class="plan-price-setup">
+                            <span data-translate="waas.plan.waas.setup_price">€0</span>
+                            <span class="plan-price-setup-period" data-translate="waas.plan.waas.setup_period">zero downpayment</span>
+                        </div>
+                        <div class="plan-price-monthly">
+                            <span data-translate="waas.plan.waas.monthly_price">€79.99</span>
+                            <span class="plan-price-monthly-period" data-translate="waas.plan.waas.monthly_period">per month</span>
+                        </div>
+                    </div>
+                    
+                    <p class="plan-desc" data-translate="waas.plan.waas.desc">The ultimate hassle-free solution. We design, host, protect, and continuously update your website while you focus on your business.</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.waas.feat1">€0 starting downpayment (Zero upfront risk)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.waas.feat2">All-inclusive premium cloud hosting & SSL</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.waas.feat3">Weekly secure cloud backups & spam defense</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.waas.feat4">WhatsApp Content Support (15-20 min/mo included)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-translate="waas.plan.waas.feat5">Flexible 12 or 24-month contract terms</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: auto;" data-translate="waas.cta.get_started">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 data-translate="waas.faq.title">WaaS Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3 class="faq-question" data-translate="waas.faq.q1">What is Website as a Service (WaaS)?</h3>
+                <p class="faq-answer" data-translate="waas.faq.a1">WaaS is an all-inclusive subscription model. Instead of paying thousands of euros upfront for design and development, you pay a flat monthly fee. We build, host, secure, and update the site for you.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question" data-translate="waas.faq.q2">What is the commitment period for Option 2 (WaaS)?</h3>
+                <p class="faq-answer" data-translate="waas.faq.a2">Option 2 is built on a minimum contract of 12 or 24 months. If you wish to terminate early, the website remains the property of TheGenAI, or you can purchase it for the standard one-off development price (€499).</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question" data-translate="waas.faq.q3">How does the WhatsApp Content Support work?</h3>
+                <p class="faq-answer" data-translate="waas.faq.a3">It's our killer support feature! If you finish a project, renovate a house, or paint a room, just send us the photos and a brief description directly on WhatsApp. We will format them and upload them beautifully to your website portfolio section within 24 hours.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question" data-translate="waas.faq.q4">Are the websites optimized for Google and AI search engines?</h3>
+                <p class="faq-answer" data-translate="waas.faq.a4">Absolutely. Every site we build is highly optimized using Generative Engine Optimization (GEO) and standard SEO practices. This ensures search engines and AI assistants (like ChatGPT or Claude) easily read, cite, and recommend your services.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo">
+                    <p data-translate="footer.description">Creating intelligent solutions for tomorrow's challenges.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-translate="footer.services.title">Services</h4>
+                        <ul>
+                            <li><a href="index.html#services" data-translate="footer.services.workshop">AI Workshops</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.consulting">AI Consulting</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.dev">Software Development</a></li>
+                            <li><a href="waas.html" data-translate="services.waas.title">Website as a Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-translate="footer.company.title">Company</h4>
+                        <ul>
+                            <li><a href="index.html#about" data-translate="nav.about">About Us</a></li>
+                            <li><a href="index.html#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                            <li><a href="index.html#contact" data-translate="nav.contact">Contact</a></li>
+                            <li><a href="privacy.html" data-translate="footer.privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-translate="footer.social.title">Connect</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/company/112309922" target="_blank" data-translate="footer.social.linkedin_company">LinkedIn (Company)</a></li>
+                            <li><a href="https://www.linkedin.com/in/dima-kalachniuk-0b07b368" target="_blank" data-translate="footer.social.linkedin_founder">LinkedIn (Founder)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2026 TheGenAI. All rights reserved. KVK 42019613</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="8225d3b1-0a45-4c33-9346-ca32ebf3e4ba"></script>
+</body>
+
+</html>
