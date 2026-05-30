@@ -14,17 +14,38 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 }));
 
 // Smooth scrolling for navigation links
+// Guard: if we're on the file:// directory index (no .html in pathname) and a hash
+// link is clicked, redirect to index.html#hash so the page actually loads.
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offsetTop = target.offsetTop - 60; // Account for fixed navbar
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
+        e.stopPropagation();
+
+        const hash = this.getAttribute('href');
+        if (!hash || hash === '#') return;
+
+        // file:// edge-case: if path doesn't end in .html, we're on a directory URL
+        if (window.location.protocol === 'file:' && !window.location.pathname.endsWith('.html')) {
+            window.location.href = 'index.html' + hash;
+            return;
         }
+
+        const target = document.querySelector(hash);
+        if (!target) {
+            // Target section doesn't exist on this page (e.g. we're on the blog page).
+            // Navigate to the home page and let the browser jump to the section.
+            if (window.location.protocol === 'file:') {
+                // Go one directory up to reach public/index.html
+                window.location.href = '../index.html' + hash;
+            } else {
+                // HTTP: navigate to the site root with the hash
+                window.location.href = window.location.origin + '/' + hash;
+            }
+            return;
+        }
+
+        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 60;
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     });
 });
 
@@ -530,3 +551,66 @@ document.addEventListener('click', (e) => {
         });
     }
 });
+
+// ─── Scroll-to-top button ───
+const scrollTopBtn = document.getElementById('scroll-top-btn');
+if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    }, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// ─── Active nav link on scroll ───
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            const activeLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+            if (activeLink) activeLink.classList.add('active');
+        }
+    });
+}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+sections.forEach(s => sectionObserver.observe(s));
+
+// ─── Animated counters ───
+function animateCounter(el) {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+
+    function step(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease-out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+

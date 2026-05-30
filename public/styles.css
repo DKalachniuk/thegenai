@@ -685,13 +685,11 @@ section {
 }
 
 .portfolio-showcase {
-    max-width: 1000px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
     position: relative;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
 }
 
 .portfolio-item {
@@ -710,17 +708,20 @@ section {
 }
 
 .portfolio-image {
-    height: 300px;
+    height: 200px;
     background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .project-preview {
     width: 80%;
     max-width: 600px;
+    transform: scale(0.85);
+    transform-origin: center center;
 }
 
 .browser-mockup {
@@ -1205,43 +1206,45 @@ section {
 }
 
 .portfolio-content {
-    padding: 40px;
+    padding: 24px;
 }
 
 .portfolio-content h3 {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #1d1d1f;
 }
 
 .portfolio-category {
-    font-size: 17px;
+    font-size: 13px;
     color: #2563eb;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .portfolio-content p {
-    font-size: 19px;
+    font-size: 15px;
     color: #6e6e73;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .portfolio-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 32px;
+    gap: 8px;
+    margin-bottom: 16px;
 }
 
 .tech-tag {
     background: #f5f5f7;
     color: #1d1d1f;
-    padding: 8px 16px;
+    padding: 5px 12px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
@@ -1764,6 +1767,10 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .portfolio-showcase {
+        grid-template-columns: 1fr;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1953,5 +1960,133 @@ section {
 
     .hero-title {
         color: #000;
+    }
+}
+
+/* ─── Hero text highlights ─── */
+.hero-highlight {
+    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.hero-accent {
+    display: inline-block;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    position: relative;
+}
+
+.hero-accent::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+/* ─── Section label pills ─── */
+.section-label {
+    display: inline-block;
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563eb;
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+/* ─── Nav active link ─── */
+.nav-link.active {
+    color: #60a5fa !important;
+}
+
+.nav-link.active::after {
+    width: 100% !important;
+}
+
+.navbar.scrolled .nav-link.active {
+    color: #2563eb !important;
+}
+
+/* ─── Service card top-border accent ─── */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+    border-radius: 16px 16px 0 0;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: left;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Process step connector removed — was appearing above cards */
+
+/* ─── Scroll-to-top button ─── */
+#scroll-top-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(16px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+    z-index: 999;
+}
+
+#scroll-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#scroll-top-btn:hover {
+    background: #1d4ed8;
+    box-shadow: 0 8px 28px rgba(37, 99, 235, 0.45);
+    transform: translateY(-3px);
+}
+
+#scroll-top-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    #scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
     }
 }
