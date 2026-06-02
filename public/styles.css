@@ -227,6 +227,7 @@ textarea:focus-visible {
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -463,7 +464,7 @@ textarea:focus-visible {
 
 .main-code pre {
     font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size: 15px;
+    font-size: 13.5px;
     line-height: 1.7;
     color: #cbd5e1;
     overflow-x: auto;
@@ -1667,6 +1668,7 @@ section {
         flex-direction: column;
         background-color: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -2088,5 +2090,195 @@ section {
         right: 20px;
         width: 44px;
         height: 44px;
+    }
+}
+
+/* Book Promo Section Styles */
+.book-promo {
+    background: var(--bg-secondary);
+    position: relative;
+    padding: 100px 0;
+}
+
+.book-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 28px;
+    padding: 60px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.book-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.book-cover-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 280px;
+    height: 380px;
+}
+
+.book-cover {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 6px 16px 16px 6px;
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.25), 
+                -2px 0 5px rgba(0, 0, 0, 0.05);
+    transform: rotateY(-20deg) rotateX(5deg);
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.book-cover-container:hover .book-cover {
+    transform: rotateY(-5deg) rotateX(2deg) scale(1.03);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.book-spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px 0 0 6px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+.book-title-overlay {
+    padding: 32px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.book-badge {
+    background: #2563eb;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.book-title-overlay h2 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: white;
+    margin: 20px 0 8px;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.book-title-overlay p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.book-author {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3b82f6;
+    letter-spacing: 0.5px;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.book-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.2;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.book-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.book-description {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.book-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.benefit-item svg {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.book-btn {
+    padding: 16px 36px;
+    font-size: 16px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+@media (max-width: 992px) {
+    .book-card {
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+    }
+    .book-cover-container {
+        width: 240px;
+        height: 330px;
     }
 }

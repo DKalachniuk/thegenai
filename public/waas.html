@@ -28,9 +28,9 @@
     <meta name="twitter:description" id="twitter-description" content="Website as a Service (WaaS) van wereldklasse in Nederland. Converterende, volledig beheerde websites zonder opstartkosten.">
     <meta name="twitter:image" content="https://thegenai.nl/images/logo_thegenai.png">
 
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="alternate" type="text/plain" title="LLM Instructions" href="/llms.txt">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="alternate" type="text/plain" title="LLM Instructions" href="llms.txt">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
@@ -315,6 +315,144 @@
         .navbar {
             background: rgba(15, 23, 42, 0.9);
         }
+        
+        /* Bookkeeping Partner Section */
+        .partner-card {
+            background: #ffffff;
+            border: 1px dashed var(--primary-color);
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.02);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        
+        .partner-info {
+            flex: 1;
+        }
+        
+        .partner-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .partner-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+        
+        .partner-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        .partner-pricing {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .partner-price-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .partner-price-item svg {
+            color: #10b981;
+            flex-shrink: 0;
+        }
+        
+        .partner-cta-container {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+        
+        .partner-ua-promo {
+            font-size: 0.85rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            text-align: left;
+            max-width: 320px;
+        }
+        
+        .partner-ua-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .partner-ua-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .partner-ua-list li {
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+        
+        .partner-ua-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .partner-card {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 30px 20px;
+                gap: 30px;
+            }
+            
+            .partner-cta-container {
+                align-items: center;
+                text-align: center;
+            }
+            
+            .partner-ua-promo {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -323,26 +461,26 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="/index.html" style="text-decoration: none;"><span class="logo-text">The GenAI</span></a>
+                <a href="index.html" style="text-decoration: none;"><span class="logo-text">The GenAI</span></a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="/index.html#home" class="nav-link" data-translate="nav.home">Home</a>
+                    <a href="index.html#home" class="nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/index.html#about" class="nav-link" data-translate="nav.about">About</a>
+                    <a href="index.html#about" class="nav-link" data-translate="nav.about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                    <a href="index.html#services" class="nav-link" data-translate="nav.services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/index.html#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
+                    <a href="index.html#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/blog/" class="nav-link" data-translate="nav.blog">Blog</a>
+                    <a href="blog/" class="nav-link" data-translate="nav.blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                    <a href="index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
@@ -363,8 +501,8 @@
             <h1 data-translate="waas.hero.title">Bespoke Websites. Zero Upfront Costs.</h1>
             <p data-translate="waas.hero.subtitle">Get a world-class, premium website that generates leads, handles booking inquiries, and functions beautifully. Fully managed, optimized for SEO/GEO, with optional zero downpayment.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="/index.html#contact" class="btn btn-primary" data-translate="waas.cta.get_started">Get Your Offerte Now</a>
-                <a href="/example-klusbedrijf.html" class="btn btn-outline" style="border-color: var(--primary-color); color: var(--primary-color);" data-translate="waas.cta.view_example">View Live Demo Website</a>
+                <a href="index.html#contact" class="btn btn-primary" data-translate="waas.cta.get_started">Get Your Offerte Now</a>
+                <a href="example-klusbedrijf.html" class="btn btn-outline" style="border-color: var(--primary-color); color: var(--primary-color);" data-translate="waas.cta.view_example">View Live Demo Website</a>
                 <a href="#pricing" class="btn btn-secondary" style="color: var(--text-secondary); border-color: rgba(0, 0, 0, 0.1);" data-translate="waas.cta.explore">Explore Pricing Models</a>
             </div>
         </div>
@@ -470,7 +608,7 @@
                         </li>
                     </ul>
                     
-                    <a href="/index.html#contact" class="btn btn-secondary" style="margin-top: auto; color: var(--text-primary);" data-translate="waas.cta.get_started">Get Started</a>
+                    <a href="index.html#contact" class="btn btn-secondary" style="margin-top: auto; color: var(--text-primary);" data-translate="waas.cta.get_started">Get Started</a>
                 </div>
 
                 <!-- Option 2: WaaS -->
@@ -515,7 +653,26 @@
                         </li>
                     </ul>
                     
-                    <a href="/index.html#contact" class="btn btn-primary" style="margin-top: auto;" data-translate="waas.cta.get_started">Get Started</a>
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: auto;" data-translate="waas.cta.get_started">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Partner Bookkeeping Card -->
+            <div class="partner-card">
+                <div class="partner-info">
+                    <span class="partner-badge" data-translate="waas.partner.badge">Official Bookkeeping Partner</span>
+                    <h3 class="partner-title" data-translate="waas.partner.title">Need Help with ZZP/EMZ Bookkeeping & Registration?</h3>
+                    <p class="partner-subtitle" data-translate="waas.partner.subtitle">We have partnered with TaxUA to make running your business in the Netherlands simple.</p>
+                </div>
+                <div class="partner-cta-container">
+                    <div class="partner-ua-promo">
+                        <div class="partner-ua-title" data-translate="waas.partner.promo_title">Exclusive Partner Offer:</div>
+                        <ul class="partner-ua-list">
+                            <li data-translate="waas.partner.item1">EMZ/ZZP Bookkeeping: From €50 / month</li>
+                            <li data-translate="waas.partner.item2">EMZ/ZZP Registration: Free**</li>
+                        </ul>
+                    </div>
+                    <a href="https://taxua.nl/" target="_blank" class="btn btn-outline" style="border-color: var(--primary-color); color: var(--primary-color); padding: 12px 24px; font-weight: 700; text-decoration: none; display: inline-block; border-radius: 12px;" data-translate="waas.partner.link_text">Visit TaxUA.nl</a>
                 </div>
             </div>
         </div>
@@ -551,27 +708,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="/images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo">
+                    <img src="images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo">
                     <p data-translate="footer.description">Creating intelligent solutions for tomorrow's challenges.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 data-translate="footer.services.title">Services</h4>
                         <ul>
-                            <li><a href="/index.html#services" data-translate="footer.services.workshop">AI Workshops</a></li>
-                            <li><a href="/index.html#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
-                            <li><a href="/index.html#services" data-translate="footer.services.consulting">AI Consulting</a></li>
-                            <li><a href="/index.html#services" data-translate="footer.services.dev">Software Development</a></li>
-                            <li><a href="/waas.html" data-translate="services.waas.title">Website as a Service</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.workshop">AI Workshops</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.consulting">AI Consulting</a></li>
+                            <li><a href="index.html#services" data-translate="footer.services.dev">Software Development</a></li>
+                            <li><a href="waas.html" data-translate="services.waas.title">Website as a Service</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4 data-translate="footer.company.title">Company</h4>
                         <ul>
-                            <li><a href="/index.html#about" data-translate="nav.about">About Us</a></li>
-                            <li><a href="/index.html#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
-                            <li><a href="/index.html#contact" data-translate="nav.contact">Contact</a></li>
-                            <li><a href="/privacy.html" data-translate="footer.privacy">Privacy Policy</a></li>
+                            <li><a href="index.html#about" data-translate="nav.about">About Us</a></li>
+                            <li><a href="index.html#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                            <li><a href="index.html#contact" data-translate="nav.contact">Contact</a></li>
+                            <li><a href="privacy.html" data-translate="footer.privacy">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -589,8 +746,8 @@
         </div>
     </footer>
 
-    <script src="/translations.js"></script>
-    <script src="/script.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js"

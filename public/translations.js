@@ -32,6 +32,16 @@ const translations = {
         'about.stats.projects': 'Projects Completed',
         'about.stats.clients': 'Happy Clients',
 
+        // Book section
+        'book.label': 'NEW BOOK RELEASE',
+        'book.title': 'Practical Vibecoding with Prompts',
+        'book.subtitle': 'How I Built a Real SaaS with AI',
+        'book.description': 'Woonprijs.nl is a live, revenue-generating platform with real paying users. This book shares the exact, production-tested prompts and playbook I used to build it from scratch as a solo builder.',
+        'book.benefit1': '55 production-tested prompts (APIs, UI, Stripe, auth, and more)',
+        'book.benefit2': 'Real-world case study: How Woonprijs.nl was built step-by-step',
+        'book.benefit3': 'No fluff: Actual mistakes, bugs, and real AI fixes included',
+        'book.cta': 'Buy on Gumroad',
+
         // Services section
         'services.title': 'Our AI Solutions',
         'services.subtitle': 'Comprehensive AI services designed to accelerate your business growth',
@@ -96,6 +106,14 @@ const translations = {
         'waas.plan.waas.feat4': 'WhatsApp Content Support (15-20 min/mo included)',
         'waas.plan.waas.feat5': 'Flexible 12 or 24-month contract terms',
         
+        'waas.partner.badge': 'Official Bookkeeping Partner',
+        'waas.partner.title': 'Need Help with ZZP/EMZ Bookkeeping & Registration?',
+        'waas.partner.subtitle': 'We have partnered with TaxUA to make running your business in the Netherlands simple.',
+        'waas.partner.promo_title': 'Exclusive Partner Offer:',
+        'waas.partner.item1': 'EMZ/ZZP Bookkeeping: From €50 / month',
+        'waas.partner.item2': 'EMZ/ZZP Registration: Free**',
+        'waas.partner.link_text': 'Visit TaxUA.nl',
+
         'waas.faq.title': 'WaaS Frequently Asked Questions',
         'waas.faq.q1': 'What is Website as a Service (WaaS)?',
         'waas.faq.a1': 'WaaS is an all-inclusive subscription model. Instead of paying thousands of euros upfront for design and development, you pay a flat monthly fee. We build, host, secure, and update the site for you.',
@@ -283,6 +301,16 @@ const translations = {
         'about.stats.projects': 'Projecten Voltooid',
         'about.stats.clients': 'Tevreden Klanten',
 
+        // Book section
+        'book.label': 'NIEUW BOEK UITGEBRACHT',
+        'book.title': 'Practical Vibecoding with Prompts',
+        'book.subtitle': 'How I Built a Real SaaS with AI',
+        'book.description': 'Woonprijs.nl is een live platform met betalende gebruikers. Dit boek deelt de exacte, in de praktijk geteste prompts en het playbook dat ik heb gebruikt om het vanaf nul op te bouwen als solo-ontwikkelaar.',
+        'book.benefit1': '55 in de praktijk geteste prompts (APIs, UI, Stripe, auth, enz.)',
+        'book.benefit2': 'Echte case study: Hoe Woonprijs.nl stap-voor-stap is gebouwd',
+        'book.benefit3': 'Geen onzin: Inclusief echte fouten, bugs en concrete AI-oplossingen',
+        'book.cta': 'Koop op Gumroad',
+
         // Services section
         'services.title': 'Onze AI Oplossingen',
         'services.subtitle': 'Uitgebreide AI-diensten ontworpen om uw bedrijfsgroei te versnellen',
@@ -347,6 +375,14 @@ const translations = {
         'waas.plan.waas.feat4': 'WhatsApp Content Support (15-20 min/mnd inbegrepen)',
         'waas.plan.waas.feat5': 'Flexibele contracten van 12 of 24 maanden',
         
+        'waas.partner.badge': 'Officiële Boekhoudpartner',
+        'waas.partner.title': 'Hulp nodig met uw ZZP/EMZ boekhouding & registratie?',
+        'waas.partner.subtitle': 'We zijn een samenwerking aangegaan met TaxUA om het runnen van uw bedrijf in Nederland eenvoudig te maken.',
+        'waas.partner.promo_title': 'Exclusieve Partneraanbieding:',
+        'waas.partner.item1': 'EMZ/ZZP Boekhouding: Vanaf €50 / maand',
+        'waas.partner.item2': 'EMZ/ZZP Registratie: Gratis**',
+        'waas.partner.link_text': 'Bezoek TaxUA.nl',
+
         'waas.faq.title': 'Veelgestelde vragen over WaaS',
         'waas.faq.q1': 'Wat is Website as a Service (WaaS)?',
         'waas.faq.a1': 'WaaS is een all-in-one abonnement. In plaats van duizenden euro\'s vooraf te betalen voor ontwerp en ontwikkeling, betaalt u een vast maandelijks bedrag. Wij bouwen, hosten, beveiligen en updaten de site voor u.',
