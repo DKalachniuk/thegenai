@@ -2440,15 +2440,6 @@ section {
     }
 }
 
-/* ── IntersectionObserver Fallback for non-supporting browsers ── */
-.scroll-reveal,
-.scroll-stagger > *,
-.scroll-scale,
-.scroll-slide-left,
-.scroll-slide-right {
-    /* Base: hidden until JS reveals */
-}
-
 /* ── 3D Magnetic Tilt Cards ── */
 .tilt-card {
     transform-style: preserve-3d;
