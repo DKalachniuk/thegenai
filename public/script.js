@@ -81,9 +81,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
+// Observe elements for animation (legacy — hero and contact only;
+// service-card, portfolio-item, stat, about-text now use CSS scroll-driven animations)
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.service-card, .portfolio-item, .stat, .about-text, .contact-info');
+    const animateElements = document.querySelectorAll('.contact-info');
     
     animateElements.forEach(el => {
         observer.observe(el);

@@ -212,6 +212,9 @@
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -251,6 +254,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Animated background orbs -->
+        <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+        <!-- Neural network canvas -->
+        <canvas id="neural-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title" data-translate="hero.title">AI Solutions That <span class="hero-highlight">Transform</span> Business</h1>
@@ -308,7 +317,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                     difference</p>
             </div>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text scroll-slide-left">
                     <h3 data-translate="about.heading">Transforming Ideas into Intelligence</h3>
                     <p data-translate="about.text1">At TheGenAI, we specialize in developing cutting-edge artificial
                         intelligence solutions tailored to meet the unique needs of businesses and individuals. Our team
@@ -318,7 +327,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                         innovation across various industries.</p>
                 </div>
                 <div class="about-stats">
-                    <div class="stat">
+                    <div class="stat scroll-scale">
                         <h4><span class="counter" data-target="50" data-suffix="+">50+</span></h4>
                         <p data-translate="about.stats.projects">Projects Completed</p>
                     </div>
@@ -380,8 +389,8 @@ Workshops.<span class="token-function">trainTeam</span>({
                 <p data-translate="services.subtitle">Comprehensive AI services designed to accelerate your business
                     growth</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
+            <div class="services-grid scroll-stagger">
+                <div class="service-card shimmer-card tilt-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -395,7 +404,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                     <p data-translate="services.workshop.description">Empower your team with hands-on training to build
                         AI prototypes and real-world projects in interactive sessions.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card shimmer-card tilt-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -407,7 +416,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                     <p data-translate="services.prototype.description">Hire us to design and build a working AI
                         prototype for your future project in just 8 hours.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card shimmer-card tilt-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -422,7 +431,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                     <p data-translate="services.consulting.description">Strategic guidance to help you identify AI
                         opportunities and develop a comprehensive AI roadmap.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card shimmer-card tilt-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -435,7 +444,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                     <p data-translate="services.dev.description">Custom software solutions powered by AI to automate
                         workflows and enhance user experiences.</p>
                 </div>
-                <div class="service-card" onclick="window.location.href='waas.html'" style="cursor: pointer; position: relative; border: 1px dashed var(--primary-color);">
+                <div class="service-card shimmer-card tilt-card" onclick="window.location.href='waas.html'" style="cursor: pointer; position: relative; border: 1px dashed var(--primary-color);">
                     <div style="position: absolute; top: 12px; right: 12px; background: var(--primary-color); color: white; font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">New</div>
                     <div class="service-icon" style="color: var(--primary-color); background: rgba(37, 99, 235, 0.1);">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -460,7 +469,7 @@ Workshops.<span class="token-function">trainTeam</span>({
                 <h2 data-translate="process.title">How It Works</h2>
                 <p data-translate="process.subtitle">From idea to working prototype in a single day.</p>
             </div>
-            <div class="process-steps">
+            <div class="process-steps scroll-stagger">
                 <div class="process-step">
                     <div class="step-header">
                         <div class="step-number">01</div>
@@ -507,8 +516,8 @@ Workshops.<span class="token-function">trainTeam</span>({
                 <h2 data-translate="portfolio.title">Featured Portfolio</h2>
                 <p data-translate="portfolio.subtitle">Real-world AI solutions that deliver measurable results</p>
             </div>
-            <div class="portfolio-showcase">
-                <div class="portfolio-item featured">
+            <div class="portfolio-showcase scroll-stagger">
+                <div class="portfolio-item featured shimmer-card">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);">
                         <div class="project-preview">
                             <div class="browser-mockup">
@@ -1223,6 +1232,270 @@ Workshops.<span class="token-function">trainTeam</span>({
             }
         });
     </script>
+
+    <!-- ═══════════════════════════════════════════════
+         Modern Animation Engine — TheGenAI 2026
+         ═══════════════════════════════════════════════ -->
+    <script>
+    (function() {
+        'use strict';
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* ── 1. Scroll Progress Bar ── */
+        const progressBar = document.getElementById('scroll-progress');
+        if (progressBar) {
+            const updateProgress = () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                progressBar.style.width = pct + '%';
+            };
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            updateProgress();
+        }
+
+        /* ── 2. Neural Network Canvas ── */
+        function initNeuralCanvas() {
+            if (prefersReducedMotion) return;
+            const canvas = document.getElementById('neural-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            let W, H, nodes, animId;
+            const NODE_COUNT = 55;
+            const MAX_DIST = 160;
+
+            function resize() {
+                W = canvas.width  = canvas.offsetWidth;
+                H = canvas.height = canvas.offsetHeight;
+            }
+
+            function createNodes() {
+                nodes = Array.from({ length: NODE_COUNT }, () => ({
+                    x:  Math.random() * W,
+                    y:  Math.random() * H,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    r:  Math.random() * 1.8 + 0.8,
+                    opacity: Math.random() * 0.5 + 0.3,
+                }));
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+
+                // Update positions
+                for (const n of nodes) {
+                    n.x += n.vx;
+                    n.y += n.vy;
+                    if (n.x < 0 || n.x > W) n.vx *= -1;
+                    if (n.y < 0 || n.y > H) n.vy *= -1;
+                }
+
+                // Draw connections
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < MAX_DIST) {
+                            const alpha = (1 - dist / MAX_DIST) * 0.4;
+                            ctx.beginPath();
+                            ctx.strokeStyle = `rgba(96, 165, 250, ${alpha})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.moveTo(nodes[i].x, nodes[i].y);
+                            ctx.lineTo(nodes[j].x, nodes[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                // Draw nodes
+                for (const n of nodes) {
+                    ctx.beginPath();
+                    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(147, 197, 253, ${n.opacity})`;
+                    ctx.fill();
+                }
+
+                animId = requestAnimationFrame(draw);
+            }
+
+            // Only run canvas when hero is in viewport
+            const heroSection = document.querySelector('#home');
+            const canvasObserver = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                        if (!animId) draw();
+                    } else {
+                        cancelAnimationFrame(animId);
+                        animId = null;
+                    }
+                }
+            }, { threshold: 0 });
+
+            resize();
+            createNodes();
+            draw();
+            if (heroSection) canvasObserver.observe(heroSection);
+            window.addEventListener('resize', () => { resize(); }, { passive: true });
+        }
+
+        /* ── 3. 3D Magnetic Tilt on Cards ── */
+        function initTiltCards() {
+            if (prefersReducedMotion || window.innerWidth <= 768) return;
+
+            document.querySelectorAll('.tilt-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const cx = rect.left + rect.width  / 2;
+                    const cy = rect.top  + rect.height / 2;
+                    const dx = (e.clientX - cx) / (rect.width  / 2);
+                    const dy = (e.clientY - cy) / (rect.height / 2);
+                    const maxTilt = 10;
+                    card.style.transform = `perspective(800px) rotateX(${-dy * maxTilt}deg) rotateY(${dx * maxTilt}deg) translateY(-4px)`;
+                }, { passive: true });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                }, { passive: true });
+            });
+        }
+
+        /* ── 4. Magnetic Buttons ── */
+        function initMagneticButtons() {
+            if (prefersReducedMotion || window.innerWidth <= 768) return;
+
+            document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+                btn.classList.add('btn-magnetic');
+
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const cx = rect.left + rect.width  / 2;
+                    const cy = rect.top  + rect.height / 2;
+                    const dx = (e.clientX - cx) / (rect.width  / 2);
+                    const dy = (e.clientY - cy) / (rect.height / 2);
+                    btn.style.transform = `translate(${dx * 6}px, ${dy * 6}px)`;
+                }, { passive: true });
+
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                }, { passive: true });
+            });
+        }
+
+        /* ── 5. Floating Decorative Particles in Hero ── */
+        function initHeroParticles() {
+            if (prefersReducedMotion) return;
+            const hero = document.querySelector('.hero');
+            if (!hero) return;
+
+            const colors = ['rgba(96,165,250,0.6)', 'rgba(167,139,250,0.5)', 'rgba(244,114,182,0.4)'];
+            for (let i = 0; i < 22; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                const size = Math.random() * 4 + 2;
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                const dur = 8 + Math.random() * 12;
+                const delay = Math.random() * -20;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                p.style.cssText = `
+                    width:${size}px; height:${size}px;
+                    left:${x}%; top:${y}%;
+                    background:${color};
+                    animation: orbDrift1 ${dur}s ${delay}s ease-in-out infinite;
+                    opacity: ${Math.random() * 0.5 + 0.2};
+                `;
+                hero.appendChild(p);
+            }
+        }
+
+        /* ── 6. IntersectionObserver Fallback for CSS scroll-driven animations ── */
+        function initScrollFallback() {
+            const supportsCSSScrollDriven = CSS.supports('(animation-timeline: view()) and (animation-range: entry)');
+            if (supportsCSSScrollDriven) return; // Native CSS handles it
+
+            const selectors = [
+                '.scroll-reveal',
+                '.scroll-scale',
+                '.scroll-slide-left',
+                '.scroll-slide-right',
+            ];
+
+            // Set initial hidden state
+            const allEls = document.querySelectorAll(selectors.join(','));
+            allEls.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+            });
+
+            // .scroll-slide-left initial transform
+            document.querySelectorAll('.scroll-slide-left').forEach(el => {
+                el.style.transform = 'translateX(-50px)';
+            });
+            document.querySelectorAll('.scroll-slide-right').forEach(el => {
+                el.style.transform = 'translateX(50px)';
+            });
+            document.querySelectorAll('.scroll-scale').forEach(el => {
+                el.style.transform = 'scale(0.88) translateY(28px)';
+            });
+            document.querySelectorAll('.scroll-reveal').forEach(el => {
+                el.style.transform = 'translateY(40px)';
+            });
+
+            // Staggered children
+            document.querySelectorAll('.scroll-stagger > *').forEach((el, i) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(36px)';
+                el.style.transition = `opacity 0.6s ${i * 80}ms ease, transform 0.6s ${i * 80}ms ease`;
+            });
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = '';
+                        revealObserver.unobserve(entry.target);
+                    }
+                }
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            document.querySelectorAll(
+                selectors.join(',') + ', .scroll-stagger > *'
+            ).forEach(el => revealObserver.observe(el));
+        }
+
+        /* ── 7. Section Label Animated Underline ── */
+        function initSectionLabels() {
+            const labelObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        labelObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.section-label').forEach(label => {
+                labelObserver.observe(label);
+            });
+        }
+
+        /* ── Bootstrap all on DOMContentLoaded ── */
+        document.addEventListener('DOMContentLoaded', () => {
+            initNeuralCanvas();
+            initTiltCards();
+            initMagneticButtons();
+            initHeroParticles();
+            initScrollFallback();
+            initSectionLabels();
+        });
+
+    })();
+    </script>
+
 </body>
 
 </html>
