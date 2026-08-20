@@ -238,6 +238,9 @@ const translations = {
         'blog.thinking.category': 'AI Architecture',
         'blog.thinking.title': 'Why I stopped asking AI to "code" and started asking it to "think."',
         'blog.thinking.description': 'I changed my workflow to a Two-Tier AI Architecture. Here is the 2-step playbook I used for my latest build.',
+        'blog.trends.category': 'SEO & Agentic AI',
+        'blog.trends.title': 'Supercharge Your SEO Directly in Claude Code & Antigravity: Introducing trends-skill',
+        'blog.trends.description': 'Bridge real-world search volume demand on Google Trends directly with your local website codebase using Claude Code, Antigravity, and Gemini.',
 
         'blog.guide.page_title': '8-Hour MVP: How to Build and Launch Your AI Idea Fast - TheGenAI',
         'blog.guide.page_description': 'Practical tips on how to build a working AI MVP in just 8 hours. Learn the strategies for rapid prototyping.',
@@ -247,6 +250,8 @@ const translations = {
         'blog.geo.page_description': 'Learn how to optimize your website for AI search engines like ChatGPT, Gemini, Copilot, and Claude. Embrace Generative Engine Optimization (GEO).',
         'blog.thinking.page_title': 'Why I Stopped Asking AI to Code and Started Asking it to Think - TheGenAI',
         'blog.thinking.page_description': 'Leverage the 2-step "Master Architect" playbook for agentic workflows. Use thinking models for logic and standard models for execution.',
+        'blog.trends.page_title': 'Supercharge Your SEO Directly in Claude Code & Antigravity: Introducing trends-skill - TheGenAI',
+        'blog.trends.page_description': 'Supercharge your SEO directly in Claude Code & Antigravity. Introducing trends-skill: an open-source Agentic AI skill bridging real-time Google Trends data with local website code.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacy Policy - TheGenAI',
@@ -507,6 +512,9 @@ const translations = {
         'blog.thinking.category': 'AI Architectuur',
         'blog.thinking.title': 'Waarom ik stopte met AI te vragen om "code" en begon te vragen om te "denken"',
         'blog.thinking.description': 'Ik veranderde mijn workflow naar een Two-Tier AI-architectuur. Ontdek het 2-stappen playbook dat ik gebruikte voor mijn laatste build.',
+        'blog.trends.category': 'SEO & Agentic AI',
+        'blog.trends.title': 'Supercharge je SEO direct in Claude Code & Antigravity: Introductie van trends-skill',
+        'blog.trends.description': 'Verbind real-time Google Trends zoekgegevens rechtstreeks met je lokale codebase met Claude Code, Antigravity en Gemini.',
 
         'blog.guide.page_title': '8-Uur MVP: Hoe je jouw AI-idee snel bouwt en lanceert - TheGenAI',
         'blog.guide.page_description': 'Praktische tips over hoe je in slechts 8 uur een werkende AI MVP bouwt. Leer de strategieën voor prototyping.',
@@ -516,6 +524,8 @@ const translations = {
         'blog.geo.page_description': 'Leer hoe u uw website optimaliseert voor AI-zoekmachines zoals ChatGPT, Gemini, Copilot en Claude. Ontdek Generative Engine Optimization (GEO).',
         'blog.thinking.page_title': 'Waarom ik stopte met AI te vragen om te coderen - TheGenAI',
         'blog.thinking.page_description': 'Gebruik het 2-stappen "Master Architect" playbook voor agentic workflows. Gebruik denkhulpmiddelen voor logica en coderingsmodellen voor uitvoering.',
+        'blog.trends.page_title': 'Supercharge je SEO in Claude Code & Antigravity: Introductie van trends-skill - TheGenAI',
+        'blog.trends.page_description': 'Supercharge je SEO rechtstreeks vanuit Claude Code & Antigravity met de open-source Agentic AI trends-skill.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacybeleid - TheGenAI',

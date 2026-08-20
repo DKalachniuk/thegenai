@@ -38,6 +38,15 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/trae-vs-antigravity-vs-cursor" />
     </url>
     <url>
+        <loc>https://thegenai.nl/blog/trends-skill</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/blog/trends-skill" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/blog/trends-skill?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/trends-skill" />
+    </url>
+    <url>
         <loc>https://thegenai.nl/blog/why-i-stopped-asking-ai-to-code</loc>
         <lastmod>2026-04-10</lastmod>
         <changefreq>monthly</changefreq>
