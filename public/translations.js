@@ -241,6 +241,9 @@ const translations = {
         'blog.trends.category': 'SEO & Agentic AI',
         'blog.trends.title': 'Supercharge Your SEO Directly in Claude Code & Antigravity: Introducing trends-skill',
         'blog.trends.description': 'Bridge real-world search volume demand on Google Trends directly with your local website codebase using Claude Code, Antigravity, and Gemini.',
+        'blog.gemini_flash.category': 'Autonomous AI & Agents',
+        'blog.gemini_flash.title': 'Google Just Quietly Changed the AI Game: Why Gemini 3.8 Flash Isn\'t Just Another Cheap Model',
+        'blog.gemini_flash.description': 'Forget tiny speed upgrades and low API bills. Google re-engineered its budget model into an autonomous workhorse built for agentic execution, heavy coding, and cyber defense.',
 
         'blog.guide.page_title': '8-Hour MVP: How to Build and Launch Your AI Idea Fast - TheGenAI',
         'blog.guide.page_description': 'Practical tips on how to build a working AI MVP in just 8 hours. Learn the strategies for rapid prototyping.',
@@ -252,6 +255,8 @@ const translations = {
         'blog.thinking.page_description': 'Leverage the 2-step "Master Architect" playbook for agentic workflows. Use thinking models for logic and standard models for execution.',
         'blog.trends.page_title': 'Supercharge Your SEO Directly in Claude Code & Antigravity: Introducing trends-skill - TheGenAI',
         'blog.trends.page_description': 'Supercharge your SEO directly in Claude Code & Antigravity. Introducing trends-skill: an open-source Agentic AI skill bridging real-time Google Trends data with local website code.',
+        'blog.gemini_flash.page_title': 'Why Gemini 3.8 Flash Isn\'t Just Another Cheap Model - TheGenAI',
+        'blog.gemini_flash.page_description': 'Google re-engineered Gemini 3.8 Flash into an autonomous workhorse built for agentic execution, heavy coding, and cyber defense.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacy Policy - TheGenAI',
@@ -515,6 +520,9 @@ const translations = {
         'blog.trends.category': 'SEO & Agentic AI',
         'blog.trends.title': 'Supercharge je SEO direct in Claude Code & Antigravity: Introductie van trends-skill',
         'blog.trends.description': 'Verbind real-time Google Trends zoekgegevens rechtstreeks met je lokale codebase met Claude Code, Antigravity en Gemini.',
+        'blog.gemini_flash.category': 'Autonome AI & Agents',
+        'blog.gemini_flash.title': 'Google veranderde zojuist het AI-speelveld: Waarom Gemini 3.8 Flash meer is dan een budgetmodel',
+        'blog.gemini_flash.description': 'Vergeet kleine snelheidsupgrades en lage API-rekeningen. Google heeft zijn budgetmodel herontworpen tot een autonome engineer voor agentische executie, zwaar programmeerwerk en cyberdefensie.',
 
         'blog.guide.page_title': '8-Uur MVP: Hoe je jouw AI-idee snel bouwt en lanceert - TheGenAI',
         'blog.guide.page_description': 'Praktische tips over hoe je in slechts 8 uur een werkende AI MVP bouwt. Leer de strategieën voor prototyping.',
@@ -526,6 +534,8 @@ const translations = {
         'blog.thinking.page_description': 'Gebruik het 2-stappen "Master Architect" playbook voor agentic workflows. Gebruik denkhulpmiddelen voor logica en coderingsmodellen voor uitvoering.',
         'blog.trends.page_title': 'Supercharge je SEO in Claude Code & Antigravity: Introductie van trends-skill - TheGenAI',
         'blog.trends.page_description': 'Supercharge je SEO rechtstreeks vanuit Claude Code & Antigravity met de open-source Agentic AI trends-skill.',
+        'blog.gemini_flash.page_title': 'Waarom Gemini 3.8 Flash meer is dan een budgetmodel - TheGenAI',
+        'blog.gemini_flash.page_description': 'Google heeft Gemini 3.8 Flash herontworpen tot een autonome engineer geoptimaliseerd voor multi-stap agentic executie en cyberverdediging.',
 
         // Privacy Policy Page
         'privacy.title': 'Privacybeleid - TheGenAI',
