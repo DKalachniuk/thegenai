@@ -1133,6 +1133,162 @@ section {
     color: #92400e;
 }
 
+/* Dovidka.nl Mockup Styles */
+.dovidka-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.knowledge-hub-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(2, 132, 199, 0.15);
+}
+
+.knowledge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.knowledge-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.guides-count-badge {
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 3px 8px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 700;
+    border: 1px solid #bfdbfe;
+}
+
+.knowledge-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.cat-pill {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.specialist-verified-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 8px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.verified-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.verified-text {
+    font-size: 10px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* SocialeHuurGids Mockup Styles */
+.socialehuur-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.huurgids-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(13, 148, 136, 0.15);
+}
+
+.huurgids-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.huurgids-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.loting-badge {
+    background: #ccfbf1;
+    color: #0f766e;
+    padding: 3px 8px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.huurgids-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.huur-metric {
+    text-align: center;
+}
+
+.metric-val {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.metric-label {
+    font-size: 9px;
+    color: #64748b;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.huurgids-alert {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    color: #0f766e;
+    font-weight: 600;
+    background: #f0fdfa;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
 /* Bedankt.me Mockup Styles */
 .greeting-card-preview {
     display: flex;

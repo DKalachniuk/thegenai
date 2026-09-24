@@ -2,12 +2,12 @@
 const translations = {
     en: {
         // Meta tags
-        'page-title': 'TheGenAI \u2014 Generative AI Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'page-description': 'TheGenAI is the leading gen AI agency in the Netherlands. We deliver hands-on generative AI workshops for teams and build working AI MVPs in just 8 hours. Serving all of Europe.',
-        'og-title': 'TheGenAI \u2014 Generative AI Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'og-description': 'TheGenAI is the leading gen AI agency in the Netherlands. We deliver hands-on generative AI workshops for teams and build working AI MVPs in just 8 hours. Serving all of Europe.',
-        'twitter-title': 'TheGenAI \u2014 Generative AI Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'twitter-description': 'TheGenAI is the leading gen AI agency in the Netherlands. We deliver hands-on generative AI workshops for teams and build working AI MVPs in just 8 hours. Serving all of Europe.',
+        'page-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
+        'page-description': 'TheGenAI is the premier enterprise AI agency in the Netherlands. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops. Serving all of Europe.',
+        'og-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
+        'og-description': 'TheGenAI is the premier enterprise AI agency in the Netherlands. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops. Serving all of Europe.',
+        'twitter-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
+        'twitter-description': 'TheGenAI is the premier enterprise AI agency in the Netherlands. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops. Serving all of Europe.',
 
         // Navigation
         'nav.home': 'Home',
@@ -53,6 +53,8 @@ const translations = {
         'services.consulting.description': 'Strategic guidance to help you identify AI opportunities and develop a comprehensive AI roadmap.',
         'services.dev.title': 'Software Development with AI',
         'services.dev.description': 'Custom software solutions powered by AI to automate workflows and enhance user experiences.',
+        'services.legacydocs.title': 'Legacy Codebase Intelligence',
+        'services.legacydocs.description': 'Turn undocumented monoliths and tribal knowledge into crystal-clear living architecture diagrams, API contracts, and AI-ready technical docs. Eliminate key-person risk and onboard developers 5x faster.',
         'services.waas.title': 'WaaS for Builders & Contractors',
         'services.waas.description': 'Get a high-converting, fully-managed website for your construction or renovation business with zero down payment and WhatsApp content updates.',
 
@@ -148,6 +150,12 @@ const translations = {
         'portfolio.fluitvoormij.title': 'FluitVoorMij.nl',
         'portfolio.fluitvoormij.category': 'Sports Automation Platform',
         'portfolio.fluitvoormij.description': 'A specialized platform that automates referee assignments for football clubs in the Netherlands. It streamlines communication, manages availability, and ensures fair rotation for club referees.',
+        'portfolio.dovidka.title': 'Dovidka.nl',
+        'portfolio.dovidka.category': 'Community Knowledge & Integration Portal',
+        'portfolio.dovidka.description': 'An extensive informational platform and knowledge base for the Ukrainian community in the Netherlands. Features 40+ structured step-by-step guides covering housing, ZZP taxes, healthcare, education, and an audited directory of accredited Dutch professionals.',
+        'portfolio.socialehuurgids.title': 'SocialeHuurGids.nl',
+        'portfolio.socialehuurgids.category': 'Social Housing Navigation Platform',
+        'portfolio.socialehuurgids.description': 'A comprehensive navigation platform and strategy guide for the Dutch social housing market. Helps tenants understand the regulated rental system, bypass years-long waiting lists with lottery housing (lotingwoningen), navigate municipal priority schemes (urgentie), and calculate rental subsidies (huurtoeslag).',
         'portfolio.btn.view': 'View Project',
 
         // Games section
@@ -198,6 +206,10 @@ const translations = {
         'faq.a4': 'TheGenAI is based in Amsterdam, The Netherlands, and serves clients across all of Europe with on-site and remote workshops and consulting.',
         'faq.q5': 'How do I book a workshop or order an MVP?',
         'faq.a5': 'Email us at info@thegenai.nl or fill in the contact form on our website to get started.',
+        'faq.q6': 'How does TheGenAI handle enterprise data security, privacy, and EU AI Act compliance?',
+        'faq.a6': 'We prioritize enterprise-grade security and full compliance with the EU AI Act and GDPR. All solutions can be deployed 100% privately within your enterprise VPC (AWS, Azure, GCP) or on-premise air-gapped environments. We enforce zero data retention policies with zero training on your proprietary data.',
+        'faq.q7': 'How do you reverse-engineer and document undocumented legacy codebases?',
+        'faq.a7': 'We employ specialized static analysis engines and private LLM agents to map service boundaries, data flows, database schemas, and API contracts into living architectural diagrams and OpenAPI specifications. We also create context layers (AGENTS.md, llms.txt) allowing modern AI coding assistants to work safely with your legacy code without hallucinations.',
 
         // Newsletter
         'newsletter.title': 'Stay Ahead of AI',
@@ -281,12 +293,12 @@ const translations = {
     },
     nl: {
         // Meta tags
-        'page-title': 'TheGenAI \u2014 Generatieve AI Workshops & 8-Uur MVP Prototyping | Nederland',
-        'page-description': 'TheGenAI is het toonaangevende gen AI bureau in Nederland. Wij bieden praktische generatieve AI workshops voor teams en bouwen werkende AI MVPs in slechts 8 uur. Actief in heel Europa.',
-        'og-title': 'TheGenAI \u2014 Generatieve AI Workshops & 8-Uur MVP Prototyping | Nederland',
-        'og-description': 'TheGenAI is het toonaangevende gen AI bureau in Nederland. Wij bieden praktische generatieve AI workshops voor teams en bouwen werkende AI MVPs in slechts 8 uur. Actief in heel Europa.',
-        'twitter-title': 'TheGenAI \u2014 Generatieve AI Workshops & 8-Uur MVP Prototyping | Nederland',
-        'twitter-description': 'TheGenAI is het toonaangevende gen AI bureau in Nederland. Wij bieden praktische generatieve AI workshops voor teams en bouwen werkende AI MVPs in slechts 8 uur. Actief in heel Europa.',
+        'page-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
+        'page-description': 'TheGenAI is het toonaangevende enterprise AI bureau in Nederland. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams. Actief in heel Europa.',
+        'og-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
+        'og-description': 'TheGenAI is het toonaangevende enterprise AI bureau in Nederland. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams. Actief in heel Europa.',
+        'twitter-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
+        'twitter-description': 'TheGenAI is het toonaangevende enterprise AI bureau in Nederland. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams. Actief in heel Europa.',
 
         // Navigation
         'nav.home': 'Home',
@@ -332,6 +344,8 @@ const translations = {
         'services.consulting.description': 'Strategische begeleiding om u te helpen AI-mogelijkheden te identificeren en een uitgebreide AI-roadmap te ontwikkelen.',
         'services.dev.title': 'Softwareontwikkeling met AI',
         'services.dev.description': 'Maatwerk software-oplossingen aangedreven door AI om workflows te automatiseren en gebruikerservaringen te verbeteren.',
+        'services.legacydocs.title': 'Legacy Codebase Documentatie & Intelligentie',
+        'services.legacydocs.description': 'Transformeer ongedocumenteerde legacy-monolieten en bedrijfskennis naar haarscherpe interactieve architectuurschema\'s, API-specificaties en AI-ready documentatie. Elimineer sleutelpersoonrisico\'s en versnel developer-onboarding 5x.',
         'services.waas.title': 'WaaS voor Klusbedrijven',
         'services.waas.description': 'Ontvang een converterende, volledig beheerde website voor uw bouw- of klusbedrijf met nul aanbetaling en WhatsApp content-updates.',
 
@@ -427,6 +441,12 @@ const translations = {
         'portfolio.fluitvoormij.title': 'FluitVoorMij.nl',
         'portfolio.fluitvoormij.category': 'Sport Automatisering Platform',
         'portfolio.fluitvoormij.description': 'Een gespecialiseerd platform dat scheidsrechtertoewijzingen voor voetbalclubs in Nederland automatiseert. Het stroomlijnt de communicatie, beheert beschikbaarheid en zorgt voor een eerlijke rotatie van clubscheidsrechters.',
+        'portfolio.dovidka.title': 'Dovidka.nl',
+        'portfolio.dovidka.category': 'Kennis- en Integratieplatform',
+        'portfolio.dovidka.description': 'Een uitgebreid informatieplatform en kennisbank voor de Oekraïense gemeenschap in Nederland. Bevat 40+ gestructureerde gidsen over wonen, ZZP-belastingen, zorg, onderwijs, gemeentelijke registratie en een geauditeerd register van erkende professionals.',
+        'portfolio.socialehuurgids.title': 'SocialeHuurGids.nl',
+        'portfolio.socialehuurgids.category': 'Sociale Huur Navigatieplatform',
+        'portfolio.socialehuurgids.description': 'Een uitgebreid navigatieplatform en strategiegids voor de Nederlandse sociale huursector. Helpt woningzoekenden het gereguleerde huursysteem te doorgronden, jarenlange wachtlijsten te omzeilen via lotingwoningen, urgentieverklaringen aan te vragen en huurtoeslag te berekenen.',
         'portfolio.btn.view': 'Bekijk Project',
 
         // Games section
@@ -477,6 +497,10 @@ const translations = {
         'faq.a4': 'TheGenAI is gevestigd in Amsterdam, Nederland en bedient klanten in heel Europa met workshops en advies, zowel op locatie als op afstand.',
         'faq.q5': 'Hoe boek ik een workshop of bestel ik een MVP?',
         'faq.a5': 'Mail ons op info@thegenai.nl of vul het contactformulier in op onze website om te starten.',
+        'faq.q6': 'Hoe waarborgt TheGenAI enterprise databeveiliging, privacy en de EU AI Act?',
+        'faq.a6': 'We hanteren strenge enterprise beveiligingsnormen en volledige compliance met de EU AI Act en AVG/GDPR. Onze oplossingen kunnen 100% privé worden geïmplementeerd binnen uw eigen VPC (AWS, Azure, GCP) of on-premise omgevingen, met gegarandeerd zero data retention en zonder dat uw data wordt gebruikt voor modeltraining.',
+        'faq.q7': 'Hoe documenteren en moderniseren jullie ongedocumenteerde legacy codebases?',
+        'faq.a7': 'We zetten gespecialiseerde statische analyse-engines en private LLM-agenten in om servicegrenzen, datastromen, databaseschema\'s en API-contracten te vertalen naar levende architectuurschema\'s en OpenAPI-specificaties. Ook bouwen we context-lagen (AGENTS.md, llms.txt) waarmee moderne AI coding assistants veilig met uw codebase kunnen werken zonder te hallucineren.',
 
         // Newsletter
         'newsletter.title': 'Blijf Voorop met AI',
