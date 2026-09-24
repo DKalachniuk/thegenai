@@ -14,44 +14,65 @@ document.querySelectorAll('.nav-link, .nav-cta-btn').forEach(n => n.addEventList
 }));
 
 // Smooth scrolling for navigation links
-// Guard: if we're on the file:// directory index (no .html in pathname) and a hash
-// link is clicked, redirect to index.html#hash so the page actually loads.
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"], a[href^="/#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+        const rawHref = this.getAttribute('href');
+        if (!rawHref || rawHref === '#' || rawHref === '/#' || rawHref === '/') return;
 
-        const hash = this.getAttribute('href');
-        if (!hash || hash === '#') return;
+        const hash = rawHref.startsWith('/#') ? rawHref.substring(1) : rawHref;
+        if (!hash.startsWith('#')) return;
 
-        // file:// edge-case: if path doesn't end in .html, we're on a directory URL
-        if (window.location.protocol === 'file:' && !window.location.pathname.endsWith('.html')) {
-            window.location.href = 'index.html' + hash;
-            return;
-        }
+        // Check if current page is the homepage
+        const isHomePage = window.location.pathname === '/' || 
+                           window.location.pathname.endsWith('/index.html') ||
+                           (window.location.protocol === 'file:' && window.location.pathname.endsWith('index.html'));
 
-        const target = document.querySelector(hash);
-        if (!target) {
-            // Target section doesn't exist on this page (e.g. we're on the blog page).
-            // Navigate to the home page and let the browser jump to the section.
-            if (window.location.protocol === 'file:') {
-                // Go one directory up to reach public/index.html
-                window.location.href = '../index.html' + hash;
-            } else {
-                // HTTP: navigate to the site root with the hash
-                window.location.href = window.location.origin + '/' + hash;
+        if (isHomePage) {
+            const target = document.querySelector(hash);
+            if (target) {
+                e.preventDefault();
+                e.stopPropagation();
+                const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 60;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                if (history.pushState) {
+                    history.pushState(null, null, hash);
+                } else {
+                    window.location.hash = hash;
+                }
+                return;
             }
-            return;
+        } else {
+            // On a subpage (e.g. /privacy/ or /blog/), if clicking a hash-only link, route to /#hash
+            if (rawHref.startsWith('#')) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.location.href = '/' + hash;
+            }
         }
-
-        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 60;
-        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     });
+});
+
+// Offset scroll position on page load if arriving with a hash (e.g. /#services)
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            setTimeout(() => {
+                const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 60;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }, 100);
+        }
+    }
 });
 
 // Enhanced navbar background change on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    if (document.body.classList.contains('blog-page')) {
+        navbar.classList.add('scrolled');
+        return;
+    }
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
     } else {

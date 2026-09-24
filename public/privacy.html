@@ -19,7 +19,7 @@
     <meta property="og:title" id="og-title" content="Privacy Policy - TheGenAI">
     <meta property="og:description" id="og-description" content="Privacy Policy for TheGenAI. Learn how we handle your data with a focus on privacy and transparency.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thegenai.nl/privacy.html">
+    <meta property="og:url" content="https://thegenai.nl/privacy/">
     <meta property="og:image" content="https://thegenai.nl/images/logo_thegenai.png">
 
     <!-- Twitter Card Meta Tags -->
@@ -28,9 +28,9 @@
     <meta name="twitter:description" id="twitter-description" content="Privacy Policy for TheGenAI. Learn how we handle your data with a focus on privacy and transparency.">
     <meta name="twitter:image" content="https://thegenai.nl/images/logo_thegenai.png">
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="alternate" type="text/plain" title="LLM Instructions" href="/llms.txt">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
@@ -79,32 +79,41 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="" style="text-decoration: none;"><span class="logo-text">The GenAI</span></a>
+                <a href="/" class="logo-link">
+                    <span class="logo-mark"></span>
+                    <span class="logo-text">The GenAI</span>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link" data-translate="nav.home">Home</a>
+                    <a href="/#home" class="nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link" data-translate="nav.about">About</a>
+                    <a href="/#about" class="nav-link" data-translate="nav.about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#services" class="nav-link" data-translate="nav.services">Services</a>
+                    <a href="/#services" class="nav-link" data-translate="nav.services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
+                    <a href="/#portfolio" class="nav-link" data-translate="nav.portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="blog/" class="nav-link" data-translate="nav.blog">Blog</a>
+                    <a href="/#lab" class="nav-link" data-translate="nav.lab">Lab</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                    <a href="/blog/" class="nav-link" data-translate="nav.blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <button class="header-lang-toggle" id="header-lang-toggle">NL</button>
+                    <a href="/#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                </li>
+                <li class="nav-item nav-cta-item">
+                    <a href="/#contact" class="nav-cta-btn" data-translate="nav.cta">Book a Sprint</a>
+                </li>
+                <li class="nav-item">
+                    <button class="header-lang-toggle" id="header-lang-toggle" aria-label="Toggle language">NL</button>
                 </li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -151,26 +160,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo">
+                    <img src="/images/logo_thegenai.png" alt="TheGenAI - AI Prototyping and Workshops in Europe" class="logo">
                     <p data-translate="footer.description">Creating intelligent solutions for tomorrow's challenges.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 data-translate="footer.services.title">Services</h4>
                         <ul>
-                            <li><a href="#services" data-translate="footer.services.workshop">AI Workshops</a></li>
-                            <li><a href="#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
-                            <li><a href="#services" data-translate="footer.services.consulting">AI Consulting</a></li>
-                            <li><a href="#services" data-translate="footer.services.dev">Software Development</a></li>
+                            <li><a href="/#services" data-translate="footer.services.workshop">AI Workshops</a></li>
+                            <li><a href="/#services" data-translate="footer.services.prototype">Rapid Prototyping</a></li>
+                            <li><a href="/#services" data-translate="footer.services.consulting">AI Consulting</a></li>
+                            <li><a href="/#services" data-translate="footer.services.dev">Software Development</a></li>
+                            <li><a href="/waas.html" data-translate="services.waas.title">Website as a Service</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4 data-translate="footer.company.title">Company</h4>
                         <ul>
-                            <li><a href="#about" data-translate="nav.about">About Us</a></li>
-                            <li><a href="#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
-                            <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
-                            <li><a href="privacy.html" data-translate="footer.privacy">Privacy Policy</a></li>
+                            <li><a href="/#about" data-translate="nav.about">About Us</a></li>
+                            <li><a href="/#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                            <li><a href="/#lab" data-translate="nav.lab">Lab</a></li>
+                            <li><a href="/#contact" data-translate="nav.contact">Contact</a></li>
+                            <li><a href="/privacy/" data-translate="footer.privacy">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -188,8 +199,8 @@
         </div>
     </footer>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="/translations.js"></script>
+    <script src="/script.js"></script>
 
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js"
