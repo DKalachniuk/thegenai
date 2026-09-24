@@ -588,6 +588,7 @@ sections.forEach(s => sectionObserver.observe(s));
 // ─── Animated counters ───
 function animateCounter(el) {
     const target = parseInt(el.dataset.target, 10);
+    const prefix = el.dataset.prefix || '';
     const suffix = el.dataset.suffix || '';
     const duration = 1400;
     const start = performance.now();
@@ -598,7 +599,7 @@ function animateCounter(el) {
         // Ease-out cubic
         const eased = 1 - Math.pow(1 - progress, 3);
         const current = Math.round(eased * target);
-        el.textContent = current + suffix;
+        el.textContent = prefix + current + suffix;
         if (progress < 1) requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
@@ -614,4 +615,31 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+// ─── Portfolio Category Filtering ───
+document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+    const portfolioItems = document.querySelectorAll('#portfolio .portfolio-item');
+
+    if (filterBtns.length > 0 && portfolioItems.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+
+                portfolioItems.forEach(item => {
+                    const category = item.dataset.category;
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = '';
+                        item.classList.remove('filter-hidden');
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.add('filter-hidden');
+                    }
+                });
+            });
+        });
+    }
+});
 

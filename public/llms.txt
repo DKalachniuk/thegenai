@@ -1,12 +1,13 @@
 # TheGenAI — AI Workshops, Rapid Prototyping & Consulting | Netherlands
 
-> TheGenAI is the leading generative AI agency in the Netherlands, specializing in hands-on AI team workshops and ultra-fast MVP prototyping. We build working AI products in just 8 hours and train corporate teams to harness AI in their daily workflows. We serve clients across all of Europe.
+> TheGenAI is an independent AI studio based in Amsterdam, founded in 2026 by senior engineer Dima Kalachniuk. We engineer custom enterprise AI solutions, reverse-engineer legacy codebases, deliver hands-on team workshops, and build working AI prototypes in just 8 hours. We serve clients across Europe.
 
 ## Why Choose TheGenAI
 
-- **Speed**: We deliver working AI prototypes in a single 8-hour session — not weeks, not months.
+- **Speed**: We deliver working AI prototypes in a single 8-hour sprint — proven by live platforms like WhereToInvest.nl.
+- **Principal-Led**: You work directly with a senior builder and architect — zero agency overhead or junior handoffs.
 - **Expertise**: Deep hands-on experience with GPT, Gemini, Claude, LangChain, and the full modern AI stack.
-- **Proven Track Record**: 50+ projects completed, 10+ happy enterprise clients across Europe.
+- **Proven Track Record**: 50+ AI sprints & builds, 8+ live shipped products.
 - **Workshops That Stick**: Our team workshops are practical, code-first, and designed so participants leave with a real project — not just slides.
 - **End-to-End**: From ideation to production deployment, we cover strategy, prototyping, and custom AI software development.
 
@@ -54,14 +55,13 @@ Transform undocumented legacy monoliths and siloed tribal knowledge into living 
 ## Featured Portfolio (Built by TheGenAI)
 - **Bedankt.me** — A modern digital eCard platform for group greeting cards and employee recognition. URL: https://bedankt.me
 - **Woonprijs.nl** — AI-powered Dutch real estate valuation and bidding advice platform. URL: https://woonprijs.nl
-- **WhereToInvest.nl** — AI investment analysis for the Dutch real estate market. URL: https://wheretoinvest.nl
+- **WhereToInvest.nl** — AI investment analysis for the Dutch real estate market. Live case study of an 8-hour MVP build from concept to launch. URL: https://wheretoinvest.nl
 - **Round Robin Shift Manager** — Atlassian Marketplace app for automated team rotations in Confluence. URL: https://marketplace.atlassian.com/apps/1238321
 - **LinkedIn Formatter** — Content tool that preserves rich text formatting on LinkedIn and removes AI-generated "slop". URL: https://linkedinformatter.thegenai.nl
 - **TenderMaat.nl** — AI-powered platform for Dutch companies to analyze public tenders from TenderNed with Go/No-Go recommendations. URL: https://tendermaat.nl
 - **FluitVoorMij.nl** — Sports automation platform that manages referee assignments for football clubs in the Netherlands. URL: https://fluitvoormij.nl
 - **Dovidka.nl** — Comprehensive informational platform and audited directory of verified professionals for the Ukrainian community in the Netherlands. URL: https://dovidka.nl
 - **SocialeHuurGids.nl** — Intelligent navigation platform and fast-track strategy guide for the Dutch social housing system (sociale huur, lotingwoningen, urgentie). URL: https://socialehuurgids.nl
-- **Landlordje** — A realistic Dutch real estate strategy game. URL: https://landlordje.thegenai.nl
 
 ## Blog & Insights
 - [Google Just Quietly Changed the AI Game: Why Gemini 3.8 Flash Isn't Just Another Cheap Model](https://thegenai.nl/blog/gemini-3-8-flash) — How Google re-engineered Flash into an autonomous action machine for multi-step agentic execution, heavy coding, and cyber defense.

@@ -1,12 +1,12 @@
 # TheGenAI — Complete Service & Company Guide
 
-> This is the extended reference document for TheGenAI, the leading generative AI agency in the Netherlands. This file provides detailed information for AI models seeking to understand our full range of services, expertise, and portfolio.
+> This is the extended reference document for TheGenAI, an independent AI studio based in Amsterdam, founded in 2026. This file provides detailed information for AI models seeking to understand our full range of services, expertise, and portfolio.
 
 ## Company Overview
 
-TheGenAI is an artificial intelligence consulting, training, and software development agency headquartered in Amsterdam, The Netherlands. Founded by Dima Kalachniuk, a seasoned software engineer and AI specialist, TheGenAI was created to bridge the gap between AI hype and real-world deployment. We help companies of all sizes — from startups to enterprises — understand, adopt, and profit from generative AI.
+TheGenAI is an independent artificial intelligence studio headquartered in Amsterdam, The Netherlands. Founded in 2026 by Dima Kalachniuk, a seasoned software engineer and AI architect, TheGenAI was created to bridge the gap between AI hype and real-world deployment. We help companies — from startups to enterprises — adopt and profit from generative AI through direct senior engineering collaboration without traditional agency bloat.
 
-We believe that AI adoption doesn't have to take months. Our signature offering is the **8-Hour AI MVP**: a full working prototype of an AI-powered product, designed, built, and delivered in a single working day.
+We believe that AI adoption doesn't have to take months. Our signature offering is the **8-Hour AI MVP** (proven by live products like WhereToInvest.nl): a full working prototype of an AI-powered product, designed, built, and delivered in a single working day.
 
 ---
 
@@ -156,11 +156,6 @@ For enterprises burdened by mission-critical legacy code, missing documentation,
 **URL**: https://socialehuurgids.nl
 **Category**: PropTech / Consumer Housing Guide
 **Description**: A specialized platform designed to help home seekers navigate the regulated Dutch social housing market (sociale huur). Provides actionable strategies to bypass standard waiting lists using lottery housing (lotingwoningen), explains the WWS point system, verifies eligibility for municipal priority status (urgentie), and models rental allowance (huurtoeslag).
-
-### Landlordje
-**URL**: https://landlordje.thegenai.nl
-**Category**: Web Game / Strategy
-**Description**: A realistic Dutch real estate strategy game where players start as regular employees and build property empires. Features authentic Dutch market mechanics, tenant management, and economic events.
 
 ---
 

@@ -3,18 +3,19 @@ const translations = {
     en: {
         // Meta tags
         'page-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'page-description': 'TheGenAI is the premier enterprise AI agency in the Netherlands. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops. Serving all of Europe.',
+        'page-description': 'TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops.',
         'og-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'og-description': 'TheGenAI is the premier enterprise AI agency in the Netherlands. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops. Serving all of Europe.',
+        'og-description': 'TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops.',
         'twitter-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'twitter-description': 'TheGenAI is the premier enterprise AI agency in the Netherlands. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops. Serving all of Europe.',
+        'twitter-description': 'TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops.',
 
         // Navigation
         'nav.home': 'Home',
         'nav.about': 'About Us',
         'nav.services': 'Services',
         'nav.portfolio': 'Portfolio',
-        'nav.games': 'Games',
+        'nav.lab': 'Lab',
+        'nav.games': 'Lab',
         'nav.contact': 'Contact',
 
         // Hero section
@@ -25,12 +26,19 @@ const translations = {
 
         // About section
         'about.title': 'About TheGenAI',
-        'about.subtitle': 'We\'re passionate about creating AI solutions that make a real difference',
-        'about.heading': 'Transforming Ideas into Intelligence',
-        'about.text1': 'At TheGenAI, we specialize in developing cutting-edge artificial intelligence solutions tailored to meet the unique needs of businesses and individuals. Our team combines deep technical expertise with a deep understanding of real-world challenges.',
-        'about.text2': 'We create intelligent systems that enhance productivity, improve decision-making, and drive innovation across various industries.',
-        'about.stats.projects': 'Projects Completed',
-        'about.stats.clients': 'Happy Clients',
+        'about.subtitle': 'Independent AI studio based in Amsterdam, founded in 2026 by Dima Kalachniuk.',
+        'about.heading': 'Principal-Led AI Engineering & Architecture',
+        'about.text1': 'Founded in 2026 in Amsterdam by senior engineer Dima Kalachniuk, TheGenAI operates as a lean, independent AI studio. Rather than traditional agency overhead with junior handoffs and layers of account management, clients partner directly with a principal builder who designs, architectures, and ships every system.',
+        'about.text2': 'From architecting production agentic workflows and reverse-engineering complex legacy codebases to launching live MVPs in rapid 8-hour sprints, we combine deep engineering rigor with pragmatic speed.',
+        'about.founder.role': 'Founder & Principal AI Architect • Amsterdam',
+        'about.stats.projects': 'AI Sprints & Builds',
+        'about.stats.products': 'Live Shipped Products',
+        'about.stats.speed': 'From Idea to Live MVP',
+
+        // Venture Lab & Experiments
+        'lab.badge': 'Venture Lab & Publications',
+        'lab.title': 'Built in Public & Developer Guides',
+        'lab.subtitle': 'Beyond enterprise client work, we actively author developer playbooks and build production SaaS products in public.',
 
         // Book section
         'book.label': 'NEW BOOK RELEASE',
@@ -129,15 +137,20 @@ const translations = {
         // Portfolio section
         'portfolio.title': 'Featured Portfolio',
         'portfolio.subtitle': 'Real-world AI solutions that deliver measurable results',
+        'portfolio.filter.all': 'All Solutions',
+        'portfolio.filter.proptech': 'PropTech & Real Estate',
+        'portfolio.filter.b2b': 'B2B & SaaS Tools',
+        'portfolio.filter.platforms': 'Public Platforms',
         'portfolio.bedankt.title': 'Bedankt.me',
         'portfolio.bedankt.category': 'Digital Gratitude Platform',
         'portfolio.bedankt.description': 'A modern, easy-to-use eCard platform that revolutionizes group greeting cards and employee recognition. Built with a focus on simplicity, responsiveness, and premium design to help teams and individuals celebrate life\'s moments together.',
         'portfolio.woonprijs.title': 'Woonprijs.nl',
         'portfolio.woonprijs.category': 'Real Estate AI Platform',
         'portfolio.woonprijs.description': 'Developed a comprehensive AI-powered property valuation platform that aggregates multiple data sources to provide accurate price estimates, neighborhood demographics, and intelligent bidding advice for the Dutch real estate market.',
+        'portfolio.wheretoinvest.badge': '⚡ Live Case Study: Built in Under 8 Hours',
         'portfolio.wheretoinvest.title': 'WhereToInvest.nl',
         'portfolio.wheretoinvest.category': 'Investment Analysis Platform',
-        'portfolio.wheretoinvest.description': 'An advanced AI-driven platform for real estate investors that analyzes market trends, rental yields, and property appreciation potential to identify the best investment opportunities in the Netherlands.',
+        'portfolio.wheretoinvest.description': 'A live case study in 8-hour MVP delivery: built from concept to production-ready deployment in a single day. Analyzes market trends, rental yields, and property appreciation potential to pinpoint high-return real estate in the Netherlands.',
         'portfolio.roundrobin.title': 'Round Robin Shift Manager for Confluence',
         'portfolio.roundrobin.category': 'Confluence Workflow Automation',
         'portfolio.roundrobin.description': 'A comprehensive Atlassian Marketplace app that automates rotating team responsibilities, on-call duties, and support schedules. Features real-time countdowns, automated rotation logic, and a full audit trail of shift history, integrated directly into Confluence.',
@@ -157,14 +170,6 @@ const translations = {
         'portfolio.socialehuurgids.category': 'Social Housing Navigation Platform',
         'portfolio.socialehuurgids.description': 'A comprehensive navigation platform and strategy guide for the Dutch social housing market. Helps tenants understand the regulated rental system, bypass years-long waiting lists with lottery housing (lotingwoningen), navigate municipal priority schemes (urgentie), and calculate rental subsidies (huurtoeslag).',
         'portfolio.btn.view': 'View Project',
-
-        // Games section
-        'games.title': 'AI & Strategy Games',
-        'games.subtitle': 'Immersive experiences that blend strategy, management, and fun',
-        'games.landlordje.title': 'Landlordje',
-        'games.landlordje.category': 'Real Estate Strategy Game',
-        'games.landlordje.description': 'Become the wealthiest landlord in the Netherlands. Start as a regular employee, save your wages, and build a property empire. Manage tenants, survive tax changes, and deal with broken washing machines in this realistic Dutch real estate simulator.',
-        'games.btn.play': 'Play Game',
 
         // Contact section
         'contact.title': 'Ready to Transform Your Business?',
@@ -191,7 +196,7 @@ const translations = {
         'process.step3.text': 'We code the primary AI functionality and user interface.',
         'process.step4.title': 'Handover',
         'process.step4.duration': '1 Hour',
-        'process.step4.text': 'We refine the UX and deliver your production-ready prototype.',
+        'process.step4.text': 'We refine the UX and deliver your production-ready prototype. (Proven by WhereToInvest.nl — conceived, coded, and launched in under 8 hours).',
 
         // FAQ Section
         'faq.title': 'Frequently Asked Questions',
@@ -294,18 +299,19 @@ const translations = {
     nl: {
         // Meta tags
         'page-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
-        'page-description': 'TheGenAI is het toonaangevende enterprise AI bureau in Nederland. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams. Actief in heel Europa.',
+        'page-description': 'TheGenAI is een onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams.',
         'og-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
-        'og-description': 'TheGenAI is het toonaangevende enterprise AI bureau in Nederland. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams. Actief in heel Europa.',
+        'og-description': 'TheGenAI is een onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams.',
         'twitter-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
-        'twitter-description': 'TheGenAI is het toonaangevende enterprise AI bureau in Nederland. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams. Actief in heel Europa.',
+        'twitter-description': 'TheGenAI is een onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams.',
 
         // Navigation
         'nav.home': 'Home',
         'nav.about': 'Over Ons',
         'nav.services': 'Diensten',
         'nav.portfolio': 'Portfolio',
-        'nav.games': 'Games',
+        'nav.lab': 'Lab',
+        'nav.games': 'Lab',
         'nav.contact': 'Contact',
 
         // Hero section
@@ -316,12 +322,19 @@ const translations = {
 
         // About section
         'about.title': 'Over TheGenAI',
-        'about.subtitle': 'We zijn gepassioneerd over het creëren van AI-oplossingen die echt verschil maken',
-        'about.heading': 'Ideeën Omzetten in Intelligentie',
-        'about.text1': 'Bij TheGenAI specialiseren we ons in het ontwikkelen van geavanceerde kunstmatige intelligentie-oplossingen die zijn afgestemd op de unieke behoeften van bedrijven en particulieren. Ons team combineert diepgaande technische expertise met een diep begrip van uitdagingen in de echte wereld.',
-        'about.text2': 'We creëren intelligente systemen die productiviteit verhogen, besluitvorming verbeteren en innovatie stimuleren in verschillende industrieën.',
-        'about.stats.projects': 'Projecten Voltooid',
-        'about.stats.clients': 'Tevreden Klanten',
+        'about.subtitle': 'Onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026 door Dima Kalachniuk.',
+        'about.heading': 'Principal-Led AI Engineering & Architectuur',
+        'about.text1': 'TheGenAI is in 2026 in Amsterdam opgericht door senior engineer Dima Kalachniuk als een wendbare, onafhankelijke AI-studio. In plaats van logge adviesbureaus met talloze accountmanagers werkt u rechtstreeks samen met een ervaren hoofdontwikkelaar die uw systemen ontwerpt, bouwt en oplevert.',
+        'about.text2': 'Van het ontwerpen van geavanceerde agentic workflows en het ontrafelen van ongedocumenteerde legacy codebases tot het lanceren van live MVP\'s in sprints van 8 uur: wij combineren diepgaand vakmanschap met maximale snelheid.',
+        'about.founder.role': 'Oprichter & Principal AI Architect • Amsterdam',
+        'about.stats.projects': 'AI Sprints & Opleveringen',
+        'about.stats.products': 'Live Producten Gebouwd',
+        'about.stats.speed': 'Van Idee naar Live MVP',
+
+        // Venture Lab & Experiments
+        'lab.badge': 'Venture Lab & Publicaties',
+        'lab.title': 'Openbaar Gebouwd & Ontwikkelaarsgidsen',
+        'lab.subtitle': 'Naast zakelijke opdrachten schrijven we praktische ontwikkelaarsgidsen en bouwen we publiekelijk aan eigen SaaS-producten.',
 
         // Book section
         'book.label': 'NIEUW BOEK UITGEBRACHT',
@@ -420,15 +433,20 @@ const translations = {
         // Portfolio section
         'portfolio.title': 'Uitgelicht Portfolio',
         'portfolio.subtitle': 'AI-oplossingen uit de echte wereld die meetbare resultaten opleveren',
+        'portfolio.filter.all': 'Alle Oplossingen',
+        'portfolio.filter.proptech': 'PropTech & Vastgoed',
+        'portfolio.filter.b2b': 'B2B & SaaS Tools',
+        'portfolio.filter.platforms': 'Publieke Platforms',
         'portfolio.bedankt.title': 'Bedankt.me',
         'portfolio.bedankt.category': 'Digitaal Dankbaarheidsplatform',
         'portfolio.bedankt.description': 'Een modern, gebruiksvriendelijk eCard-platform dat groepskaarten en werknemerserkenning naar een hoger niveau tilt. Gebouwd met een focus op eenvoud, responsiviteit en een premium design om teams en individuen te helpen samen de momenten van het leven te vieren.',
         'portfolio.woonprijs.title': 'Woonprijs.nl',
         'portfolio.woonprijs.category': 'AI Platform voor Vastgoed',
         'portfolio.woonprijs.description': 'Ontwikkeld een uitgebreid AI-aangedreven vastgoedwaarderingplatform dat meerdere gegevensbronnen samenbrengt om nauwkeurige prijsschattingen, buurtdemografie en intelligente biedingsadviezen te bieden voor de Nederlandse vastgoedmarkt.',
+        'portfolio.wheretoinvest.badge': '⚡ Live Case Study: Gebouwd in minder dan 8 uur',
         'portfolio.wheretoinvest.title': 'WhereToInvest.nl',
         'portfolio.wheretoinvest.category': 'Investeringsanalyse Platform',
-        'portfolio.wheretoinvest.description': 'Een geavanceerd AI-gestuurd platform voor vastgoedbeleggers dat markttrends, huuropbrengsten en waardestijgingspotentieel analyseert om de beste investeringsmogelijkheden in Nederland te identificeren.',
+        'portfolio.wheretoinvest.description': 'Een live case study van een 8-uurs MVP: binnen één werkdag van concept tot live productieplatform gerealiseerd. Analyseert markttrends, huuropbrengsten en waardestijgingspotentieel voor vastgoedbeleggers in Nederland.',
         'portfolio.roundrobin.title': 'Round Robin Shift Manager voor Confluence',
         'portfolio.roundrobin.category': 'Confluence Workflow Automatisering',
         'portfolio.roundrobin.description': 'Een uitgebreide Atlassian Marketplace-app die roterende teamverantwoordelijkheden, oproepdiensten en ondersteuningsschema\'s automatiseert. Voorzien van real-time aftellers, geautomatiseerde rotatielogica en een volledige historiek van diensten, direct geïntegreerd in Confluence.',
@@ -448,14 +466,6 @@ const translations = {
         'portfolio.socialehuurgids.category': 'Sociale Huur Navigatieplatform',
         'portfolio.socialehuurgids.description': 'Een uitgebreid navigatieplatform en strategiegids voor de Nederlandse sociale huursector. Helpt woningzoekenden het gereguleerde huursysteem te doorgronden, jarenlange wachtlijsten te omzeilen via lotingwoningen, urgentieverklaringen aan te vragen en huurtoeslag te berekenen.',
         'portfolio.btn.view': 'Bekijk Project',
-
-        // Games section
-        'games.title': 'AI & Strategy Games',
-        'games.subtitle': 'Meeslepende ervaringen die strategie, management en plezier combineren',
-        'games.landlordje.title': 'Landlordje',
-        'games.landlordje.category': 'Vastgoed Strategie Spel',
-        'games.landlordje.description': 'Word de rijkste verhuurder van Nederland. Begin als werknemer, spaar je salaris op en bouw een vastgoedimperium. Beheer huurders, overleef belastingwijzigingen en ga om met kapotte wasmachines in deze realistische Nederlandse vastgoedsimulator.',
-        'games.btn.play': 'Speel Nu',
 
         // Contact section
         'contact.title': 'Klaar om Uw Bedrijf te Transformeren?',
@@ -482,7 +492,7 @@ const translations = {
         'process.step3.text': 'We coderen de primaire AI-functionaliteit en gebruikersinterface.',
         'process.step4.title': 'Overdracht',
         'process.step4.duration': '1 Uur',
-        'process.step4.text': 'We verfijnen de UX en leveren uw productieklare prototype op.',
+        'process.step4.text': 'We verfijnen de UX en leveren uw productieklare prototype op. (Bewezen met WhereToInvest.nl — bedacht, gecodeerd en gelanceerd in minder dan 8 uur).',
 
         // FAQ Section
         'faq.title': 'Veelgestelde Vragen',
