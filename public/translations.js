@@ -17,12 +17,17 @@ const translations = {
         'nav.lab': 'Lab',
         'nav.games': 'Lab',
         'nav.contact': 'Contact',
+        'nav.cta': 'Book a Sprint',
 
         // Hero section
+        'hero.badge': 'Independent AI Studio • Amsterdam, Netherlands',
         'hero.title': 'AI Solutions That Transform Business',
         'hero.subtitle': 'We build production-ready AI prototypes in just 8 hours, and deliver comprehensive workshops to teach your teams how to do the same.',
         'hero.btn.explore': 'Explore Solutions',
         'hero.btn.portfolio': 'View Portfolio',
+        'hero.trust.metric1': '50+ AI Sprints Delivered',
+        'hero.trust.metric2': 'EU AI Act & GDPR Ready',
+        'hero.trust.metric3': 'Zero Data Retention / Private VPC',
 
         // About section
         'about.title': 'About TheGenAI',
@@ -313,12 +318,17 @@ const translations = {
         'nav.lab': 'Lab',
         'nav.games': 'Lab',
         'nav.contact': 'Contact',
+        'nav.cta': 'Boek een Sprint',
 
         // Hero section
+        'hero.badge': 'Onafhankelijke AI Studio • Amsterdam, Nederland',
         'hero.title': 'AI Oplossingen Die Bedrijven Transformeren',
         'hero.subtitle': 'Wij bouwen productieklare AI-prototypes in slechts 8 uur en geven uitgebreide workshops om uw teams te leren hetzelfde te doen.',
         'hero.btn.explore': 'Ontdek Oplossingen',
         'hero.btn.portfolio': 'Bekijk Portfolio',
+        'hero.trust.metric1': '50+ AI Sprints Opgeleverd',
+        'hero.trust.metric2': 'EU AI Act & AVG/GDPR Conform',
+        'hero.trust.metric3': 'Zero Data Retention / Private VPC',
 
         // About section
         'about.title': 'Over TheGenAI',
