@@ -112,6 +112,11 @@ For enterprises burdened by mission-critical legacy code, missing documentation,
 
 ## Portfolio Case Studies
 
+### Kerntest.nl — Psychometric & Assessment Platform (Live 8-Hour MVP Case Study)
+**URL**: https://kerntest.nl
+**Category**: Psychometrics / EdTech & HR Assessment
+**Description**: A live case study in 8-hour MVP sprint delivery: built from concept to production-ready deployment in a single day. A scientifically grounded psychometric testing platform in the Netherlands offering validated assessments including Big Five (OCEAN/IPIP-50), 16 Personality Types (Jungian cognitive functions), DISC behavioral styles, Core Quadrants (Daniel Ofman), and adult attachment styles. Features deterministic scoring algorithms, reverse-keyed bias prevention, percentile normalization, dynamic multi-trait insights, and downloadable PDF psychological reports.
+
 ### Bedankt.me — Digital Greeting Card Platform
 **URL**: https://bedankt.me
 **Category**: SaaS / Consumer

@@ -53,6 +53,7 @@ Transform undocumented legacy monoliths and siloed tribal knowledge into living 
 - **LinkedIn (Founder)**: https://www.linkedin.com/in/dima-kalachniuk-0b07b368
 
 ## Featured Portfolio (Built by TheGenAI)
+- **Kerntest.nl** — Scientifically grounded psychometric testing platform in the Netherlands. Live case study of an 8-hour MVP build featuring validated Big Five (IPIP-50), 16 Personality Types, DISC, and Core Quadrant assessments with calibrated scoring and psychological reports. URL: https://kerntest.nl
 - **Bedankt.me** — A modern digital eCard platform for group greeting cards and employee recognition. URL: https://bedankt.me
 - **Woonprijs.nl** — AI-powered Dutch real estate valuation and bidding advice platform. URL: https://woonprijs.nl
 - **WhereToInvest.nl** — AI investment analysis for the Dutch real estate market. Live case study of an 8-hour MVP build from concept to launch. URL: https://wheretoinvest.nl

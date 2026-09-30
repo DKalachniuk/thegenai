@@ -174,6 +174,10 @@ const translations = {
         'portfolio.socialehuurgids.title': 'SocialeHuurGids.nl',
         'portfolio.socialehuurgids.category': 'Social Housing Navigation Platform',
         'portfolio.socialehuurgids.description': 'A comprehensive navigation platform and strategy guide for the Dutch social housing market. Helps tenants understand the regulated rental system, bypass years-long waiting lists with lottery housing (lotingwoningen), navigate municipal priority schemes (urgentie), and calculate rental subsidies (huurtoeslag).',
+        'portfolio.kerntest.badge': '⚡ Live Case Study: Built in Under 8 Hours',
+        'portfolio.kerntest.title': 'Kerntest.nl',
+        'portfolio.kerntest.category': 'Psychometric & Assessment Platform',
+        'portfolio.kerntest.description': 'A scientifically grounded psychometric testing platform in the Netherlands. Offers validated assessments including Big Five (OCEAN/IPIP-50), 16 Personality Types, DISC, Core Quadrants (Ofman), and Attachment Styles with calibrated scoring, trait distribution analytics, and in-depth psychological reports.',
         'portfolio.btn.view': 'View Project',
 
         // Contact section
@@ -475,6 +479,10 @@ const translations = {
         'portfolio.socialehuurgids.title': 'SocialeHuurGids.nl',
         'portfolio.socialehuurgids.category': 'Sociale Huur Navigatieplatform',
         'portfolio.socialehuurgids.description': 'Een uitgebreid navigatieplatform en strategiegids voor de Nederlandse sociale huursector. Helpt woningzoekenden het gereguleerde huursysteem te doorgronden, jarenlange wachtlijsten te omzeilen via lotingwoningen, urgentieverklaringen aan te vragen en huurtoeslag te berekenen.',
+        'portfolio.kerntest.badge': '⚡ Live Case Study: Gebouwd in minder dan 8 uur',
+        'portfolio.kerntest.title': 'Kerntest.nl',
+        'portfolio.kerntest.category': 'Psychometrisch & Assessment Platform',
+        'portfolio.kerntest.description': 'Een wetenschappelijk onderbouwd psychometrisch testplatform in Nederland. Biedt gevalideerde assessments waaronder de Big Five (OCEAN/IPIP-50), 16 Persoonlijkheidstypes, DISC, Kernkwadranten (Ofman) en Hechtingsstijlen met gekalibreerde scoring, profielanalyses en diepgaande psychologische rapportages.',
         'portfolio.btn.view': 'Bekijk Project',
 
         // Contact section

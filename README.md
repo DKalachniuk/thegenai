@@ -7,7 +7,7 @@ A modern, Apple-inspired website for TheGenAI - a company that creates AI soluti
 - **Modern Design**: Clean, minimalist design inspired by Apple.com
 - **Responsive**: Fully responsive design that works on all devices
 - **Interactive**: Smooth animations and hover effects
-- **Portfolio Showcase**: Features the woonprijs.nl project
+- **Portfolio Showcase**: Features live production projects including Woonprijs.nl, WhereToInvest.nl, Kerntest.nl, TenderMaat.nl, SocialeHuurGids.nl, Dovidka.nl, and FluitVoorMij.nl
 - **Contact Form**: Functional contact form with validation
 - **Performance Optimized**: Fast loading with optimized assets
 - **SEO Optimized**: Comprehensive SEO for Dutch AI solution searches
