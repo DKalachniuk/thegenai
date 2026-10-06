@@ -2,12 +2,12 @@
 const translations = {
     en: {
         // Meta tags
-        'page-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'page-description': 'TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops.',
-        'og-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'og-description': 'TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops.',
-        'twitter-title': 'TheGenAI — Enterprise AI Solutions, Workshops & 8-Hour MVP Prototyping | Netherlands',
-        'twitter-description': 'TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We engineer custom AI solutions, reverse-engineer legacy codebases, and deliver hands-on team workshops.',
+        'page-title': 'TheGenAI — AI That Your Engineering Team Can Actually Run | Netherlands',
+        'page-description': 'AI that your engineering team can actually run. Legacy codebase intelligence, 8-hour proof-of-value sprints, and hands-on developer training for Dutch software companies.',
+        'og-title': 'TheGenAI — AI That Your Engineering Team Can Actually Run | Netherlands',
+        'og-description': 'AI that your engineering team can actually run. Legacy codebase intelligence, 8-hour proof-of-value sprints, and hands-on developer training for Dutch software companies.',
+        'twitter-title': 'TheGenAI — AI That Your Engineering Team Can Actually Run | Netherlands',
+        'twitter-description': 'AI that your engineering team can actually run. Legacy codebase intelligence, 8-hour proof-of-value sprints, and hands-on developer training for Dutch software companies.',
 
         // Navigation
         'nav.home': 'Home',
@@ -16,13 +16,14 @@ const translations = {
         'nav.portfolio': 'Portfolio',
         'nav.lab': 'Lab',
         'nav.games': 'Lab',
+        'nav.blog': 'Blog',
         'nav.contact': 'Contact',
         'nav.cta': 'Book a Sprint',
 
         // Hero section
         'hero.badge': 'Independent AI Studio • Amsterdam, Netherlands',
-        'hero.title': 'AI Solutions That Transform Business',
-        'hero.subtitle': 'We build production-ready AI prototypes in just 8 hours, and deliver comprehensive workshops to teach your teams how to do the same.',
+        'hero.title': 'AI that your engineering team can <span class="hero-highlight">actually run</span>',
+        'hero.subtitle': 'Legacy codebase intelligence, <span class="hero-accent">8-hour proof-of-value sprints</span>, and hands-on developer training for Dutch software companies.',
         'hero.btn.explore': 'Explore Solutions',
         'hero.btn.portfolio': 'View Portfolio',
         'hero.trust.metric1': '50+ AI Sprints Delivered',
@@ -38,7 +39,7 @@ const translations = {
         'about.founder.role': 'Founder & Principal AI Architect • Amsterdam',
         'about.stats.projects': 'AI Sprints & Builds',
         'about.stats.products': 'Live Shipped Products',
-        'about.stats.speed': 'From Idea to Live MVP',
+        'about.stats.speed': 'Proof-of-Value Sprint',
 
         // Venture Lab & Experiments
         'lab.badge': 'Venture Lab & Publications',
@@ -51,25 +52,53 @@ const translations = {
         'book.subtitle': 'How I Built a Real SaaS with AI',
         'book.description': 'Woonprijs.nl is a live, revenue-generating platform with real paying users. This book shares the exact, production-tested prompts and playbook I used to build it from scratch as a solo builder.',
         'book.benefit1': '55 production-tested prompts (APIs, UI, Stripe, auth, and more)',
-        'book.benefit2': 'Real-world case study: How Woonprijs.nl was built step-by-step',
+        'book.benefit2': 'Prompt strategies for leading AI models and coding agents',
         'book.benefit3': 'No fluff: Actual mistakes, bugs, and real AI fixes included',
         'book.cta': 'Buy on Gumroad',
 
-        // Services section
+        // Services section (6 Core Services)
         'services.title': 'Our AI Solutions',
-        'services.subtitle': 'Comprehensive AI services designed to accelerate your business growth',
-        'services.workshop.title': 'AI Team Workshops',
-        'services.workshop.description': 'Empower your team with hands-on training to build AI prototypes and real-world projects over immersive sessions.',
-        'services.prototype.title': 'Rapid AI Prototyping',
-        'services.prototype.description': 'Hire us to design and build a working AI prototype for your future project in just 8 hours.',
-        'services.consulting.title': 'AI Consulting',
-        'services.consulting.description': 'Strategic guidance to help you identify AI opportunities and develop a comprehensive AI roadmap.',
-        'services.dev.title': 'Software Development with AI',
-        'services.dev.description': 'Custom software solutions powered by AI to automate workflows and enhance user experiences.',
-        'services.legacydocs.title': 'Legacy Codebase Intelligence',
-        'services.legacydocs.description': 'Turn undocumented monoliths and tribal knowledge into crystal-clear living architecture diagrams, API contracts, and AI-ready technical docs. Eliminate key-person risk and onboard developers 5x faster.',
-        'services.waas.title': 'WaaS for Builders & Contractors',
-        'services.waas.description': 'Get a high-converting, fully-managed website for your construction or renovation business with zero down payment and WhatsApp content updates.',
+        'services.subtitle': 'Pragmatic, principal-led engineering services designed for European tech teams.',
+        'services.cta': 'Request a quote',
+        'services.footnote': 'Pilot fees are credited against follow-up work. 50% upfront, 50% on delivery.',
+
+        // Service 1: Legacy Codebase Intelligence
+        'services.legacy.title': 'Legacy Codebase Intelligence',
+        'services.legacy.badge': 'Most popular',
+        'services.legacy.description': 'Turn undocumented systems into living architecture maps, API contracts and AI-ready docs. Remove key-person risk and onboard developers faster.',
+        'services.legacy.price': 'Pilot (1 module, ~1 week) from €5,500 fixed. Full codebase from €15,000.',
+        'services.legacy.note': 'Pilot fee is credited against a full engagement.',
+
+        // Service 2: AI Readiness Scan
+        'services.readiness.title': 'AI Readiness Scan',
+        'services.readiness.description': 'A 1-2 week scan that finds your best AI use cases, the risks and a short roadmap. No hype, a prioritised plan.',
+        'services.readiness.price': '€3,900 fixed.',
+        'services.readiness.note': '1-2 weeks • Prioritised opportunity & risk roadmap',
+
+        // Service 3: Proof-of-Value Sprint (8 hours)
+        'services.pov.title': 'Proof-of-Value Sprint (8 hours)',
+        'services.pov.description': 'A working prototype of your "magic feature" in one day, to prove value before you invest. Follow-up hardening available.',
+        'services.pov.price': '€2,900 fixed.',
+        'services.pov.note': '1 working day • Working prototype of your core feature',
+
+        // Service 4: Production Hardening
+        'services.hardening.title': 'Production Hardening',
+        'services.hardening.description': 'Turn a prototype into something your team can run: tests, security review, logging and a clean handover.',
+        'services.hardening.price': '€1,000/day or 5-day package €4,750.',
+        'services.hardening.note': '5-day package €4,750 • Tests, security review & logging',
+
+        // Service 5: AI Workshops for Developer Teams
+        'services.workshops.title': 'AI Workshops for Developer Teams',
+        'services.workshops.description': 'Hands-on training in AI-assisted coding, working safely with agents (AGENTS.md, llms.txt) and building real prototypes. Includes an optional AI-literacy session for the wider organisation.',
+        'services.workshops.price': 'Half day €2,000, full day €3,500 (up to 12 people). AI-literacy session half day €1,500 (up to 20 people).',
+        'services.workshops.note': 'Up to 12 people • Optional AI-literacy session (up to 20 people)',
+
+        // Service 6: Website as a Service
+        'services.waas.title': 'Website as a Service (WaaS)',
+        'services.waas.description': 'Get a high-converting, fully-managed website for your business with zero down payment and all-inclusive support.',
+        'services.waas.price': 'Dedicated plans • €0 down payment',
+        'services.waas.note': 'Open page to see all plans & pricing options',
+        'services.waas.cta': 'View Plans & Pricing',
 
         // WaaS Page English
         'waas.title': 'WaaS for Builders, Contractors & Klusbedrijven | TheGenAI',
@@ -192,7 +221,7 @@ const translations = {
         'contact.form.submit': 'Send Message',
 
         // Process Section (How it Works)
-        'process.title': 'How It Works',
+        'process.title': 'Proof-of-Value Sprint',
         'process.subtitle': 'From idea to working prototype in a single day.',
         'process.step1.title': 'Discovery',
         'process.step1.duration': '1 Hour',
@@ -205,7 +234,10 @@ const translations = {
         'process.step3.text': 'We code the primary AI functionality and user interface.',
         'process.step4.title': 'Handover',
         'process.step4.duration': '1 Hour',
-        'process.step4.text': 'We refine the UX and deliver your production-ready prototype. (Proven by WhereToInvest.nl — conceived, coded, and launched in under 8 hours).',
+        'process.step4.text': 'We refine the UX and deliver your working prototype. (Proven by WhereToInvest.nl — conceived, coded, and launched in an 8-hour sprint).',
+        'process.step5.title': 'Next: Hardening',
+        'process.step5.duration': 'Next Step',
+        'process.step5.text': 'We scope the path to production (optional).',
 
         // FAQ Section
         'faq.title': 'Frequently Asked Questions',
@@ -215,15 +247,21 @@ const translations = {
         'faq.q2': 'Do I need a technical background?',
         'faq.a2': 'No. Our workshops and prototypes are designed to bridge the gap between business ideas and technical reality for everyone.',
         'faq.q3': 'What happens after the 8 hours?',
-        'faq.a3': 'You receive a fully functional, production-ready codebase that you can host, test, or use as a foundation for your final product. We also offer follow-up development engagements.',
+        'faq.a3': 'You receive a working prototype of your core feature along with the complete source code. Production hardening — adding automated tests, CI/CD, security audits, logging, and production infrastructure — is a separate, scoped follow-up phase so you only invest once value is proven.',
         'faq.q4': 'Where does TheGenAI operate?',
         'faq.a4': 'TheGenAI is based in Amsterdam, The Netherlands, and serves clients across all of Europe with on-site and remote workshops and consulting.',
         'faq.q5': 'How do I book a workshop or order an MVP?',
         'faq.a5': 'Email us at info@thegenai.nl or fill in the contact form on our website to get started.',
         'faq.q6': 'How does TheGenAI handle enterprise data security, privacy, and EU AI Act compliance?',
-        'faq.a6': 'We prioritize enterprise-grade security and full compliance with the EU AI Act and GDPR. All solutions can be deployed 100% privately within your enterprise VPC (AWS, Azure, GCP) or on-premise air-gapped environments. We enforce zero data retention policies with zero training on your proprietary data.',
+        'faq.a6': 'We prioritize enterprise-grade security and full compliance with the EU AI Act and GDPR. All solutions can be deployed 100% privately within your enterprise VPC (AWS, Azure, GCP) or on-premise air-gapped environments. We enforce zero data retention policies with zero training on your proprietary data. Learn more on our <a href="/security/">Security and Data Handling</a> page.',
         'faq.q7': 'How do you reverse-engineer and document undocumented legacy codebases?',
         'faq.a7': 'We employ specialized static analysis engines and private LLM agents to map service boundaries, data flows, database schemas, and API contracts into living architectural diagrams and OpenAPI specifications. We also create context layers (AGENTS.md, llms.txt) allowing modern AI coding assistants to work safely with your legacy code without hallucinations.',
+        'faq.q8': 'What do your services cost?',
+        'faq.a8': 'We work with fixed, transparent pricing: AI Readiness Scan (€3,900 fixed), 8-Hour Proof-of-Value Sprint (€2,900 fixed), Legacy Codebase Intelligence (pilot from €5,500, full codebase from €15,000, with pilot fee credited toward full engagements), Production Hardening (€1,000/day or €4,750 for 5 days), and Developer Workshops (half-day €2,000, full-day €3,500). Website as a Service (WaaS) offers dedicated plans starting from €0 upfront.',
+        'faq.q9': 'Who owns the code?',
+        'faq.a9': 'You do. The client owns 100% of the deliverables and custom source code, as agreed and stipulated in our contract. There is no vendor lock-in.',
+        'faq.q10': 'What is the AI-literacy session?',
+        'faq.a10': 'The AI-literacy session is a half-day interactive workshop covering the AI-literacy obligation under the EU AI Act for organisations using or deploying AI systems. It provides practical, non-technical and technical guidance on safe, compliant AI usage.',
 
         // Newsletter
         'newsletter.title': 'Stay Ahead of AI',
@@ -234,16 +272,43 @@ const translations = {
         // Footer
         'footer.description': 'Creating intelligent solutions for tomorrow\'s challenges.',
         'footer.services.title': 'Services',
-        'footer.services.workshop': 'AI Workshops',
-        'footer.services.prototype': 'Rapid Prototyping',
-        'footer.services.consulting': 'AI Consulting',
-        'footer.services.dev': 'Software Development',
+        'footer.services.legacy': 'Legacy Codebase Intelligence',
+        'footer.services.readiness': 'AI Readiness Scan',
+        'footer.services.pov': 'Proof-of-Value Sprint',
+        'footer.services.hardening': 'Production Hardening',
+        'footer.services.workshops': 'AI Workshops',
+        'footer.services.waas': 'Website as a Service',
         'footer.company.title': 'Company',
         'footer.social.title': 'Connect',
         'footer.social.linkedin_company': 'LinkedIn (Company)',
         'footer.social.linkedin_founder': 'LinkedIn (Founder)',
         'footer.privacy': 'Privacy Policy',
+        'footer.security': 'Security & Data Handling',
         'footer.copyright': '© 2026 TheGenAI. All rights reserved. KVK 42019613',
+
+        // Security Page English
+        'security.title': 'Security and Data Handling - TheGenAI',
+        'security.badge': 'Enterprise Security & Compliance',
+        'security.heading': 'Security & Data Handling',
+        'security.subtitle': 'Deploy in your private cloud, retain 100% data ownership, and stay compliant with GDPR and the EU AI Act.',
+        'security.last_updated': 'Last Updated: October 2026',
+        'security.intro': 'At TheGenAI, enterprise security, code confidentiality, and regulatory compliance are built into our architecture from day one. Here is exactly how we handle your infrastructure, models, and data.',
+        'security.vpc.title': '1. Private VPC & On-Premise Deployment',
+        'security.vpc.text': 'All custom AI solutions, prototypes, and agentic workflows can be deployed entirely within your own cloud perimeter (AWS, Microsoft Azure, Google Cloud Platform) or self-hosted in air-gapped on-premise environments. No client code, proprietary business logic, or customer data ever leaves your controlled security perimeter.',
+        'security.retention.title': '2. Zero Data Retention & No Training on Client Data',
+        'security.retention.text': 'We enforce strict Zero Data Retention (ZDR) policies across all AI APIs and foundation model providers. Your proprietary codebases, architecture diagrams, internal APIs, and operational data are strictly processed ephemerally for runtime inference and are never stored or used to train public or proprietary models.',
+        'security.gdpr.title': '3. GDPR & EU AI Act-Aware Architecture',
+        'security.gdpr.text': 'As an Amsterdam-based studio, we build systems with privacy-by-design under the GDPR and align with the European AI Act framework. We implement strict data minimization, human-in-the-loop governance for agentic workflows, audit logging, and team AI-literacy best practices.',
+        'security.ownership.title': '4. 100% Code & IP Ownership',
+        'security.ownership.text': 'Clients retain complete, unencumbered ownership of all deliverables, repositories, architecture maps, and custom code created during our engagements. We build on open, standardized technologies to guarantee zero vendor lock-in.',
+        'security.subprocessors.title': '5. Subprocessors List',
+        'security.subprocessors.text': 'We maintain a minimal footprint of verified infrastructure subprocessors. A comprehensive list of third-party sub-processors with geographic hosting regions is available upon request.',
+        'security.dpa.title': '6. Data Processing Agreement (DPA)',
+        'security.dpa.text': 'We provide standard, GDPR-compliant Data Processing Agreements (DPA) incorporating standard contractual clauses for all enterprise and pilot engagements.',
+        'security.insurance.title': '7. Insurance & Liability',
+        'security.insurance.text': 'TheGenAI carries professional indemnity and cyber liability insurance tailored for software engineering and enterprise advisory services.',
+        'security.certifications.title': '8. Certifications & Standards',
+        'security.certifications.text': 'Our engineering practices adhere to ISO/IEC 27001 information security controls and OWASP Top 10 for LLMs security guidelines.',
 
         // Blog Section
         'blog.page_title': 'Blog: AI Insights, Workshops & Prototyping - TheGenAI',
@@ -307,12 +372,12 @@ const translations = {
     },
     nl: {
         // Meta tags
-        'page-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
-        'page-description': 'TheGenAI is een onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams.',
-        'og-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
-        'og-description': 'TheGenAI is een onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams.',
-        'twitter-title': 'TheGenAI — Enterprise AI Oplossingen, Workshops & 8-Uur MVP Prototyping | Nederland',
-        'twitter-description': 'TheGenAI is een onafhankelijke AI-studio gevestigd in Amsterdam, opgericht in 2026. Wij bouwen maatwerk AI-oplossingen, documenteren legacy codebases en verzorgen praktische workshops voor teams.',
+        'page-title': 'TheGenAI — AI Die Uw Engineeringteam Daadwerkelijk Kan Beheren | Nederland',
+        'page-description': 'AI die uw engineeringteam daadwerkelijk kan beheren. Legacy codebase intelligence, 8-uurs proof-of-value sprints en praktijkgerichte developer training voor Nederlandse softwarebedrijven.',
+        'og-title': 'TheGenAI — AI Die Uw Engineeringteam Daadwerkelijk Kan Beheren | Nederland',
+        'og-description': 'AI die uw engineeringteam daadwerkelijk kan beheren. Legacy codebase intelligence, 8-uurs proof-of-value sprints en praktijkgerichte developer training voor Nederlandse softwarebedrijven.',
+        'twitter-title': 'TheGenAI — AI Die Uw Engineeringteam Daadwerkelijk Kan Beheren | Nederland',
+        'twitter-description': 'AI die uw engineeringteam daadwerkelijk kan beheren. Legacy codebase intelligence, 8-uurs proof-of-value sprints en praktijkgerichte developer training voor Nederlandse softwarebedrijven.',
 
         // Navigation
         'nav.home': 'Home',
@@ -321,13 +386,14 @@ const translations = {
         'nav.portfolio': 'Portfolio',
         'nav.lab': 'Lab',
         'nav.games': 'Lab',
+        'nav.blog': 'Blog',
         'nav.contact': 'Contact',
         'nav.cta': 'Boek een Sprint',
 
         // Hero section
         'hero.badge': 'Onafhankelijke AI Studio • Amsterdam, Nederland',
-        'hero.title': 'AI Oplossingen Die Bedrijven Transformeren',
-        'hero.subtitle': 'Wij bouwen productieklare AI-prototypes in slechts 8 uur en geven uitgebreide workshops om uw teams te leren hetzelfde te doen.',
+        'hero.title': 'AI die uw engineeringteam daadwerkelijk kan <span class="hero-highlight">beheren</span>',
+        'hero.subtitle': 'Legacy codebase intelligence, <span class="hero-accent">8-uurs proof-of-value sprints</span> en praktijkgerichte developer training voor Nederlandse softwarebedrijven.',
         'hero.btn.explore': 'Ontdek Oplossingen',
         'hero.btn.portfolio': 'Bekijk Portfolio',
         'hero.trust.metric1': '50+ AI Sprints Opgeleverd',
@@ -343,7 +409,7 @@ const translations = {
         'about.founder.role': 'Oprichter & Principal AI Architect • Amsterdam',
         'about.stats.projects': 'AI Sprints & Opleveringen',
         'about.stats.products': 'Live Producten Gebouwd',
-        'about.stats.speed': 'Van Idee naar Live MVP',
+        'about.stats.speed': 'Proof-of-Value Sprint',
 
         // Venture Lab & Experiments
         'lab.badge': 'Venture Lab & Publicaties',
@@ -356,25 +422,53 @@ const translations = {
         'book.subtitle': 'How I Built a Real SaaS with AI',
         'book.description': 'Woonprijs.nl is een live platform met betalende gebruikers. Dit boek deelt de exacte, in de praktijk geteste prompts en het playbook dat ik heb gebruikt om het vanaf nul op te bouwen als solo-ontwikkelaar.',
         'book.benefit1': '55 in de praktijk geteste prompts (APIs, UI, Stripe, auth, enz.)',
-        'book.benefit2': 'Echte case study: Hoe Woonprijs.nl stap-voor-stap is gebouwd',
+        'book.benefit2': 'Promptstrategieën voor toonaangevende AI-modellen en coding agents',
         'book.benefit3': 'Geen onzin: Inclusief echte fouten, bugs en concrete AI-oplossingen',
         'book.cta': 'Koop op Gumroad',
 
-        // Services section
+        // Services section (6 Core Services Dutch)
         'services.title': 'Onze AI Oplossingen',
-        'services.subtitle': 'Uitgebreide AI-diensten ontworpen om uw bedrijfsgroei te versnellen',
-        'services.workshop.title': 'AI Team Workshops',
-        'services.workshop.description': 'Geef uw team praktische training om AI-prototypes en echte projecten te bouwen tijdens interactieve sessies.',
-        'services.prototype.title': 'Snelle AI Prototyping',
-        'services.prototype.description': 'Huur ons in om binnen 8 uur een werkend AI-prototype voor uw toekomstige project te ontwerpen en bouwen.',
-        'services.consulting.title': 'AI Advies',
-        'services.consulting.description': 'Strategische begeleiding om u te helpen AI-mogelijkheden te identificeren en een uitgebreide AI-roadmap te ontwikkelen.',
-        'services.dev.title': 'Softwareontwikkeling met AI',
-        'services.dev.description': 'Maatwerk software-oplossingen aangedreven door AI om workflows te automatiseren en gebruikerservaringen te verbeteren.',
-        'services.legacydocs.title': 'Legacy Codebase Documentatie & Intelligentie',
-        'services.legacydocs.description': 'Transformeer ongedocumenteerde legacy-monolieten en bedrijfskennis naar haarscherpe interactieve architectuurschema\'s, API-specificaties en AI-ready documentatie. Elimineer sleutelpersoonrisico\'s en versnel developer-onboarding 5x.',
-        'services.waas.title': 'WaaS voor Klusbedrijven',
-        'services.waas.description': 'Ontvang een converterende, volledig beheerde website voor uw bouw- of klusbedrijf met nul aanbetaling en WhatsApp content-updates.',
+        'services.subtitle': 'Pragmatische engineeringdiensten door een ervaren hoofdontwikkelaar voor Nederlandse softwarebedrijven.',
+        'services.cta': 'Offerte aanvragen',
+        'services.footnote': 'Pilotkosten worden verrekend met vervolgtrajecten. 50% vooraf, 50% bij oplevering.',
+
+        // Service 1: Legacy Codebase Intelligence
+        'services.legacy.title': 'Legacy Codebase Intelligence',
+        'services.legacy.badge': 'Meest populair',
+        'services.legacy.description': 'Transformeer ongedocumenteerde systemen naar actuele architectuurkaarten, API-contracten en AI-ready documentatie. Elimineer sleutelpersoonrisico en werk developers sneller in.',
+        'services.legacy.price': 'Pilot (1 module, ~1 week) vanaf €5.500 vast. Volledige codebase vanaf €15.000.',
+        'services.legacy.note': 'Pilotkosten worden verrekend met een volledig traject.',
+
+        // Service 2: AI Readiness Scan
+        'services.readiness.title': 'AI Readiness Scan',
+        'services.readiness.description': 'Een scan van 1-2 weken die uw beste AI use-cases, risico\'s en een compacte roadmap identificeert. Geen hype, een geprioriteerd plan.',
+        'services.readiness.price': '€3.900 vast.',
+        'services.readiness.note': '1-2 weken • Geprioriteerde kansen & risico-roadmap',
+
+        // Service 3: Proof-of-Value Sprint (8 uur)
+        'services.pov.title': 'Proof-of-Value Sprint (8 uur)',
+        'services.pov.description': 'Een werkend prototype van uw "magic feature" in één dag, om waarde te bewijzen vóórdat u investeert. Aansluitende hardening beschikbaar.',
+        'services.pov.price': '€2.900 vast.',
+        'services.pov.note': '1 werkdag • Werkend prototype van uw kernfeature',
+
+        // Service 4: Production Hardening
+        'services.hardening.title': 'Production Hardening',
+        'services.hardening.description': 'Transformeer een prototype naar iets dat uw team daadwerkelijk kan beheren: tests, security review, logging en een gestructureerde overdracht.',
+        'services.hardening.price': '€1.000/dag of 5-dagen pakket €4.750.',
+        'services.hardening.note': '5-dagen pakket €4.750 • Tests, security review & logging',
+
+        // Service 5: AI Workshops voor Developer Teams
+        'services.workshops.title': 'AI Workshops voor Developer Teams',
+        'services.workshops.description': 'Praktijkgerichte training in AI-assisted coding, veilig werken met agents (AGENTS.md, llms.txt) en het bouwen van echte prototypes. Inclusief optionele AI-geletterdheidssessie voor de bredere organisatie.',
+        'services.workshops.price': 'Halve dag €2.000, hele dag €3.500 (tot 12 personen). AI-geletterdheidssessie halve dag €1.500 (tot 20 personen).',
+        'services.workshops.note': 'Tot 12 personen • Optionele AI-geletterdheidssessie (tot 20 personen)',
+
+        // Service 6: Website as a Service
+        'services.waas.title': 'Website as a Service (WaaS)',
+        'services.waas.description': 'Ontvang een converterende, volledig beheerde website voor uw bedrijf met nul aanbetaling en complete ondersteuning.',
+        'services.waas.price': 'Vaste pakketten • €0 aanbetaling',
+        'services.waas.note': 'Open de pagina om alle pakketten en tarieven te bekijken',
+        'services.waas.cta': 'Bekijk Tarieven & Details',
 
         // WaaS Page Dutch
         'waas.title': 'WaaS voor Klusbedrijven, Aannemers & Bouw-ZZP\'ers | TheGenAI',
@@ -497,20 +591,23 @@ const translations = {
         'contact.form.submit': 'Verstuur Bericht',
 
         // Process Section (How it Works)
-        'process.title': 'Hoe Het Werkt',
-        'process.subtitle': 'Van idee naar werkend prototype in één dag.',
-        'process.step1.title': 'Discovery',
+        'process.title': 'Proof-of-Value Sprint',
+        'process.subtitle': 'Van idee naar werkend prototype in één werkdag.',
+        'process.step1.title': 'Ontdekking',
         'process.step1.duration': '1 Uur',
         'process.step1.text': 'We identificeren het kernprobleem en definiëren de "magic" feature.',
         'process.step2.title': 'Architectuur',
         'process.step2.duration': '2 Uur',
-        'process.step2.text': 'We brengen de datastroom en UI-structuur in kaart.',
+        'process.step2.text': 'We ontwerpen de datastromen en UI-structuur.',
         'process.step3.title': 'Core Bouw',
         'process.step3.duration': '4 Uur',
-        'process.step3.text': 'We coderen de primaire AI-functionaliteit en gebruikersinterface.',
+        'process.step3.text': 'We ontwikkelen de primaire AI-functionaliteit en gebruikersinterface.',
         'process.step4.title': 'Overdracht',
         'process.step4.duration': '1 Uur',
-        'process.step4.text': 'We verfijnen de UX en leveren uw productieklare prototype op. (Bewezen met WhereToInvest.nl — bedacht, gecodeerd en gelanceerd in minder dan 8 uur).',
+        'process.step4.text': 'We verfijnen de UX en leveren uw werkende prototype op. (Bewezen met WhereToInvest.nl — bedacht, gecodeerd en gelanceerd in een 8-uurs sprint).',
+        'process.step5.title': 'Volgende stap: Hardening',
+        'process.step5.duration': 'Vervolgstap',
+        'process.step5.text': 'We bepalen het traject naar productie (optioneel).',
 
         // FAQ Section
         'faq.title': 'Veelgestelde Vragen',
@@ -520,15 +617,21 @@ const translations = {
         'faq.q2': 'Heb ik een technische achtergrond nodig?',
         'faq.a2': 'Nee. Onze workshops en prototypes zijn ontworpen om de kloof tussen zakelijke ideeën en technische realiteit voor iedereen te overbruggen.',
         'faq.q3': 'Wat gebeurt er na de 8 uur?',
-        'faq.a3': 'U ontvangt een volledig functionele, productieklare codebase die u kunt hosten, testen of gebruiken als basis voor uw uiteindelijke product. We bieden ook vervolgtrajecten aan.',
+        'faq.a3': 'U ontvangt een werkend prototype van uw kernfeature inclusief de volledige broncode. Production hardening — geautomatiseerde tests, CI/CD, beveiligingsaudits, logging en productie-infrastructuur — is een afzonderlijke, afgebakende vervolgfase, zodat u pas investeert nadat waarde is bewezen.',
         'faq.q4': 'Waar is TheGenAI actief?',
         'faq.a4': 'TheGenAI is gevestigd in Amsterdam, Nederland en bedient klanten in heel Europa met workshops en advies, zowel op locatie als op afstand.',
         'faq.q5': 'Hoe boek ik een workshop of bestel ik een MVP?',
         'faq.a5': 'Mail ons op info@thegenai.nl of vul het contactformulier in op onze website om te starten.',
         'faq.q6': 'Hoe waarborgt TheGenAI enterprise databeveiliging, privacy en de EU AI Act?',
-        'faq.a6': 'We hanteren strenge enterprise beveiligingsnormen en volledige compliance met de EU AI Act en AVG/GDPR. Onze oplossingen kunnen 100% privé worden geïmplementeerd binnen uw eigen VPC (AWS, Azure, GCP) of on-premise omgevingen, met gegarandeerd zero data retention en zonder dat uw data wordt gebruikt voor modeltraining.',
+        'faq.a6': 'Wij hanteren enterprise-grade beveiliging en volledige compliance met de EU AI Act en AVG/GDPR. Onze oplossingen kunnen 100% privé worden geïmplementeerd binnen uw enterprise VPC (AWS, Azure, GCP) of op eigen servers, met gegarandeerd zero data retention en zonder dat uw data wordt gebruikt voor modeltraining. Lees meer op onze pagina <a href="/security/">Beveiliging en dataverwerking</a>.',
         'faq.q7': 'Hoe documenteren en moderniseren jullie ongedocumenteerde legacy codebases?',
         'faq.a7': 'We zetten gespecialiseerde statische analyse-engines en private LLM-agenten in om servicegrenzen, datastromen, databaseschema\'s en API-contracten te vertalen naar levende architectuurschema\'s en OpenAPI-specificaties. Ook bouwen we context-lagen (AGENTS.md, llms.txt) waarmee moderne AI coding assistants veilig met uw codebase kunnen werken zonder te hallucineren.',
+        'faq.q8': 'Wat kosten jullie diensten?',
+        'faq.a8': 'Wij hanteren transparante, vaste prijzen: AI Readiness Scan (€3.900 vast), 8-uurs Proof-of-Value Sprint (€2.900 vast), Legacy Codebase Intelligence (pilot vanaf €5.500, volledige codebase vanaf €15.000, waarbij pilotkosten worden verrekend met een vervolgtraject), Production Hardening (€1.000/dag of €4.750 voor 5 dagen) en Developer Workshops (halve dag €2.000, hele dag €3.500). Website as a Service (WaaS) biedt pakketten vanaf €0 opstartkosten.',
+        'faq.q9': 'Wie is eigenaar van de broncode?',
+        'faq.a9': 'U bent de eigenaar. De opdrachtgever bezit 100% van de opgeleverde deliverables en maatwerkcode, zoals contractueel vastgelegd. Er is geen sprake van vendor lock-in.',
+        'faq.q10': 'Wat houdt de AI-geletterdheidssessie in?',
+        'faq.a10': 'De AI-geletterdheidssessie is een interactieve workshop van een halve dag die aansluit bij de verplichting tot AI-geletterdheid onder de Europese AI Act voor organisaties die AI-systemen inzetten. Het biedt praktische richtlijnen voor verantwoord, veilig en compliant AI-gebruik.',
 
         // Newsletter
         'newsletter.title': 'Blijf Voorop met AI',
@@ -539,16 +642,43 @@ const translations = {
         // Footer
         'footer.description': 'Intelligente oplossingen creëren voor de uitdagingen van morgen.',
         'footer.services.title': 'Diensten',
-        'footer.services.workshop': 'AI Workshops',
-        'footer.services.prototype': 'Snelle Prototyping',
-        'footer.services.consulting': 'AI Advies',
-        'footer.services.dev': 'Softwareontwikkeling met AI',
+        'footer.services.legacy': 'Legacy Codebase Intelligence',
+        'footer.services.readiness': 'AI Readiness Scan',
+        'footer.services.pov': 'Proof-of-Value Sprint',
+        'footer.services.hardening': 'Production Hardening',
+        'footer.services.workshops': 'AI Workshops',
+        'footer.services.waas': 'Website as a Service',
         'footer.company.title': 'Bedrijf',
         'footer.social.title': 'Connect',
         'footer.social.linkedin_company': 'LinkedIn (Bedrijf)',
         'footer.social.linkedin_founder': 'LinkedIn (Oprichter)',
         'footer.privacy': 'Privacybeleid',
+        'footer.security': 'Beveiliging & Dataverwerking',
         'footer.copyright': '© 2026 TheGenAI. Alle rechten voorbehouden. KVK 42019613',
+
+        // Security Page Dutch
+        'security.title': 'Beveiliging en Dataverwerking - TheGenAI',
+        'security.badge': 'Enterprise Beveiliging & Compliance',
+        'security.heading': 'Beveiliging & Dataverwerking',
+        'security.subtitle': 'Implementatie in uw private cloud, 100% eigendom van data en code, en conform de AVG/GDPR en EU AI Act.',
+        'security.last_updated': 'Laatst bijgewerkt: oktober 2026',
+        'security.intro': 'Bij TheGenAI zijn enterprise beveiliging, codevertrouwelijkheid en wetgevingscompliance vanaf dag één verankerd in onze werkwijze. Hier leest u precies hoe wij omgaan met uw infrastructuur, modellen en bedrijfsdata.',
+        'security.vpc.title': '1. Private VPC & On-Premise Implementatie',
+        'security.vpc.text': 'Alle AI-oplossingen, prototypes en agentic workflows kunnen volledig binnen uw eigen cloudomgeving (AWS, Microsoft Azure, Google Cloud Platform) of in afgeschermde on-premise omgevingen draaien. Er verlaat nooit broncode of data uw beveiligingsperimeter.',
+        'security.retention.title': '2. Zero Data Retention & Geen Training op Klantdata',
+        'security.retention.text': 'Wij hanteren strikte Zero Data Retention (ZDR) voorwaarden bij modelaanbieders. Uw codebases, architectuurschema\'s en bedrijfsgegevens worden enkel vluchtig verwerkt tijdens runtime en worden nooit opgeslagen of gebruikt om openbare of private AI-modellen te trainen.',
+        'security.gdpr.title': '3. AVG/GDPR & EU AI Act-Conforme Architectuur',
+        'security.gdpr.text': 'Als studio in Amsterdam ontwerpen we volgens privacy-by-design onder de AVG en sluiten we aan bij de vereisten van de Europese AI Act. We hanteren dataminimalisatie, human-in-the-loop controle voor agents, auditlogs en scholing in AI-geletterdheid.',
+        'security.ownership.title': '4. 100% Eigendom van Code & IP',
+        'security.ownership.text': 'Opdrachtgevers behouden het volledige eigendom over alle deliverables, repositories, architectuurkaarten en maatwerkcode. We bouwen op open standaarden zodat u nooit vastzit aan een leverancier.',
+        'security.subprocessors.title': '5. Lijst van Subverwerkers',
+        'security.subprocessors.text': 'Wij houden een minimale kring van geverifieerde infrastructuur-subverwerkers aan. Een actuele lijst met hostingregio\'s is op aanvraag beschikbaar.',
+        'security.dpa.title': '6. Verwerkersovereenkomst (DPA)',
+        'security.dpa.text': 'Wij verstrekken standaard, AVG-conforme verwerkersovereenkomsten met standaard contractbepalingen voor al onze zakelijke opdrachten en pilots.',
+        'security.insurance.title': '7. Verzekering & Aansprakelijkheid',
+        'security.insurance.text': 'TheGenAI beschikt over een beroepsaansprakelijkheids- en cyberverzekering afgestemd op softwareontwikkeling en zakelijke advisering.',
+        'security.certifications.title': '8. Certificeringen & Standaarden',
+        'security.certifications.text': 'Onze engineeringpraktijken volgen ISO/IEC 27001 beveiligingsrichtlijnen en de OWASP Top 10 voor LLM-applicaties.',
 
         // Blog Section
         'blog.page_title': 'Blog: AI Inzichten, Workshops & Prototyping - TheGenAI',
@@ -655,7 +785,11 @@ class TranslationManager {
         elements.forEach(element => {
             const key = element.getAttribute('data-translate');
             if (translations[lang] && translations[lang][key]) {
-                element.textContent = translations[lang][key];
+                if (translations[lang][key].includes('<')) {
+                    element.innerHTML = translations[lang][key];
+                } else {
+                    element.textContent = translations[lang][key];
+                }
             }
         });
 

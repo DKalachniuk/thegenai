@@ -101,6 +101,15 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/privacy" />
     </url>
     <url>
+        <loc>https://thegenai.nl/security</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/security" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/security?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/security" />
+    </url>
+    <url>
         <loc>https://thegenai.nl/llms.txt</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>monthly</changefreq>
