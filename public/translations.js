@@ -24,6 +24,7 @@ const translations = {
         'hero.badge': 'Independent AI Studio • Amsterdam, Netherlands',
         'hero.title': 'AI that your engineering team can <span class="hero-highlight">actually run</span>',
         'hero.subtitle': 'Legacy codebase intelligence, <span class="hero-accent">8-hour proof-of-value sprints</span>, and hands-on developer training for Dutch software companies.',
+        'hero.btn.cta': 'Book a Sprint',
         'hero.btn.explore': 'Explore Solutions',
         'hero.btn.portfolio': 'View Portfolio',
         'hero.trust.metric1': '50+ AI Sprints Delivered',
@@ -207,6 +208,9 @@ const translations = {
         'portfolio.kerntest.title': 'Kerntest.nl',
         'portfolio.kerntest.category': 'Psychometric & Assessment Platform',
         'portfolio.kerntest.description': 'A scientifically grounded psychometric testing platform in the Netherlands. Offers validated assessments including Big Five (OCEAN/IPIP-50), 16 Personality Types, DISC, Core Quadrants (Ofman), and Attachment Styles with calibrated scoring, trait distribution analytics, and in-depth psychological reports.',
+        'portfolio.padelmath.title': 'PadelMath.com',
+        'portfolio.padelmath.category': 'Padel Analytics & Equipment Intelligence',
+        'portfolio.padelmath.description': 'A data-driven sports analytics platform and decision engine for padel players and court developers. Features objective racket fit scoring formulas, comprehensive spec databases, and US court cost & ROI feasibility calculators.',
         'portfolio.btn.view': 'View Project',
 
         // Contact section
@@ -262,6 +266,10 @@ const translations = {
         'faq.a9': 'You do. The client owns 100% of the deliverables and custom source code, as agreed and stipulated in our contract. There is no vendor lock-in.',
         'faq.q10': 'What is the AI-literacy session?',
         'faq.a10': 'The AI-literacy session is a half-day interactive workshop covering the AI-literacy obligation under the EU AI Act for organisations using or deploying AI systems. It provides practical, non-technical and technical guidance on safe, compliant AI usage.',
+        'faq.q11': 'How does Codebase Intelligence prevent high-risk "Big Bang" rewrites?',
+        'faq.a11': 'Instead of freezing feature work for a multi-year rewrite that risks omitting undocumented edge cases, our codebase intelligence maps dependencies and data flows so you can safely apply the Strangler Fig pattern — incrementally migrating isolated modules with zero downtime.',
+        'faq.q12': 'How do you eliminate key-person risk ("sleutelpersoonrisico") in legacy systems?',
+        'faq.a12': 'We extract tribal knowledge directly from git history, undocumented business logic, and code paths into living architectural maps, OpenAPI specs, and AI context layers (AGENTS.md, llms.txt), ensuring no single engineer is a single point of failure.',
 
         // Newsletter
         'newsletter.title': 'Stay Ahead of AI',
@@ -394,6 +402,7 @@ const translations = {
         'hero.badge': 'Onafhankelijke AI Studio • Amsterdam, Nederland',
         'hero.title': 'AI die uw engineeringteam daadwerkelijk kan <span class="hero-highlight">beheren</span>',
         'hero.subtitle': 'Legacy codebase intelligence, <span class="hero-accent">8-uurs proof-of-value sprints</span> en praktijkgerichte developer training voor Nederlandse softwarebedrijven.',
+        'hero.btn.cta': 'Boek een Sprint',
         'hero.btn.explore': 'Ontdek Oplossingen',
         'hero.btn.portfolio': 'Bekijk Portfolio',
         'hero.trust.metric1': '50+ AI Sprints Opgeleverd',
@@ -577,6 +586,9 @@ const translations = {
         'portfolio.kerntest.title': 'Kerntest.nl',
         'portfolio.kerntest.category': 'Psychometrisch & Assessment Platform',
         'portfolio.kerntest.description': 'Een wetenschappelijk onderbouwd psychometrisch testplatform in Nederland. Biedt gevalideerde assessments waaronder de Big Five (OCEAN/IPIP-50), 16 Persoonlijkheidstypes, DISC, Kernkwadranten (Ofman) en Hechtingsstijlen met gekalibreerde scoring, profielanalyses en diepgaande psychologische rapportages.',
+        'portfolio.padelmath.title': 'PadelMath.com',
+        'portfolio.padelmath.category': 'Padel Analytics & Materiaalplatform',
+        'portfolio.padelmath.description': 'Een datagedreven sportanalyse- en beslissingsplatform voor padelspelers en baaneigenaren. Biedt objectieve racket fit-algoritmes, specificatiedatabases en financiële haalbaarheidsmodellen voor padelbanen.',
         'portfolio.btn.view': 'Bekijk Project',
 
         // Contact section
@@ -632,6 +644,10 @@ const translations = {
         'faq.a9': 'U bent de eigenaar. De opdrachtgever bezit 100% van de opgeleverde deliverables en maatwerkcode, zoals contractueel vastgelegd. Er is geen sprake van vendor lock-in.',
         'faq.q10': 'Wat houdt de AI-geletterdheidssessie in?',
         'faq.a10': 'De AI-geletterdheidssessie is een interactieve workshop van een halve dag die aansluit bij de verplichting tot AI-geletterdheid onder de Europese AI Act voor organisaties die AI-systemen inzetten. Het biedt praktische richtlijnen voor verantwoord, veilig en compliant AI-gebruik.',
+        'faq.q11': 'Hoe voorkomt Codebase Intelligence een risicovolle "Big Bang" softwareherbouw?',
+        'faq.a11': 'In plaats van een jarenlang herschrijftraject waarbij de business stilstaat, brengt onze codebase intelligence alle datastromen en afhankelijkheden in kaart. Hierdoor past u veilig het Strangler Fig-patroon toe: stapsgewijze modernisering per module zonder downtime of risico op ontbrekende bedrijfslogica.',
+        'faq.q12': 'Hoe lost Codebase Intelligence het sleutelpersoonrisico op bij vertrek van ontwikkelaars?',
+        'faq.a12': 'Wij extraheren impliciete kennis en ongedocumenteerde regels direct uit de code en git-geschiedenis naar actuele architectuurkaarten, API-contracten en AI-contextlagen (AGENTS.md, llms.txt). Hierdoor blijft bedrijfskennis gewaarborgd en werken nieuwe ontwikkelaars in dagen in plaats van maanden in.',
 
         // Newsletter
         'newsletter.title': 'Blijf Voorop met AI',

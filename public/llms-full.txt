@@ -13,7 +13,8 @@ We provide AI that engineering teams can actually run. Our core focus spans lega
 ## Detailed Service Offerings
 
 ### 1. Legacy Codebase Intelligence (Flagship)
-Turn undocumented systems into living architecture maps, API contracts, module dependency graphs, and AI-ready technical documentation. Removes key-person risk and slashes developer onboarding from months to days. Prepares legacy codebases for AI coding assistants (Antigravity, Cursor, Claude Code) without hallucinations.
+Turn undocumented systems into living architecture maps, API contracts, module dependency graphs, and AI-ready technical documentation. Eliminates key-person risk ("sleutelpersoonrisico"), avoids high-risk "Big Bang" rewrites via the Strangler Fig pattern, and slashes developer onboarding from months to days. Prepares legacy codebases for AI coding assistants (Antigravity, Cursor, Claude Code) without hallucinations.
+- **Keywords**: Legacy software moderniseren, sleutelpersoonrisico, codebase intelligence, Strangler Fig pattern, code archeologie, reverse engineering.
 - **Pricing**: Pilot (1 module, ~1 week) from €5,500 fixed. Full codebase from €15,000.
 - **Note**: Pilot fee is credited against a full engagement.
 - **Security**: 100% Private execution inside the client's enterprise VPC (AWS, Azure, GCP) or on-premise air-gapped environments.
@@ -99,6 +100,11 @@ Bespoke, high-performance websites built specifically for contractors, builders,
 **URL**: https://socialehuurgids.nl  
 **Category**: PropTech / Consumer Housing Guide  
 **Description**: Navigation guide for the Dutch social housing market, lottery allocations, and housing subsidies.
+
+### PadelMath.com — Padel Analytics & Equipment Intelligence Platform
+**URL**: https://padelmath.com  
+**Category**: Sports Analytics / Decision Engine & SaaS  
+**Description**: Data-driven padel racket fit scoring engine, racket specs database, and US padel court feasibility & ROI calculators. Built with Astro & Preact.
 
 ---
 

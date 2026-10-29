@@ -9,6 +9,8 @@
         content="AI that your engineering team can actually run. Legacy codebase intelligence, 8-hour proof-of-value sprints, and hands-on developer training for Dutch software companies.">
 
     <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="Legacy Codebase Intelligence, legacy software moderniseren, sleutelpersoonrisico IT, legacy code refactoring Nederland, codebase intelligence tools, AI code documentatie, strangler fig pattern Amsterdam, TheGenAI">
     <meta name="author" content="TheGenAI">
     <meta name="robots" content="index, follow">
     <meta name="language" content="en">
@@ -23,7 +25,7 @@
         content="AI that your engineering team can actually run. Legacy codebase intelligence, 8-hour proof-of-value sprints, and hands-on developer training for Dutch software companies.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thegenai.nl">
-    <meta property="og:image" content="https://thegenai.nl/images/logo_thegenai.png">
+    <meta property="og:image" content="https://thegenai.nl/images/og-share.jpg">
     <meta property="og:site_name" content="TheGenAI">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="nl_NL">
@@ -34,7 +36,7 @@
         content="TheGenAI — AI That Your Engineering Team Can Actually Run | Netherlands">
     <meta name="twitter:description" id="twitter-description" data-translate="twitter-description"
         content="AI that your engineering team can actually run. Legacy codebase intelligence, 8-hour proof-of-value sprints, and hands-on developer training for Dutch software companies.">
-    <meta name="twitter:image" content="https://thegenai.nl/images/logo_thegenai.png">
+    <meta name="twitter:image" content="https://thegenai.nl/images/og-share.jpg">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://thegenai.nl">
@@ -66,7 +68,7 @@
             "description": "TheGenAI is an independent AI studio based in Amsterdam, founded in 2026. We deliver legacy codebase intelligence, 8-hour proof-of-value sprints, and developer training for engineering teams across Europe.",
             "url": "https://thegenai.nl",
             "logo": "https://thegenai.nl/images/logo_thegenai.png",
-            "image": "https://thegenai.nl/images/logo_thegenai.png",
+            "image": "https://thegenai.nl/images/og-share.jpg",
             "email": "info@thegenai.nl",
             "telephone": "",
             "address": {
@@ -153,6 +155,11 @@
                 "Generative AI",
                 "Artificial Intelligence",
                 "Legacy Codebase Intelligence",
+                "Legacy Software Modernisering",
+                "Strangler Fig Pattern",
+                "Sleutelpersoonrisico",
+                "Code Archeologie & Reverse Engineering",
+                "Technical Debt Reduction",
                 "AI Proof of Value Sprints",
                 "AI Team Workshops",
                 "Prompt Engineering",
@@ -240,6 +247,22 @@
                         "@type": "Answer",
                         "text": "We employ specialized static analysis engines and private LLM agents to map service boundaries, data flows, database schemas, and API contracts into living architectural diagrams and OpenAPI specifications. We also create context layers (AGENTS.md, llms.txt) allowing modern AI coding assistants to work safely with your legacy code without hallucinations."
                     }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does Codebase Intelligence prevent high-risk 'Big Bang' rewrites?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Instead of freezing feature work for a multi-year rewrite that risks omitting undocumented edge cases, our codebase intelligence maps dependencies and data flows so you can safely apply the Strangler Fig pattern — incrementally migrating isolated modules with zero downtime."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do you eliminate key-person risk ('sleutelpersoonrisico') in legacy systems?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We extract tribal knowledge directly from git history, undocumented business logic, and code paths into living architectural maps, OpenAPI specs, and AI context layers (AGENTS.md, llms.txt), ensuring no single engineer is a single point of failure."
+                    }
                 }
             ]
         }
@@ -257,7 +280,7 @@
             <div class="nav-logo">
                 <a href="/#home" class="logo-link">
                     <span class="logo-mark"></span>
-                    <span class="logo-text">The GenAI</span>
+                    <span class="logo-text">TheGenAI</span>
                 </a>
             </div>
             <ul class="nav-menu">
@@ -282,17 +305,18 @@
                 <li class="nav-item">
                     <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
                 </li>
-                <li class="nav-item nav-cta-item">
+                <li class="nav-item nav-menu-cta">
                     <a href="#contact" class="nav-cta-btn" data-translate="nav.cta">Book a Sprint</a>
                 </li>
-                <li class="nav-item">
-                    <button class="header-lang-toggle" id="header-lang-toggle" aria-label="Toggle language">NL</button>
-                </li>
             </ul>
-            <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button class="header-lang-toggle" id="header-lang-toggle" aria-label="Toggle language">NL</button>
+                <a href="#contact" class="nav-cta-btn nav-header-cta" data-translate="nav.cta">Book a Sprint</a>
+                <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -317,8 +341,8 @@
                 <h1 class="hero-title" data-translate="hero.title">AI that your engineering team can <span class="hero-highlight">actually run</span></h1>
                 <p class="hero-subtitle" data-translate="hero.subtitle">Legacy codebase intelligence, <span class="hero-accent">8-hour proof-of-value sprints</span>, and hands-on developer training for Dutch software companies.</p>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary hero-btn-main" data-translate="hero.btn.explore">
-                        <span>Explore Solutions</span>
+                    <a href="#contact" class="btn btn-primary hero-btn-main" data-translate="hero.btn.cta">
+                        <span>Book a Sprint</span>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
                     <a href="#portfolio" class="btn btn-secondary hero-btn-sub" data-translate="hero.btn.portfolio">View Portfolio</a>
@@ -357,7 +381,7 @@
                         </div>
                         <div class="code-editor-body">
                             <div class="editor-lines" aria-hidden="true">
-                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
                             </div>
                             <pre><code><span class="token-comment">// Amsterdam Studio • Principal Engineering</span>
 <span class="token-keyword">import</span> { AIAgent, ProofOfValue, VPC } <span class="token-keyword">from</span> <span class="token-string">'@thegenai/core'</span>;
@@ -365,7 +389,9 @@
 <span class="token-keyword">export const</span> sprint = <span class="token-keyword">await</span> ProofOfValue.<span class="token-function">build</span>({
   turnaround: <span class="token-string">'8_hours'</span>,
   architecture: <span class="token-string">'agentic_autonomous'</span>,
-  privacy: VPC.<span class="token-function">zeroRetention</span>({ euCompliance: <span class="token-keyword">true</span> }),
+  privacy: VPC.<span class="token-function">zeroRetention</span>({
+    euCompliance: <span class="token-keyword">true</span>
+  }),
   deliverable: <span class="token-string">'working_prototype'</span>
 });
 
@@ -424,7 +450,7 @@
                     
                     <div class="founder-badge-card">
                         <div class="founder-avatar-wrapper">
-                            <div class="founder-avatar">DK</div>
+                            <img src="/images/avatar.jpeg" alt="Dima Kalachniuk" class="founder-avatar-img" width="52" height="52" loading="lazy">
                         </div>
                         <div class="founder-meta">
                             <h4 class="founder-name">Dima Kalachniuk</h4>
@@ -465,7 +491,7 @@
             </div>
             <div class="services-grid scroll-stagger">
                 <!-- Card 1: Legacy Codebase Intelligence -->
-                <div class="service-card shimmer-card tilt-card" style="position: relative;">
+                <div class="service-card shimmer-card" style="position: relative;">
                     <div class="service-badge-popular" data-translate="services.legacy.badge">Most popular</div>
                     <div class="service-icon" style="color: #4f46e5; background: rgba(79, 70, 229, 0.08);">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -486,7 +512,7 @@
                 </div>
 
                 <!-- Card 2: AI Readiness Scan -->
-                <div class="service-card shimmer-card tilt-card">
+                <div class="service-card shimmer-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -506,7 +532,7 @@
                 </div>
 
                 <!-- Card 3: Proof-of-Value Sprint (8 hours) -->
-                <div class="service-card shimmer-card tilt-card">
+                <div class="service-card shimmer-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -523,7 +549,7 @@
                 </div>
 
                 <!-- Card 4: Production Hardening -->
-                <div class="service-card shimmer-card tilt-card">
+                <div class="service-card shimmer-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -541,7 +567,7 @@
                 </div>
 
                 <!-- Card 5: AI Workshops for Developer Teams -->
-                <div class="service-card shimmer-card tilt-card">
+                <div class="service-card shimmer-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -561,7 +587,7 @@
                 </div>
 
                 <!-- Card 6: Website as a Service -->
-                <div class="service-card shimmer-card tilt-card" style="position: relative;">
+                <div class="service-card shimmer-card" style="position: relative;">
                     <div class="service-icon" style="color: var(--primary-color); background: rgba(37, 99, 235, 0.1);">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -600,8 +626,7 @@
                         <div class="step-duration" data-translate="process.step1.duration">1 Hour</div>
                     </div>
                     <h3 data-translate="process.step1.title">Discovery</h3>
-                    <p data-translate="process.step1.text">We identify the core problem and define the "magic" feature.
-                    </p>
+                    <p data-translate="process.step1.text">We identify the core problem and define the "magic" feature.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-header">
@@ -625,16 +650,35 @@
                         <div class="step-duration" data-translate="process.step4.duration">1 Hour</div>
                     </div>
                     <h3 data-translate="process.step4.title">Handover</h3>
-                    <p data-translate="process.step4.text">We refine the UX and deliver your working prototype and code.
-                    </p>
+                    <p data-translate="process.step4.text">We refine the UX and deliver your working prototype and code.</p>
                 </div>
-                <div class="process-step">
-                    <div class="step-header">
-                        <div class="step-number">05</div>
-                        <div class="step-duration" data-translate="process.step5.duration">Next Phase</div>
+            </div>
+
+            <!-- Follow-up Phase 2 Banner -->
+            <div class="process-next-phase">
+                <div class="next-phase-content">
+                    <div class="next-phase-badge">
+                        <span class="next-phase-dot"></span>
+                        <span data-translate="process.step5.duration">Next Step</span>
                     </div>
-                    <h3 data-translate="process.step5.title">Next: Hardening</h3>
-                    <p data-translate="process.step5.text">We scope the path to production (optional).</p>
+                    <div class="next-phase-text">
+                        <h3 data-translate="process.step5.title">Next: Hardening</h3>
+                        <p data-translate="process.step5.text">We scope the path to production (optional).</p>
+                    </div>
+                </div>
+                <div class="next-phase-perks">
+                    <div class="perk-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>100% Code Ownership</span>
+                    </div>
+                    <div class="perk-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Zero Lock-In</span>
+                    </div>
+                    <div class="perk-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Private VPC Ready</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1183,6 +1227,64 @@
                             onclick="window.open('https://socialehuurgids.nl', '_blank');">View Project</button>
                     </div>
                 </div>
+
+                <div class="portfolio-item featured" data-category="platforms">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0e1b3d 0%, #1e4dd8 50%, #10b981 100%);">
+                        <div class="project-preview">
+                            <div class="browser-mockup">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">padelmath.com</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="padelmath-preview">
+                                        <div class="padelmath-card">
+                                            <div class="padelmath-header">
+                                                <div class="padelmath-title">🎾 Padel Analytics Engine</div>
+                                                <div class="padelmath-badge">Fit Score 96%</div>
+                                            </div>
+                                            <div class="padelmath-metrics">
+                                                <div class="padel-metric">
+                                                    <div class="metric-val">365g</div>
+                                                    <div class="metric-label">Weight Specs</div>
+                                                </div>
+                                                <div class="padel-metric">
+                                                    <div class="metric-val">Teardrop</div>
+                                                    <div class="metric-label">Shape & Balance</div>
+                                                </div>
+                                                <div class="padel-metric">
+                                                    <div class="metric-val" style="color: #10b981;">28.4%</div>
+                                                    <div class="metric-label">Court ROI</div>
+                                                </div>
+                                            </div>
+                                            <div class="padelmath-alert">
+                                                <span class="alert-icon">⚡</span>
+                                                <span class="alert-text">Data-driven fit scoring • Zero sponsored bias</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-translate="portfolio.padelmath.title">PadelMath.com</h3>
+                        <p class="portfolio-category" data-translate="portfolio.padelmath.category">Padel Analytics & Equipment Intelligence</p>
+                        <p data-translate="portfolio.padelmath.description">A data-driven sports analytics platform and decision engine for padel players and court developers. Features objective racket fit scoring formulas, comprehensive spec databases, and US court cost & ROI feasibility calculators.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Sports Analytics</span>
+                            <span class="tech-tag">Fit Scoring Engine</span>
+                            <span class="tech-tag">ROI Modeling</span>
+                            <span class="tech-tag">Astro & Preact</span>
+                        </div>
+                        <button type="button" class="btn btn-outline portfolio-link" data-translate="portfolio.btn.view"
+                            onclick="window.open('https://padelmath.com', '_blank');">View Project</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1336,6 +1438,24 @@
                     </div>
                     <div class="faq-answer">
                         <p data-translate="faq.a10">The AI-literacy session is a half-day interactive workshop covering the AI-literacy obligation under the EU AI Act for organisations using or deploying AI systems. It provides practical, non-technical and technical guidance on safe, compliant AI usage.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="faq.q11">How does Codebase Intelligence prevent high-risk 'Big Bang' rewrites?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a11">Instead of freezing feature work for a multi-year rewrite that risks omitting undocumented edge cases, our codebase intelligence maps dependencies and data flows so you can safely apply the Strangler Fig pattern — incrementally migrating isolated modules with zero downtime.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="faq.q12">How do you eliminate key-person risk ('sleutelpersoonrisico') in legacy systems?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a12">We extract tribal knowledge directly from git history, undocumented business logic, and code paths into living architectural maps, OpenAPI specs, and AI context layers (AGENTS.md, llms.txt), ensuring no single engineer is a single point of failure.</p>
                     </div>
                 </div>
             </div>
