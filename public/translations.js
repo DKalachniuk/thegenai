@@ -67,8 +67,8 @@ const translations = {
         'services.legacy.title': 'Legacy Codebase Intelligence',
         'services.legacy.badge': 'Most popular',
         'services.legacy.description': 'Turn undocumented systems into living architecture maps, API contracts and AI-ready docs. Remove key-person risk and onboard developers faster.',
-        'services.legacy.price': 'Pilot (1 module, ~1 week) from €5,500 fixed. Full codebase from €15,000.',
-        'services.legacy.note': 'Pilot fee is credited against a full engagement.',
+        'services.legacy.price': '€9,000 per week.',
+        'services.legacy.note': 'Pilot module or full codebase • Fixed weekly rate',
 
         // Service 2: AI Readiness Scan
         'services.readiness.title': 'AI Readiness Scan',
@@ -261,7 +261,7 @@ const translations = {
         'faq.q7': 'How do you reverse-engineer and document undocumented legacy codebases?',
         'faq.a7': 'We employ specialized static analysis engines and private LLM agents to map service boundaries, data flows, database schemas, and API contracts into living architectural diagrams and OpenAPI specifications. We also create context layers (AGENTS.md, llms.txt) allowing modern AI coding assistants to work safely with your legacy code without hallucinations.',
         'faq.q8': 'What do your services cost?',
-        'faq.a8': 'We work with fixed, transparent pricing: AI Readiness Scan (€3,900 fixed), 8-Hour Proof-of-Value Sprint (€2,900 fixed), Legacy Codebase Intelligence (pilot from €5,500, full codebase from €15,000, with pilot fee credited toward full engagements), Production Hardening (€1,000/day or €4,750 for 5 days), and Developer Workshops (half-day €2,000, full-day €3,500). Website as a Service (WaaS) offers dedicated plans starting from €0 upfront.',
+        'faq.a8': 'We work with fixed, transparent pricing: Forward Deployed Engineer (FDE) (€9,000/week), Legacy Codebase Intelligence (€9,000/week), AI Readiness Scan (€3,900 fixed), 8-Hour Proof-of-Value Sprint (€2,900 fixed), Production Hardening (€1,000/day or €4,750 for 5 days), and Developer Workshops (half-day €2,000, full-day €3,500). Website as a Service (WaaS) offers dedicated plans starting from €0 upfront.',
         'faq.q9': 'Who owns the code?',
         'faq.a9': 'You do. The client owns 100% of the deliverables and custom source code, as agreed and stipulated in our contract. There is no vendor lock-in.',
         'faq.q10': 'What is the AI-literacy session?',
@@ -284,8 +284,8 @@ const translations = {
         'services.fde.badge': 'New • Embedded AI',
         'services.fde.title': 'Forward Deployed Engineer (FDE)',
         'services.fde.description': 'Embed a principal AI engineer directly in your Dutch team (on-site Amsterdam/Randstad or hybrid) to connect AI to real legacy systems and ship production software in days.',
-        'services.fde.price': '1-week Field Sprint €5,500 fixed. Embedded FDE from €7,500/mo.',
-        'services.fde.note': 'Sprint fee 100% credited toward monthly retainer • On-site NL & Remote EU',
+        'services.fde.price': '€9,000 per week.',
+        'services.fde.note': 'Embedded on-site NL & Remote EU • 100% IP ownership',
         'services.fde.cta': 'Explore FDE Service',
 
         // Blog: Forward Deployed Engineer
@@ -497,8 +497,10 @@ const translations = {
         // Studio Spec Panel
         'spec.title': 'ENGAGEMENT MATRIX',
         'spec.meta': 'FIXED SCOPE · EUR',
+        'spec.fde.desc': 'Embedded principal AI engineer in your stack',
+        'spec.fde.unit': 'per week',
         'spec.legacy.desc': 'Architecture maps, OpenAPI specs & AGENTS.md',
-        'spec.legacy.unit': '1 wk pilot',
+        'spec.legacy.unit': 'per week',
         'spec.pov.desc': 'Working prototype of your core AI feature',
         'spec.pov.unit': '1 day fixed',
         'spec.readiness.desc': 'Prioritised use-case & risk roadmap',
@@ -523,7 +525,8 @@ const translations = {
 
         // Contact Service Select
         'contact.form.service.placeholder': 'Select an engagement (optional)',
-        'contact.form.service.legacy': 'Legacy Codebase Intelligence (from €5,500)',
+        'contact.form.service.fde': 'Forward Deployed Engineer (FDE) (€9,000/week)',
+        'contact.form.service.legacy': 'Legacy Codebase Intelligence (€9,000/week)',
         'contact.form.service.pov': 'Proof-of-Value Sprint — 8 hours (€2,900)',
         'contact.form.service.readiness': 'AI Readiness Scan (€3,900)',
         'contact.form.service.hardening': 'Production Hardening (from €4,750)',
@@ -597,8 +600,8 @@ const translations = {
         'services.legacy.title': 'Legacy Codebase Intelligence',
         'services.legacy.badge': 'Meest populair',
         'services.legacy.description': 'Transformeer ongedocumenteerde systemen naar actuele architectuurkaarten, API-contracten en AI-ready documentatie. Elimineer sleutelpersoonrisico en werk developers sneller in.',
-        'services.legacy.price': 'Pilot (1 module, ~1 week) vanaf €5.500 vast. Volledige codebase vanaf €15.000.',
-        'services.legacy.note': 'Pilotkosten worden verrekend met een volledig traject.',
+        'services.legacy.price': '€9.000 per week.',
+        'services.legacy.note': 'Pilotmodule of volledige codebase • Vast weektarief',
 
         // Service 2: AI Readiness Scan
         'services.readiness.title': 'AI Readiness Scan',
@@ -791,7 +794,7 @@ const translations = {
         'faq.q7': 'Hoe documenteren en moderniseren jullie ongedocumenteerde legacy codebases?',
         'faq.a7': 'We zetten gespecialiseerde statische analyse-engines en private LLM-agenten in om servicegrenzen, datastromen, databaseschema\'s en API-contracten te vertalen naar levende architectuurschema\'s en OpenAPI-specificaties. Ook bouwen we context-lagen (AGENTS.md, llms.txt) waarmee moderne AI coding assistants veilig met uw codebase kunnen werken zonder te hallucineren.',
         'faq.q8': 'Wat kosten jullie diensten?',
-        'faq.a8': 'Wij hanteren transparante, vaste prijzen: AI Readiness Scan (€3.900 vast), 8-uurs Proof-of-Value Sprint (€2.900 vast), Legacy Codebase Intelligence (pilot vanaf €5.500, volledige codebase vanaf €15.000, waarbij pilotkosten worden verrekend met een vervolgtraject), Production Hardening (€1.000/dag of €4.750 voor 5 dagen) en Developer Workshops (halve dag €2.000, hele dag €3.500). Website as a Service (WaaS) biedt pakketten vanaf €0 opstartkosten.',
+        'faq.a8': 'Wij hanteren transparante, vaste prijzen: Forward Deployed Engineer (FDE) (€9.000/week), Legacy Codebase Intelligence (€9.000/week), AI Readiness Scan (€3.900 vast), 8-uurs Proof-of-Value Sprint (€2.900 vast), Production Hardening (€1.000/dag of €4.750 voor 5 dagen) en Developer Workshops (halve dag €2.000, hele dag €3.500). Website as a Service (WaaS) biedt pakketten vanaf €0 opstartkosten.',
         'faq.q9': 'Wie is eigenaar van de broncode?',
         'faq.a9': 'U bent de eigenaar. De opdrachtgever bezit 100% van de opgeleverde deliverables en maatwerkcode, zoals contractueel vastgelegd. Er is geen sprake van vendor lock-in.',
         'faq.q10': 'Wat houdt de AI-geletterdheidssessie in?',
@@ -814,8 +817,8 @@ const translations = {
         'services.fde.badge': 'Nieuw • Embedded AI',
         'services.fde.title': 'Forward Deployed Engineer (FDE)',
         'services.fde.description': 'Haal een ervaren AI-engineer direct in uw Nederlandse team (op locatie in Amsterdam/Randstad of hybride) om AI aan echte legacy-systemen te koppelen en binnen dagen productiesoftware te leveren.',
-        'services.fde.price': '1-week Field Sprint €5.500 vast. Embedded FDE vanaf €7.500/mnd.',
-        'services.fde.note': 'Sprint-fee 100% verrekend met maandretainer • Op locatie NL & Remote EU',
+        'services.fde.price': '€9.000 per week.',
+        'services.fde.note': 'Embedded op locatie NL & Remote EU • 100% IP-eigendom',
         'services.fde.cta': 'Bekijk FDE Dienst',
 
         // Blog: Forward Deployed Engineer
@@ -1027,8 +1030,10 @@ const translations = {
         // Studio Spec Panel
         'spec.title': 'DIENSTENMATRIX',
         'spec.meta': 'VASTE PRIJS · EUR',
+        'spec.fde.desc': 'Embedded principal AI engineer in uw stack',
+        'spec.fde.unit': 'per week',
         'spec.legacy.desc': 'Architectuurkaarten, OpenAPI-specs & AGENTS.md',
-        'spec.legacy.unit': '1 wk pilot',
+        'spec.legacy.unit': 'per week',
         'spec.pov.desc': 'Werkend prototype van uw belangrijkste AI-functie',
         'spec.pov.unit': '1 dag vast',
         'spec.readiness.desc': 'Geprioriteerde use-case- & risicoroadmap',
@@ -1053,7 +1058,8 @@ const translations = {
 
         // Contact Service Select
         'contact.form.service.placeholder': 'Kies een dienst (optioneel)',
-        'contact.form.service.legacy': 'Legacy Codebase Intelligence (vanaf €5.500)',
+        'contact.form.service.fde': 'Forward Deployed Engineer (FDE) (€9.000/week)',
+        'contact.form.service.legacy': 'Legacy Codebase Intelligence (€9.000/week)',
         'contact.form.service.pov': 'Proof-of-Value Sprint — 8 uur (€2.900)',
         'contact.form.service.readiness': 'AI Readiness Scan (€3.900)',
         'contact.form.service.hardening': 'Production Hardening (vanaf €4.750)',
