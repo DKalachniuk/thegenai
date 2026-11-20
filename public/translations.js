@@ -376,7 +376,43 @@ const translations = {
         'privacy.rights.text': 'Under the GDPR, you have the right to access, rectify, or erase your personal data. If you have submitted a contact form and wish to have your data removed, please contact us at info@thegenai.nl.',
         
         'privacy.contact_us.title': '5. Contact Us',
-        'privacy.contact_us.text': 'If you have any questions about this Privacy Policy, please contact us at info@thegenai.nl.'
+        'privacy.contact_us.text': 'If you have any questions about this Privacy Policy, please contact us at info@thegenai.nl.',
+
+        // Studio Spec Panel
+        'spec.title': 'ENGAGEMENT MATRIX',
+        'spec.meta': 'FIXED SCOPE · EUR',
+        'spec.legacy.desc': 'Architecture maps, OpenAPI specs & AGENTS.md',
+        'spec.legacy.unit': '1 wk pilot',
+        'spec.pov.desc': 'Working prototype of your core AI feature',
+        'spec.pov.unit': '1 day fixed',
+        'spec.readiness.desc': 'Prioritised use-case & risk roadmap',
+        'spec.readiness.unit': '1–2 weeks',
+        'spec.hardening.desc': 'Tests, security review, logging & handover',
+        'spec.hardening.unit': '5-day pack',
+        'spec.footer.left': '100% client IP & code ownership',
+        'spec.footer.right': 'Amsterdam · Europe',
+
+        // Deliverables Preview
+        'deliverables.eyebrow': 'Concrete Output',
+        'deliverables.title': 'What your team actually receives',
+        'deliverables.description': 'No slide decks that sit in Drive. Every engagement ships directly into your repository as versioned architecture maps, API contracts, and AI-ready context layers.',
+        'deliverables.item1': '<code>AGENTS.md</code> &amp; <code>llms.txt</code> rules so coding agents never hallucinate legacy boundaries',
+        'deliverables.item2': 'Strangler Fig module dependency map &amp; OpenAPI 3.1 contracts',
+        'deliverables.item3': '100% client-owned source code, tests &amp; VPC deployment runbook',
+        'deliverables.link_llms': 'Inspect our live /llms.txt →',
+        'deliverables.link_security': 'Security &amp; VPC Handling →',
+
+        // Blog eyebrow
+        'blog.eyebrow': 'Writing',
+
+        // Contact Service Select
+        'contact.form.service.placeholder': 'Select an engagement (optional)',
+        'contact.form.service.legacy': 'Legacy Codebase Intelligence (from €5,500)',
+        'contact.form.service.pov': 'Proof-of-Value Sprint — 8 hours (€2,900)',
+        'contact.form.service.readiness': 'AI Readiness Scan (€3,900)',
+        'contact.form.service.hardening': 'Production Hardening (from €4,750)',
+        'contact.form.service.workshops': 'AI Workshops for Developer Teams (from €2,000)',
+        'contact.form.service.waas': 'Website as a Service (WaaS)'
     },
     nl: {
         // Meta tags
@@ -754,7 +790,43 @@ const translations = {
         'privacy.rights.text': 'Onder de AVG heeft u het recht om uw persoonlijke gegevens in te zien, te corrigeren of te laten verwijderen. Als u een contactformulier heeft ingediend en wilt dat uw gegevens worden verwijderd, neem dan contact met ons op via info@thegenai.nl.',
         
         'privacy.contact_us.title': '5. Contact met Ons Opnemen',
-        'privacy.contact_us.text': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via info@thegenai.nl.'
+        'privacy.contact_us.text': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via info@thegenai.nl.',
+
+        // Studio Spec Panel
+        'spec.title': 'DIENSTENMATRIX',
+        'spec.meta': 'VASTE PRIJS · EUR',
+        'spec.legacy.desc': 'Architectuurkaarten, OpenAPI-specs & AGENTS.md',
+        'spec.legacy.unit': '1 wk pilot',
+        'spec.pov.desc': 'Werkend prototype van uw belangrijkste AI-functie',
+        'spec.pov.unit': '1 dag vast',
+        'spec.readiness.desc': 'Geprioriteerde use-case- & risicoroadmap',
+        'spec.readiness.unit': '1–2 weken',
+        'spec.hardening.desc': 'Tests, security review, logging & overdracht',
+        'spec.hardening.unit': '5-daags pakket',
+        'spec.footer.left': '100% IP- & code-eigendom bij klant',
+        'spec.footer.right': 'Amsterdam · Europa',
+
+        // Deliverables Preview
+        'deliverables.eyebrow': 'Concreet Resultaat',
+        'deliverables.title': 'Wat uw team daadwerkelijk ontvangt',
+        'deliverables.description': 'Geen PowerPoints die in een map verdwijnen. Elke opdracht wordt direct in uw repository opgeleverd als geversioneerde architectuurkaarten, API-contracten en AI-contextlagen.',
+        'deliverables.item1': '<code>AGENTS.md</code> &amp; <code>llms.txt</code>-regels zodat coding agents legacy-grenzen respecteren',
+        'deliverables.item2': 'Strangler Fig-afhankelijkheidskaart &amp; OpenAPI 3.1-contracten',
+        'deliverables.item3': '100% klanteigen broncode, tests &amp; VPC-deploymenthandleiding',
+        'deliverables.link_llms': 'Bekijk onze live /llms.txt →',
+        'deliverables.link_security': 'Security &amp; VPC-verwerking →',
+
+        // Blog eyebrow
+        'blog.eyebrow': 'Artikelen',
+
+        // Contact Service Select
+        'contact.form.service.placeholder': 'Kies een dienst (optioneel)',
+        'contact.form.service.legacy': 'Legacy Codebase Intelligence (vanaf €5.500)',
+        'contact.form.service.pov': 'Proof-of-Value Sprint — 8 uur (€2.900)',
+        'contact.form.service.readiness': 'AI Readiness Scan (€3.900)',
+        'contact.form.service.hardening': 'Production Hardening (vanaf €4.750)',
+        'contact.form.service.workshops': 'AI Workshops voor Developer Teams (vanaf €2.000)',
+        'contact.form.service.waas': 'Website as a Service (WaaS)'
     }
 };
 
@@ -973,15 +1045,15 @@ class TranslationManager {
             position: fixed;
             top: 120px;
             right: 20px;
-            background: rgba(102, 126, 234, 0.9);
-            backdrop-filter: blur(10px);
+            background: #09090b;
+            border: 1px solid rgba(255, 255, 255, 0.14);
             color: white;
-            padding: 12px 20px;
-            border-radius: 12px;
+            padding: 10px 16px;
+            border-radius: 6px;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 13px;
             z-index: 10000;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
             transform: translateX(100%);
             transition: transform 0.3s ease;
         `;

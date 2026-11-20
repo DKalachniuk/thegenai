@@ -54,7 +54,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <!-- Structured Data (JSON-LD) -->
@@ -312,122 +312,109 @@
             <div class="nav-actions">
                 <button class="header-lang-toggle" id="header-lang-toggle" aria-label="Toggle language">NL</button>
                 <a href="#contact" class="nav-cta-btn nav-header-cta" data-translate="nav.cta">Book a Sprint</a>
-                <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                <button type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Subtle tech grid pattern overlay -->
         <div class="hero-grid-pattern" aria-hidden="true"></div>
-        <!-- Animated background orbs -->
-        <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
-        <!-- Neural network canvas -->
-        <canvas id="neural-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
             <div class="hero-text">
-                <div class="hero-badge-pill">
-                    <span class="badge-pulse"><span class="pulse-ring"></span><span class="pulse-dot"></span></span>
-                    <span class="badge-text" data-translate="hero.badge">Independent AI Studio • Amsterdam, Netherlands</span>
-                    <span class="badge-arrow">→</span>
-                </div>
+                <div class="hero-eyebrow" data-translate="hero.badge">Independent AI Studio • Amsterdam, Netherlands</div>
                 <h1 class="hero-title" data-translate="hero.title">AI that your engineering team can <span class="hero-highlight">actually run</span></h1>
                 <p class="hero-subtitle" data-translate="hero.subtitle">Legacy codebase intelligence, <span class="hero-accent">8-hour proof-of-value sprints</span>, and hands-on developer training for Dutch software companies.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary hero-btn-main" data-translate="hero.btn.cta">
                         <span>Book a Sprint</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
                     <a href="#portfolio" class="btn btn-secondary hero-btn-sub" data-translate="hero.btn.portfolio">View Portfolio</a>
                 </div>
                 <div class="hero-trust-strip">
                     <div class="trust-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         <span data-translate="hero.trust.metric1">50+ AI Sprints Delivered</span>
                     </div>
                     <div class="trust-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                         <span data-translate="hero.trust.metric2">EU AI Act & GDPR Ready</span>
                     </div>
                     <div class="trust-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                         <span data-translate="hero.trust.metric3">Zero Data Retention / Private VPC</span>
                     </div>
                 </div>
             </div>
 
             <div class="hero-visual">
-                <div class="hero-bento">
-                    <div class="bento-card main-code">
-                        <div class="window-header">
-                            <div class="window-controls">
-                                <i></i><i></i><i></i>
-                            </div>
-                            <div class="window-tabs">
-                                <span class="window-tab active">
-                                    <span class="tab-dot"></span>
-                                    agent.architecture.ts
-                                </span>
-                                <span class="window-tab">mvp-sprint.json</span>
-                            </div>
-                            <div class="window-badge">Enterprise v2.6</div>
-                        </div>
-                        <div class="code-editor-body">
-                            <div class="editor-lines" aria-hidden="true">
-                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
-                            </div>
-                            <pre><code><span class="token-comment">// Amsterdam Studio • Principal Engineering</span>
-<span class="token-keyword">import</span> { AIAgent, ProofOfValue, VPC } <span class="token-keyword">from</span> <span class="token-string">'@thegenai/core'</span>;
-
-<span class="token-keyword">export const</span> sprint = <span class="token-keyword">await</span> ProofOfValue.<span class="token-function">build</span>({
-  turnaround: <span class="token-string">'8_hours'</span>,
-  architecture: <span class="token-string">'agentic_autonomous'</span>,
-  privacy: VPC.<span class="token-function">zeroRetention</span>({
-    euCompliance: <span class="token-keyword">true</span>
-  }),
-  deliverable: <span class="token-string">'working_prototype'</span>
-});
-
-<span class="token-keyword">await</span> sprint.<span class="token-function">verify</span>({ tests: <span class="token-string">'100%_passing'</span> });</code></pre>
-                        </div>
-                        <div class="terminal-statusbar">
-                            <div class="status-indicator">
-                                <span class="status-dot"></span>
-                                <span class="status-text">Production Agent Online • 14ms latency</span>
-                            </div>
-                            <div class="status-audit">✓ 0 Vulnerabilities</div>
-                        </div>
+                <div class="studio-spec-panel">
+                    <div class="spec-panel-header">
+                        <span class="spec-panel-title" data-translate="spec.title">ENGAGEMENT MATRIX</span>
+                        <span class="spec-panel-meta" data-translate="spec.meta">FIXED SCOPE · EUR</span>
                     </div>
-                    <div class="bento-card floating-card" id="tilt-card">
-                        <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fbbf24;">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                        </div>
-                        <div class="stat-text">
-                            <span class="stat-value">8 Hours</span>
-                            <span class="stat-label">Proof-of-Value Sprint</span>
-                        </div>
+                    <div class="spec-panel-rows">
+                        <a href="#services" class="spec-row">
+                            <div class="spec-row-main">
+                                <span class="spec-row-index">01</span>
+                                <div>
+                                    <div class="spec-row-name" data-translate="services.legacy.title">Legacy Codebase Intelligence</div>
+                                    <div class="spec-row-desc" data-translate="spec.legacy.desc">Architecture maps, OpenAPI specs &amp; AGENTS.md</div>
+                                </div>
+                            </div>
+                            <div class="spec-row-price">
+                                <span class="spec-price-val">€5,500</span>
+                                <span class="spec-price-unit" data-translate="spec.legacy.unit">1 wk pilot</span>
+                            </div>
+                        </a>
+                        <a href="#process" class="spec-row">
+                            <div class="spec-row-main">
+                                <span class="spec-row-index">02</span>
+                                <div>
+                                    <div class="spec-row-name" data-translate="services.pov.title">Proof-of-Value Sprint (8 hours)</div>
+                                    <div class="spec-row-desc" data-translate="spec.pov.desc">Working prototype of your core AI feature</div>
+                                </div>
+                            </div>
+                            <div class="spec-row-price">
+                                <span class="spec-price-val">€2,900</span>
+                                <span class="spec-price-unit" data-translate="spec.pov.unit">1 day fixed</span>
+                            </div>
+                        </a>
+                        <a href="#services" class="spec-row">
+                            <div class="spec-row-main">
+                                <span class="spec-row-index">03</span>
+                                <div>
+                                    <div class="spec-row-name" data-translate="services.readiness.title">AI Readiness Scan</div>
+                                    <div class="spec-row-desc" data-translate="spec.readiness.desc">Prioritised use-case &amp; risk roadmap</div>
+                                </div>
+                            </div>
+                            <div class="spec-row-price">
+                                <span class="spec-price-val">€3,900</span>
+                                <span class="spec-price-unit" data-translate="spec.readiness.unit">1–2 weeks</span>
+                            </div>
+                        </a>
+                        <a href="#services" class="spec-row">
+                            <div class="spec-row-main">
+                                <span class="spec-row-index">04</span>
+                                <div>
+                                    <div class="spec-row-name" data-translate="services.hardening.title">Production Hardening</div>
+                                    <div class="spec-row-desc" data-translate="spec.hardening.desc">Tests, security review, logging &amp; handover</div>
+                                </div>
+                            </div>
+                            <div class="spec-row-price">
+                                <span class="spec-price-val">€4,750</span>
+                                <span class="spec-price-unit" data-translate="spec.hardening.unit">5-day pack</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="bento-card floating-card-secondary">
-                        <div class="stat-icon-shield">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                <polyline points="9 12 11 14 15 10"></polyline>
-                            </svg>
-                        </div>
-                        <div class="stat-text">
-                            <span class="stat-value">Private & Secure</span>
-                            <span class="stat-label">Deploy in Your Private VPC</span>
-                        </div>
+                    <div class="spec-panel-footer">
+                        <span data-translate="spec.footer.left">100% client IP &amp; code ownership</span>
+                        <span data-translate="spec.footer.right">Amsterdam · Europe</span>
                     </div>
                 </div>
             </div>
@@ -443,7 +430,7 @@
                 <p data-translate="about.subtitle">Independent AI studio based in Amsterdam, founded in 2026 by Dima Kalachniuk.</p>
             </div>
             <div class="about-content">
-                <div class="about-text scroll-slide-left">
+                <div class="about-text">
                     <h3 data-translate="about.heading">Principal-Led AI Engineering & Architecture</h3>
                     <p data-translate="about.text1">Founded in 2026 in Amsterdam by senior engineer Dima Kalachniuk, TheGenAI operates as a lean, independent AI studio. Rather than traditional agency overhead with junior handoffs and layers of account management, clients partner directly with a principal builder who designs, architectures, and ships every system.</p>
                     <p data-translate="about.text2">From architecting production agentic workflows and reverse-engineering complex legacy codebases to launching live MVPs in rapid 8-hour sprints, we combine deep engineering rigor with pragmatic speed.</p>
@@ -463,7 +450,7 @@
                     </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat scroll-scale">
+                    <div class="stat">
                         <h4><span class="counter" data-target="50" data-suffix="+">50+</span></h4>
                         <p data-translate="about.stats.projects">AI Sprints & Builds</p>
                     </div>
@@ -489,11 +476,11 @@
                 <p data-translate="services.subtitle">Comprehensive AI services designed to accelerate your business
                     growth</p>
             </div>
-            <div class="services-grid scroll-stagger">
+            <div class="services-grid">
                 <!-- Card 1: Legacy Codebase Intelligence -->
-                <div class="service-card shimmer-card" style="position: relative;">
+                <div class="service-card service-card-featured">
                     <div class="service-badge-popular" data-translate="services.legacy.badge">Most popular</div>
-                    <div class="service-icon" style="color: #4f46e5; background: rgba(79, 70, 229, 0.08);">
+                    <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
@@ -508,11 +495,11 @@
                         <div class="service-price-amount" data-translate="services.legacy.price">Pilot (1 module, ~1 week) from €5,500 fixed. Full codebase from €15,000.</div>
                         <div class="service-price-sub" data-translate="services.legacy.note">Pilot fee is credited against a full engagement.</div>
                     </div>
-                    <a href="#contact" class="service-cta-btn" data-translate="services.cta">Request a quote</a>
+                    <a href="#contact" class="service-cta-btn" data-service="legacy" data-translate="services.cta">Request a quote</a>
                 </div>
 
                 <!-- Card 2: AI Readiness Scan -->
-                <div class="service-card shimmer-card">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -528,11 +515,11 @@
                         <div class="service-price-amount" data-translate="services.readiness.price">€3,900 fixed.</div>
                         <div class="service-price-sub" data-translate="services.readiness.note">1-2 weeks • Prioritised opportunity & risk roadmap</div>
                     </div>
-                    <a href="#contact" class="service-cta-btn" data-translate="services.cta">Request a quote</a>
+                    <a href="#contact" class="service-cta-btn" data-service="readiness" data-translate="services.cta">Request a quote</a>
                 </div>
 
                 <!-- Card 3: Proof-of-Value Sprint (8 hours) -->
-                <div class="service-card shimmer-card">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -545,11 +532,11 @@
                         <div class="service-price-amount" data-translate="services.pov.price">€2,900 fixed.</div>
                         <div class="service-price-sub" data-translate="services.pov.note">1 working day • Working prototype of your core feature</div>
                     </div>
-                    <a href="#contact" class="service-cta-btn" data-translate="services.cta">Request a quote</a>
+                    <a href="#contact" class="service-cta-btn" data-service="pov" data-translate="services.cta">Request a quote</a>
                 </div>
 
                 <!-- Card 4: Production Hardening -->
-                <div class="service-card shimmer-card">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -563,11 +550,11 @@
                         <div class="service-price-amount" data-translate="services.hardening.price">€1,000/day or 5-day package €4,750.</div>
                         <div class="service-price-sub" data-translate="services.hardening.note">5-day package €4,750 • Tests, security review & logging</div>
                     </div>
-                    <a href="#contact" class="service-cta-btn" data-translate="services.cta">Request a quote</a>
+                    <a href="#contact" class="service-cta-btn" data-service="hardening" data-translate="services.cta">Request a quote</a>
                 </div>
 
                 <!-- Card 5: AI Workshops for Developer Teams -->
-                <div class="service-card shimmer-card">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -583,12 +570,12 @@
                         <div class="service-price-amount" data-translate="services.workshops.price">Half day €2,000, full day €3,500 (up to 12 people). AI-literacy session half day €1,500 (up to 20 people).</div>
                         <div class="service-price-sub" data-translate="services.workshops.note">Up to 12 people • Optional AI-literacy session (up to 20 people)</div>
                     </div>
-                    <a href="#contact" class="service-cta-btn" data-translate="services.cta">Request a quote</a>
+                    <a href="#contact" class="service-cta-btn" data-service="workshops" data-translate="services.cta">Request a quote</a>
                 </div>
 
                 <!-- Card 6: Website as a Service -->
-                <div class="service-card shimmer-card" style="position: relative;">
-                    <div class="service-icon" style="color: var(--primary-color); background: rgba(37, 99, 235, 0.1);">
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -608,6 +595,41 @@
             <div class="services-footnote">
                 <p data-translate="services.footnote">Pilot fees are credited against follow-up work. 50% upfront, 50% on delivery.</p>
             </div>
+
+            <!-- Sample Deliverable Preview -->
+            <div class="deliverables-preview">
+                <div class="deliverables-info">
+                    <span class="section-label" data-translate="deliverables.eyebrow">Concrete Output</span>
+                    <h3 data-translate="deliverables.title">What your team actually receives</h3>
+                    <p data-translate="deliverables.description">No slide decks that sit in Drive. Every engagement ships directly into your repository as versioned architecture maps, API contracts, and AI-ready context layers.</p>
+                    <ul class="deliverables-list">
+                        <li data-translate="deliverables.item1"><code>AGENTS.md</code> &amp; <code>llms.txt</code> rules so coding agents never hallucinate legacy boundaries</li>
+                        <li data-translate="deliverables.item2">Strangler Fig module dependency map &amp; OpenAPI 3.1 contracts</li>
+                        <li data-translate="deliverables.item3">100% client-owned source code, tests &amp; VPC deployment runbook</li>
+                    </ul>
+                    <div class="deliverables-links">
+                        <a href="/llms.txt" target="_blank" rel="noopener" class="deliverable-link" data-translate="deliverables.link_llms">Inspect our live /llms.txt →</a>
+                        <a href="/security/" class="deliverable-link" data-translate="deliverables.link_security">Security &amp; VPC Handling →</a>
+                    </div>
+                </div>
+                <div class="deliverables-code">
+                    <div class="deliverables-code-header">
+                        <span>AGENTS.md — Legacy Billing Module</span>
+                        <span>SAMPLE ARTIFACT</span>
+                    </div>
+                    <pre><code># Module: billing-core (Strangler Boundary)
+owner: @platform-team
+status: pilot_mapped
+
+## Invariants
+- Never mutate `invoices.settled_at` outside `SettlementService`
+- All external calls must pass `Idempotency-Key` header
+
+## Migration Target
+- Extract `/v1/webhooks` -&gt; `services/billing-webhooks`
+- Contract: `openapi/billing-v1.yaml` (verified)</code></pre>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -619,7 +641,7 @@
                 <h2 data-translate="process.title">Proof-of-Value Sprint</h2>
                 <p data-translate="process.subtitle">From idea to working prototype in a single day.</p>
             </div>
-            <div class="process-steps scroll-stagger">
+            <div class="process-steps">
                 <div class="process-step">
                     <div class="step-header">
                         <div class="step-number">01</div>
@@ -701,9 +723,9 @@
                 <button type="button" class="portfolio-filter-btn" data-filter="platforms" data-translate="portfolio.filter.platforms">Public Platforms</button>
             </div>
 
-            <div class="portfolio-showcase scroll-stagger">
-                <div class="portfolio-item featured shimmer-card" data-category="platforms">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #3730a3 0%, #4f46e5 50%, #9333ea 100%);">
+            <div class="portfolio-showcase">
+                <div class="portfolio-item featured" data-category="platforms">
+                    <div class="portfolio-image" style="background: #18181b;">
                         <div class="project-preview">
                             <div class="browser-mockup">
                                 <div class="browser-header">
@@ -728,7 +750,7 @@
                                                         <span class="trait-score">91% • Zeer hoog</span>
                                                     </div>
                                                     <div class="trait-bar-track">
-                                                        <div class="trait-bar-fill" style="width: 91%; background: #6366f1;"></div>
+                                                        <div class="trait-bar-fill" style="width: 91%; background: #1d4ed8;"></div>
                                                     </div>
                                                 </div>
                                                 <div class="trait-row">
@@ -1347,113 +1369,113 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q1">Can you really build a prototype in 8 hours?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a1">Yes. By focusing on the "magic" feature and leveraging pre-built
                             components, we deliver high-quality, focused results that solve real problems.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q2">Do I need a technical background?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a2">No. Our workshops and prototypes are designed to bridge the gap
                             between business ideas and technical reality for everyone.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q3">What happens after the 8 hours?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a3">You receive a working prototype of your core feature along with the complete source code. Production hardening — adding automated tests, CI/CD, security audits, logging, and production infrastructure — is a separate, scoped follow-up phase so you only invest once value is proven.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q4">Where does TheGenAI operate?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a4">TheGenAI is based in Amsterdam, The Netherlands, and serves clients
                             across all of Europe with on-site and remote workshops and consulting.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q5">How do I book a workshop or order an MVP?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a5">Email us at info@thegenai.nl or fill in the contact form on our
                             website to get started.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q6">How does TheGenAI handle enterprise data security, privacy, and EU AI Act compliance?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a6">We prioritize enterprise-grade security and full compliance with the EU AI Act and GDPR. All solutions can be deployed 100% privately within your enterprise VPC (AWS, Azure, GCP) or on-premise air-gapped environments. We enforce zero data retention policies with zero training on your proprietary data. Learn more on our <a href="/security/">Security and Data Handling</a> page.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q7">How do you reverse-engineer and document undocumented legacy codebases?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a7">We employ specialized static analysis engines and private LLM agents to map service boundaries, data flows, database schemas, and API contracts into living architectural diagrams and OpenAPI specifications. We also create context layers (AGENTS.md, llms.txt) allowing modern AI coding assistants to work safely with your legacy code without hallucinations.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q8">What do your services cost?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a8">We work with fixed, transparent pricing: AI Readiness Scan (€3,900 fixed), 8-Hour Proof-of-Value Sprint (€2,900 fixed), Legacy Codebase Intelligence (pilot from €5,500, full codebase from €15,000, with pilot fee credited toward full engagements), Production Hardening (€1,000/day or €4,750 for 5 days), and Developer Workshops (half-day €2,000, full-day €3,500). Website as a Service (WaaS) offers dedicated plans starting from €0 upfront.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q9">Who owns the code?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a9">You do. The client owns 100% of the deliverables and custom source code, as agreed and stipulated in our contract. There is no vendor lock-in.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q10">What is the AI-literacy session?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a10">The AI-literacy session is a half-day interactive workshop covering the AI-literacy obligation under the EU AI Act for organisations using or deploying AI systems. It provides practical, non-technical and technical guidance on safe, compliant AI usage.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q11">How does Codebase Intelligence prevent high-risk 'Big Bang' rewrites?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a11">Instead of freezing feature work for a multi-year rewrite that risks omitting undocumented edge cases, our codebase intelligence maps dependencies and data flows so you can safely apply the Strangler Fig pattern — incrementally migrating isolated modules with zero downtime.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h3 data-translate="faq.q12">How do you eliminate key-person risk ('sleutelpersoonrisico') in legacy systems?</h3>
                         <span class="faq-icon">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p data-translate="faq.a12">We extract tribal knowledge directly from git history, undocumented business logic, and code paths into living architectural maps, OpenAPI specs, and AI context layers (AGENTS.md, llms.txt), ensuring no single engineer is a single point of failure.</p>
                     </div>
@@ -1463,66 +1485,37 @@
     </section>
 
     <!-- Blog Section (Home Page Preview) -->
-    <section id="latest-insights" class="services" style="background: #f8fafc;">
+    <section id="latest-insights" class="insights-section">
         <div class="container">
             <div class="section-header">
+                <div class="section-label" data-translate="blog.eyebrow">Writing</div>
                 <h2 data-translate="blog.title">Our Blog</h2>
                 <p data-translate="blog.subtitle">Deep dives and strategic insights into AI development.</p>
             </div>
-            <div class="services-grid">
+            <div class="insights-grid">
                 <!-- Article 1 -->
-                <div class="service-card" onclick="window.location.href='blog/8-hour-mvp-guide/'"
-                    style="cursor: pointer; text-align: left;">
-                    <div class="service-icon" style="width: 64px; height: 64px; margin: 0 0 24px 0;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                            <polyline points="13 2 13 9 20 9"></polyline>
-                        </svg>
-                    </div>
-                    <p class="portfolio-category" data-translate="blog.guide.category" style="margin-bottom: 8px;">
-                        Strategy Guide</p>
-                    <h3 data-translate="blog.guide.title" style="font-size: 20px; text-align: left;">From Idea to
-                        Launch: How to Build a Working AI MVP in Just 8 Hours</h3>
-                    <p data-translate="blog.guide.description" style="font-size: 16px; margin-bottom: 24px;">Practical
-                        tips for rapid prototyping and radical prioritization.</p>
-                    <span class="btn-link"
-                        style="color: #2563eb; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                <a href="blog/8-hour-mvp-guide/" class="insight-card">
+                    <span class="insight-category" data-translate="blog.guide.category">Strategy Guide</span>
+                    <h3 data-translate="blog.guide.title">From Idea to Launch: How to Build a Working AI MVP in Just 8 Hours</h3>
+                    <p data-translate="blog.guide.description">Practical tips for rapid prototyping and radical prioritization.</p>
+                    <span class="insight-link">
                         <span data-translate="blog.read_more">Read More</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
+                        <span aria-hidden="true">→</span>
                     </span>
-                </div>
+                </a>
 
                 <!-- Article 2 -->
-                <div class="service-card" onclick="window.location.href='blog/trae-vs-antigravity-vs-cursor/'"
-                    style="cursor: pointer; text-align: left;">
-                    <div class="service-icon" style="width: 64px; height: 64px; margin: 0 0 24px 0;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <p class="portfolio-category" data-translate="blog.ide.category" style="margin-bottom: 8px;">AI
-                        Development</p>
-                    <h3 data-translate="blog.ide.title" style="font-size: 20px; text-align: left;">Trae vs Antigravity
-                        vs Cursor: The Battle of AI IDEs</h3>
-                    <p data-translate="blog.ide.description" style="font-size: 16px; margin-bottom: 24px;">A deep dive
-                        into the financial impact and development speed of AI tools.</p>
-                    <span class="btn-link"
-                        style="color: #2563eb; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                <a href="blog/trae-vs-antigravity-vs-cursor/" class="insight-card">
+                    <span class="insight-category" data-translate="blog.ide.category">AI Development</span>
+                    <h3 data-translate="blog.ide.title">Trae vs Antigravity vs Cursor: The Battle of AI IDEs</h3>
+                    <p data-translate="blog.ide.description">A deep dive into the financial impact and development speed of AI tools.</p>
+                    <span class="insight-link">
                         <span data-translate="blog.read_more">Read More</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
+                        <span aria-hidden="true">→</span>
                     </span>
-                </div>
+                </a>
             </div>
-            <div style="text-align: center; margin-top: 50px;">
+            <div class="insights-footer">
                 <a href="blog/" class="btn btn-outline" data-translate="blog.view_all">Explore more articles</a>
             </div>
         </div>
@@ -1539,7 +1532,7 @@
                 </div>
                 <form id="newsletter-form" class="newsletter-form">
                     <input type="email" id="newsletter-email" data-translate="newsletter.placeholder"
-                        placeholder="Your Email" required>
+                        placeholder="Your Email" aria-label="Email address for newsletter" required>
                     <button type="submit" class="btn btn-primary" data-translate="newsletter.btn">Subscribe</button>
                 </form>
             </div>
@@ -1571,20 +1564,31 @@
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
+                        <select id="service" name="service" aria-label="Select an engagement">
+                            <option value="" data-translate="contact.form.service.placeholder">Select an engagement (optional)</option>
+                            <option value="legacy" data-translate="contact.form.service.legacy">Legacy Codebase Intelligence (from €5,500)</option>
+                            <option value="pov" data-translate="contact.form.service.pov">Proof-of-Value Sprint — 8 hours (€2,900)</option>
+                            <option value="readiness" data-translate="contact.form.service.readiness">AI Readiness Scan (€3,900)</option>
+                            <option value="hardening" data-translate="contact.form.service.hardening">Production Hardening (from €4,750)</option>
+                            <option value="workshops" data-translate="contact.form.service.workshops">AI Workshops for Developer Teams (from €2,000)</option>
+                            <option value="waas" data-translate="contact.form.service.waas">Website as a Service (WaaS)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <input type="text" id="name" name="name" data-translate="contact.form.name"
-                            placeholder="Your Name" required>
+                            placeholder="Your Name" aria-label="Your Name" required>
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" name="email" data-translate="contact.form.email"
-                            placeholder="Your Email" required>
+                            placeholder="Your Email" aria-label="Your Email" required>
                     </div>
                     <div class="form-group">
                         <input type="text" id="company" name="company" data-translate="contact.form.company"
-                            placeholder="Company Name">
+                            placeholder="Company Name" aria-label="Company Name">
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" data-translate="contact.form.message"
-                            placeholder="Tell us about your project" rows="5" required></textarea>
+                            placeholder="Tell us about your project" aria-label="Tell us about your project" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" data-translate="contact.form.submit">Send
                         Message</button>
@@ -1684,298 +1688,17 @@
         window.serverTimestamp = serverTimestamp;
     </script>
 
-    <!-- Hero 3D Hover Effect -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const heroWrapper = document.querySelector('.hero');
-            const heroBento = document.querySelector('.hero-bento');
-
-            if (window.innerWidth > 768 && heroWrapper && heroBento) {
-                heroWrapper.addEventListener('mousemove', (e) => {
-                    const rect = heroWrapper.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-
-                    const percentX = (x - centerX) / centerX;
-                    const percentY = (y - centerY) / centerY;
-
-                    const maxRotate = 15;
-                    const rotateX = percentY * -maxRotate;
-                    const rotateY = percentX * maxRotate;
-
-                    heroBento.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-                });
-
-                heroWrapper.addEventListener('mouseleave', () => {
-                    heroBento.style.transform = `perspective(1200px) rotateX(0deg) rotateY(0deg)`;
-                });
-            }
-        });
-    </script>
-
-    <!-- ═══════════════════════════════════════════════
-         Modern Animation Engine — TheGenAI 2026
-         ═══════════════════════════════════════════════ -->
+    <!-- Scroll Progress Bar -->
     <script>
     (function() {
-        'use strict';
-
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-        /* ── 1. Scroll Progress Bar ── */
         const progressBar = document.getElementById('scroll-progress');
-        if (progressBar) {
-            const updateProgress = () => {
-                const scrollTop = window.scrollY;
-                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-                progressBar.style.width = pct + '%';
-            };
-            window.addEventListener('scroll', updateProgress, { passive: true });
-            updateProgress();
-        }
-
-        /* ── 2. Neural Network Canvas ── */
-        function initNeuralCanvas() {
-            if (prefersReducedMotion) return;
-            const canvas = document.getElementById('neural-canvas');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-
-            let W, H, nodes, animId;
-            const NODE_COUNT = 55;
-            const MAX_DIST = 160;
-
-            function resize() {
-                W = canvas.width  = canvas.offsetWidth;
-                H = canvas.height = canvas.offsetHeight;
-            }
-
-            function createNodes() {
-                nodes = Array.from({ length: NODE_COUNT }, () => ({
-                    x:  Math.random() * W,
-                    y:  Math.random() * H,
-                    vx: (Math.random() - 0.5) * 0.5,
-                    vy: (Math.random() - 0.5) * 0.5,
-                    r:  Math.random() * 1.8 + 0.8,
-                    opacity: Math.random() * 0.5 + 0.3,
-                }));
-            }
-
-            function draw() {
-                ctx.clearRect(0, 0, W, H);
-
-                // Update positions
-                for (const n of nodes) {
-                    n.x += n.vx;
-                    n.y += n.vy;
-                    if (n.x < 0 || n.x > W) n.vx *= -1;
-                    if (n.y < 0 || n.y > H) n.vy *= -1;
-                }
-
-                // Draw connections
-                for (let i = 0; i < nodes.length; i++) {
-                    for (let j = i + 1; j < nodes.length; j++) {
-                        const dx = nodes[i].x - nodes[j].x;
-                        const dy = nodes[i].y - nodes[j].y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        if (dist < MAX_DIST) {
-                            const alpha = (1 - dist / MAX_DIST) * 0.4;
-                            ctx.beginPath();
-                            ctx.strokeStyle = `rgba(96, 165, 250, ${alpha})`;
-                            ctx.lineWidth = 0.6;
-                            ctx.moveTo(nodes[i].x, nodes[i].y);
-                            ctx.lineTo(nodes[j].x, nodes[j].y);
-                            ctx.stroke();
-                        }
-                    }
-                }
-
-                // Draw nodes
-                for (const n of nodes) {
-                    ctx.beginPath();
-                    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(147, 197, 253, ${n.opacity})`;
-                    ctx.fill();
-                }
-
-                animId = requestAnimationFrame(draw);
-            }
-
-            // Only run canvas when hero is in viewport
-            const heroSection = document.querySelector('#home');
-            const canvasObserver = new IntersectionObserver((entries) => {
-                for (const entry of entries) {
-                    if (entry.isIntersecting) {
-                        if (!animId) draw();
-                    } else {
-                        cancelAnimationFrame(animId);
-                        animId = null;
-                    }
-                }
-            }, { threshold: 0 });
-
-            resize();
-            createNodes();
-            draw();
-            if (heroSection) canvasObserver.observe(heroSection);
-            window.addEventListener('resize', () => { resize(); }, { passive: true });
-        }
-
-        /* ── 3. 3D Magnetic Tilt on Cards ── */
-        function initTiltCards() {
-            if (prefersReducedMotion || window.innerWidth <= 768) return;
-
-            document.querySelectorAll('.tilt-card').forEach(card => {
-                card.addEventListener('mousemove', (e) => {
-                    const rect = card.getBoundingClientRect();
-                    const cx = rect.left + rect.width  / 2;
-                    const cy = rect.top  + rect.height / 2;
-                    const dx = (e.clientX - cx) / (rect.width  / 2);
-                    const dy = (e.clientY - cy) / (rect.height / 2);
-                    const maxTilt = 10;
-                    card.style.transform = `perspective(800px) rotateX(${-dy * maxTilt}deg) rotateY(${dx * maxTilt}deg) translateY(-4px)`;
-                }, { passive: true });
-
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = '';
-                }, { passive: true });
-            });
-        }
-
-        /* ── 4. Magnetic Buttons ── */
-        function initMagneticButtons() {
-            if (prefersReducedMotion || window.innerWidth <= 768) return;
-
-            document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
-                btn.classList.add('btn-magnetic');
-
-                btn.addEventListener('mousemove', (e) => {
-                    const rect = btn.getBoundingClientRect();
-                    const cx = rect.left + rect.width  / 2;
-                    const cy = rect.top  + rect.height / 2;
-                    const dx = (e.clientX - cx) / (rect.width  / 2);
-                    const dy = (e.clientY - cy) / (rect.height / 2);
-                    btn.style.transform = `translate(${dx * 6}px, ${dy * 6}px)`;
-                }, { passive: true });
-
-                btn.addEventListener('mouseleave', () => {
-                    btn.style.transform = '';
-                }, { passive: true });
-            });
-        }
-
-        /* ── 5. Floating Decorative Particles in Hero ── */
-        function initHeroParticles() {
-            if (prefersReducedMotion) return;
-            const hero = document.querySelector('.hero');
-            if (!hero) return;
-
-            const colors = ['rgba(96,165,250,0.6)', 'rgba(167,139,250,0.5)', 'rgba(244,114,182,0.4)'];
-            for (let i = 0; i < 22; i++) {
-                const p = document.createElement('div');
-                p.className = 'particle';
-                const size = Math.random() * 4 + 2;
-                const x = Math.random() * 100;
-                const y = Math.random() * 100;
-                const dur = 8 + Math.random() * 12;
-                const delay = Math.random() * -20;
-                const color = colors[Math.floor(Math.random() * colors.length)];
-                p.style.cssText = `
-                    width:${size}px; height:${size}px;
-                    left:${x}%; top:${y}%;
-                    background:${color};
-                    animation: orbDrift1 ${dur}s ${delay}s ease-in-out infinite;
-                    opacity: ${Math.random() * 0.5 + 0.2};
-                `;
-                hero.appendChild(p);
-            }
-        }
-
-        /* ── 6. IntersectionObserver Fallback for CSS scroll-driven animations ── */
-        function initScrollFallback() {
-            const supportsCSSScrollDriven = CSS.supports('(animation-timeline: view()) and (animation-range: entry)');
-            if (supportsCSSScrollDriven) return; // Native CSS handles it
-
-            const selectors = [
-                '.scroll-reveal',
-                '.scroll-scale',
-                '.scroll-slide-left',
-                '.scroll-slide-right',
-            ];
-
-            // Set initial hidden state
-            const allEls = document.querySelectorAll(selectors.join(','));
-            allEls.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-            });
-
-            // .scroll-slide-left initial transform
-            document.querySelectorAll('.scroll-slide-left').forEach(el => {
-                el.style.transform = 'translateX(-50px)';
-            });
-            document.querySelectorAll('.scroll-slide-right').forEach(el => {
-                el.style.transform = 'translateX(50px)';
-            });
-            document.querySelectorAll('.scroll-scale').forEach(el => {
-                el.style.transform = 'scale(0.88) translateY(28px)';
-            });
-            document.querySelectorAll('.scroll-reveal').forEach(el => {
-                el.style.transform = 'translateY(40px)';
-            });
-
-            // Staggered children
-            document.querySelectorAll('.scroll-stagger > *').forEach((el, i) => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(36px)';
-                el.style.transition = `opacity 0.6s ${i * 80}ms ease, transform 0.6s ${i * 80}ms ease`;
-            });
-
-            const revealObserver = new IntersectionObserver((entries) => {
-                for (const entry of entries) {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = '';
-                        revealObserver.unobserve(entry.target);
-                    }
-                }
-            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-            document.querySelectorAll(
-                selectors.join(',') + ', .scroll-stagger > *'
-            ).forEach(el => revealObserver.observe(el));
-        }
-
-        /* ── 7. Section Label Animated Underline ── */
-        function initSectionLabels() {
-            const labelObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animated');
-                        labelObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            document.querySelectorAll('.section-label').forEach(label => {
-                labelObserver.observe(label);
-            });
-        }
-
-        /* ── Bootstrap all on DOMContentLoaded ── */
-        document.addEventListener('DOMContentLoaded', () => {
-            initNeuralCanvas();
-            initTiltCards();
-            initMagneticButtons();
-            initHeroParticles();
-            initScrollFallback();
-            initSectionLabels();
-        });
-
+        if (!progressBar) return;
+        const updateProgress = () => {
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = (docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0) + '%';
+        };
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
     })();
     </script>
 

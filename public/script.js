@@ -3,14 +3,16 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
+    const isExpanded = hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    hamburger.setAttribute('aria-expanded', String(isExpanded));
 });
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link, .nav-cta-btn').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
 }));
 
 // Smooth scrolling for navigation links
@@ -122,6 +124,7 @@ if (contactForm) {
         
         // Get form data
         const formData = new FormData(contactForm);
+        const service = formData.get('service') || '';
         const name = formData.get('name');
         const email = formData.get('email');
         const company = formData.get('company');
@@ -168,6 +171,7 @@ if (contactForm) {
             }
 
             const messageData = {
+                service: service,
                 name: name,
                 email: email,
                 company: company || '',
@@ -413,11 +417,14 @@ document.querySelectorAll('.faq-question').forEach(question => {
         // Close all other items
         document.querySelectorAll('.faq-item').forEach(otherItem => {
             otherItem.classList.remove('active');
+            const otherBtn = otherItem.querySelector('.faq-question');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
         });
         
         // Toggle current item
         if (!isActive) {
             item.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
         }
     });
 });
@@ -636,6 +643,16 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+// ─── Service CTA pre-selection in Contact Form ───
+document.querySelectorAll('.service-cta-btn[data-service]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const serviceSelect = document.getElementById('service');
+        if (serviceSelect && btn.dataset.service) {
+            serviceSelect.value = btn.dataset.service;
+        }
+    });
+});
 
 // ─── Portfolio Category Filtering ───
 document.addEventListener('DOMContentLoaded', () => {
