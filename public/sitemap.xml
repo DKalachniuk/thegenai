@@ -20,6 +20,24 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/" />
     </url>
     <url>
+        <loc>https://thegenai.nl/forward-deployed-engineer/</loc>
+        <lastmod>2026-11-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/forward-deployed-engineer/" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/forward-deployed-engineer/?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/forward-deployed-engineer/" />
+    </url>
+    <url>
+        <loc>https://thegenai.nl/blog/forward-deployed-engineer-netherlands/</loc>
+        <lastmod>2026-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://thegenai.nl/blog/forward-deployed-engineer-netherlands/" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://thegenai.nl/blog/forward-deployed-engineer-netherlands/?lang=nl" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://thegenai.nl/blog/forward-deployed-engineer-netherlands/" />
+    </url>
+    <url>
         <loc>https://thegenai.nl/blog</loc>
         <lastmod>2026-04-07</lastmod>
         <changefreq>weekly</changefreq>
